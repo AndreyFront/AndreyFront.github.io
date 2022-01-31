@@ -1,0 +1,96 @@
+.c-slider {
+
+    .slider {
+
+        &__line {
+            margin-top: 40px;
+        }
+
+        &__slide {
+            height: auto;
+        }
+
+        &__block-time-line {
+            width: 360px;
+            height: 1px;
+            background-color: $color-light-blue;
+        }
+    
+        &__time-line {
+            height: 100%;
+            background-color: $color-main;
+            width: 0;
+        }
+
+        &__btn {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border: 1px solid;
+            border-color: $color-main;
+            cursor: pointer;
+            transition: $transition;
+    
+            &[disabled] {
+                cursor: default;
+                border-color: $color-light-blue;
+            }
+    
+            &:hover {
+                border-color: $color-light-blue;
+            }
+    
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 10px;
+                height: 20px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+    
+            &--prev {
+                &:before {
+                    background-image: url('assets/images/icons/arrow-prev.svg');
+                }  
+            }
+    
+            &--next {
+                margin-left: 40px;
+    
+                &:before {
+                    background-image: url('assets/images/icons/arrow-next.svg');
+                }
+            }
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__block-title {}
+
+    &__title {
+        font-weight: bold;
+        font-size: 3.125rem;
+        line-height: 3.75rem;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__block-btns {
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 40px;
+    }
+}
