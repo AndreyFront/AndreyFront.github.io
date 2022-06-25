@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="image/x-icon" href="./assets/static/favicon.ico" rel="shortcut icon">
+<link type="Image/x-icon" href="./assets/static/favicon.ico" rel="icon">
+<link rel="stylesheet" href="./styles/main.css">
+<title>Components</title>
+    <link rel="stylesheet" href="./styles/main-dev.css">
+</head>
+<body>
+    <main class="dev">
+        <div class="dev__box-title">
+            <h1 class="dev__title">Components</h1>
+        </div>
+
+        <div class="dev__box-components">
+            <div class="dev__box-component">
+                <!-- include component -->
+            </div>
+        </div>
+    </main>
+    <div class="hystmodal modal m-subscription" id="m-subscription" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Закрыть</button>
+            <span class="modal__title">Подписка на рассылку обновлений цен</span>
+            <form action="" class="modal__form">
+                <input type="text" class="modal__input" placeholder="Ваше имя/Название компании" required>
+                <input type="tel" class="modal__input" placeholder="Ваш номер телефона" required>
+                <select name="region" class="modal__select" required>
+                    <option value="" selected="selected">Ваш регион</option>
+                    <option value="krd">Краснодарский край</option>
+                    <option value="rnd">Ростовская область</option>
+                    <option value="stv">Ставропольский край</option>
+                    <option value="mso">Московская область</option>
+                    <option value="sar">Саратовская область</option>
+                    <option value="krim">Республика Крым</option>
+                </select>
+                <label class="modal__label">
+                    <input type="checkbox" class="modal__label-input" name="">
+                    <span class="modal__label-text">Присылать обновление цен на Whatsapp</span>
+                </label>
+                <button type="submit" class="btn btn--size--bg btn--theme--fill">
+                    <span class="btn__text">Подписаться</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="./scripts/libs.js"></script>
+<script src="./scripts/main.js"></script>
+</body>
+</html>
