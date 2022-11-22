@@ -1,0 +1,58 @@
+.btn {
+    position: relative;
+    width: 100%;
+    padding: 9px 26px;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-column-gap: 11px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: background-color $transition-time, border-color $transition-time;
+
+    &:not([disabled]) {
+        cursor: pointer;
+    }
+
+    &[disabled] {
+        pointer-events: none;
+    }
+
+    &__text {
+        transition: color $transition-time;
+    }
+
+    &--theme--primary {
+        overflow: hidden;
+        border-color: transparent;
+        background-color: $color-4;
+
+        &:hover {
+            background-color: $color-3;
+        }
+
+        .btn {
+
+            &__text {
+                position: relative;
+                color: $color-1;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &--size--md {
+        width: 208px;
+        min-height: 47px;
+
+        .btn {
+            &__text {
+                font-size: 15px;
+            }
+        }
+    }
+}

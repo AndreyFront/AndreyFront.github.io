@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <div class="main-container max-width">
-            <router-link :to="{ name: 'home' }" class="link-reset"><span class="logo">Andrey_Front</span></router-link>
+            <router-link :to="{ name: 'home' }" class="link-reset"><span class="logo">Andrey <span>FD</span></span></router-link>
             <nav class="nav">
                 <ul class="list list-reset">
                     <li class="li">
@@ -47,10 +47,26 @@ export default {
     }
 
     .logo {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        align-items: center;
+        grid-column-gap: 5px;
         transition: color $transition-time;
 
         &:hover {
             color: $color-4;
+        }
+
+        span {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            background-color: $color-4;
+            color: $color-1;
+            border-radius: 4px;
+            font-weight: 500;
+            @include adaptiv-font(20, 18);
         }
     }
     

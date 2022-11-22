@@ -22,6 +22,11 @@
 
 a {
     color: $color-3;
+    transition: color $transition-time;
+
+    &:hover {
+        color: $color-4;
+    }
 }
 
 .title-reset {
