@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <div class="main-container max-width">
-            <router-link :to="{ name: 'home' }" class="link-reset"><span class="logo">Andrey <span>FD</span></span></router-link>
+            <router-link :to="{ name: 'home' }" class="link-reset"><span class="logo">John <span>FD</span></span></router-link>
             <nav class="nav">
                 <ul class="list list-reset">
                     <li class="li">
