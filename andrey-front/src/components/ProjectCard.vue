@@ -27,7 +27,7 @@ export default {
             required: true
         },
         year: {
-            type: Number,
+            type: String,
             required: true
         },
         type: {
@@ -52,6 +52,11 @@ export default {
         grid-column-gap: 18px;
         padding: 30px 0;
         border-bottom: 1px solid $color-8;
+
+        &:hover .image {
+            filter: blur(1.5px);
+            transform: scale(1.1);
+        }
     }
 
     .block-image {
@@ -65,6 +70,7 @@ export default {
         height: 100%;
         object-fit: cover;
         object-position: center;
+        transition: transform $transition-time, filter $transition-time;
     }
 
     .wrapper-info {

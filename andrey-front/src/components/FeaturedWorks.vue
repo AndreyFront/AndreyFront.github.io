@@ -19,12 +19,15 @@ export default {
         ListWorks
     },
     data() {
-        return {
-            listWorks: null
-        }
+        return {}
     },
     created() {
-        this.ListWorks = this.$store.dispatch('getWorks')
+        this.$store.dispatch('getWorks', 'http://localhost:3000/works')
+    },
+    computed: {
+        listWorks() {
+            return this.$store.getters.getListWorks
+        }
     }
 }
 </script>
