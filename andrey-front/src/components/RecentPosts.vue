@@ -29,12 +29,12 @@ export default {
         return {}
     },
     created() {
-        this.$store.dispatch('uploadingPosts', 'http://localhost:3000/posts')
+        this.$store.dispatch('uploadingPosts', 'http://localhost:3000/posts?_limit=2')
     },
     computed: {
         posts() {
-            console.log(this.$store.getters.getPosts)
-            return this.$store.getters.getPosts
+            const data = this.$store.getters.getPosts
+            return data
         }
     }
 }

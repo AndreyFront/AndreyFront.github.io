@@ -3,7 +3,7 @@
         <div class="main-container max-width">
             <div class="my-title">
                 <span class="my-title__text">Featured works</span>
-                <router-link to="/works" class="link-reset link">View all</router-link>
+                <router-link :to="{ name: 'work' }" class="link-reset link">View all</router-link>
             </div>
             <ListWorks :works="listWorks"/>
         </div>
@@ -22,7 +22,7 @@ export default {
         return {}
     },
     created() {
-        this.$store.dispatch('getWorks', 'http://localhost:3000/works')
+        this.$store.dispatch('getWorks', 'http://localhost:3000/works?_limit=3')
     },
     computed: {
         listWorks() {

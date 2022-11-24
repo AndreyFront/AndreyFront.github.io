@@ -8,7 +8,7 @@
                         <router-link to="/blog" class="link-reset"><span class="text">Blog</span></router-link>
                     </li>
                     <li class="li">
-                        <router-link to="/works" class="link-reset"><span class="text">Works</span></router-link>
+                        <router-link :to="{ name: 'work' }" class="link-reset"><span class="text">Works</span></router-link>
                     </li>
                     <li class="li">
                         <router-link to="/contact" class="link-reset"><span class="text">Contact</span></router-link>
