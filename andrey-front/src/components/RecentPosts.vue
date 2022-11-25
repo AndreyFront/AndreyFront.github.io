@@ -3,7 +3,7 @@
         <div class="main-container max-width">
             <div class="my-title">
                 <span class="my-title__text">Recent posts</span>
-                <router-link to="/blog" class="link-reset link">View all</router-link>
+                <router-link :to="{ name: 'blog' }" class="link-reset link">View all</router-link>
             </div>
             <div class="wrapper-cards">
                 <PostCard v-for="post in posts" :key="post.id"

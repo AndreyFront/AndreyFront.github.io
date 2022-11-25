@@ -5,7 +5,7 @@
             <nav class="nav">
                 <ul class="list list-reset">
                     <li class="li">
-                        <router-link to="/blog" class="link-reset"><span class="text">Blog</span></router-link>
+                        <router-link :to="{ name: 'blog' }" class="link-reset"><span class="text">Blog</span></router-link>
                     </li>
                     <li class="li">
                         <router-link :to="{ name: 'work' }" class="link-reset"><span class="text">Works</span></router-link>
