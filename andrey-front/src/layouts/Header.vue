@@ -5,6 +5,9 @@
             <nav class="nav">
                 <ul class="list list-reset">
                     <li class="li">
+                        <router-link :to="{ name: 'home' }" class="link-reset"><span class="text">Home</span></router-link>
+                    </li>
+                    <li class="li">
                         <router-link :to="{ name: 'blog' }" class="link-reset"><span class="text">Blog</span></router-link>
                     </li>
                     <li class="li">
@@ -30,7 +33,13 @@ export default {
     @import '@/assets/styles/mixins';
 
     .header {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
         padding: 27px 0;
+        background-color: $color-1;
     }
 
     .main-container {
