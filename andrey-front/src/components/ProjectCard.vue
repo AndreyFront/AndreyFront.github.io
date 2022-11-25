@@ -1,15 +1,22 @@
 <template>
     <div class="project-card">
-        <div class="block-image">
-            <img :src="image" class="image" alt="">
-        </div>
+        <a :href="link" class="link-image link-reset">
+            <div class="block-image">
+                <img :src="image" class="image" alt="">
+            </div>
+        </a>
         <div class="wrapper-info">
-            <span class="title">{{ title }}</span>
+            <a :href="link" class="link-title link-reset">
+                <span class="title">{{ title }}</span>
+            </a>
             <div class="block-info">
                 <span class="year">{{ year }}</span>
                 <span class="type">{{ type }}</span>
             </div>
             <span class="description">{{ description }}</span>
+            <a href="#" class="btn btn--size--md btn--theme--primary">
+                <span class="btn__text">Watch</span>
+            </a>
         </div>
     </div>
 </template>
@@ -18,6 +25,10 @@
 export default {
     name: 'ProjectCard',
     props: {
+        link: {
+            type: String,
+            required: true
+        },
         image: {
             type: String,
             required: true
@@ -111,5 +122,21 @@ export default {
     .description {
         font-size: 16px;
         line-height: 1.5em;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    a {
+        color: $main-color;
+
+        &:hover {
+            color: $color-4;
+        }
+    }
+
+    .link-image:hover + .wrapper-info .link-title {
+        color: $color-4;
     }
 </style>

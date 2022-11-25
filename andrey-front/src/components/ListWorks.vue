@@ -1,6 +1,7 @@
 <template>
     <div class="list-works">
         <ProjectCard v-for="work in works" :key="work.id"
+            :link="work.link"
             :image="work.image"
             :title="work.title"
             :year="work.year"
