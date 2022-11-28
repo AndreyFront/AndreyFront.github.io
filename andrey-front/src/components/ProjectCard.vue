@@ -1,12 +1,12 @@
 <template>
     <div class="project-card">
-        <a :href="link" class="link-image link-reset">
+        <a :href="link" target="_blank" class="link-image link-reset">
             <div class="block-image">
                 <img :src="image" class="image" alt="">
             </div>
         </a>
         <div class="wrapper-info">
-            <a :href="link" class="link-title link-reset">
+            <a :href="link" target="_blank" class="link-title link-reset">
                 <span class="title">{{ title }}</span>
             </a>
             <div class="block-info">
@@ -138,5 +138,26 @@ export default {
 
     .link-image:hover + .wrapper-info .link-title {
         color: $color-4;
+    }
+
+    @media screen and (max-width: 768px) {
+        .project-card {
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+        }
+
+        .link-image {
+            max-width: 300px;
+        }
+
+        .wrapper-info {
+            grid-row-gap: 12px;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .link-image {
+            max-width: 100%;
+        }
     }
 </style>

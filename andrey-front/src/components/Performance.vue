@@ -59,7 +59,7 @@ export default {
 
     .block-image {
         position: relative;
-        widows: 100%;
+        width: 243px;
         height: 243px;
     }
 
@@ -80,5 +80,31 @@ export default {
         height: 110%;
         background-color: $color-5;
         border-radius: 100%;
+    }
+
+    @media screen and (max-width: 992px) {
+        .main-container {
+            grid-template-columns: minmax(100px, 497px);
+            grid-row-gap: 45px;
+        }
+
+        .block-image {
+            order: 1;
+            margin: 0 20px;
+        }
+
+        .wrapper-info {
+            order: 2;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .performance {
+            padding: 50px 0;
+        }
+
+        .wrapper-info {
+            grid-row-gap: 25px;
+        }
     }
 </style>

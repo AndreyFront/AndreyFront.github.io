@@ -68,4 +68,11 @@ export default {
         font-size: 14px;
         text-align: center;
     }
+
+    
+    @media screen and (max-width: 768px) {
+        .footer {
+            padding: 25px 0;
+        }
+    }
 </style>

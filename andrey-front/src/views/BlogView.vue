@@ -39,11 +39,9 @@ import PostCard from "@/components/PostCard"
     @import '@/assets/styles/vars';
     @import '@/assets/styles/mixins';
 
-    .main-container {
+    .blog {
         padding: 90px 0 58px;
     }
-
-    .wrapper-posts {}
 
     .post-card {
         padding: 0 0 29px 0;
@@ -53,6 +51,12 @@ import PostCard from "@/components/PostCard"
 
         &:not(:first-child) {
             padding: 32px 0 29px 0;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .blog {
+            padding: 30px 0;
         }
     }
 </style>

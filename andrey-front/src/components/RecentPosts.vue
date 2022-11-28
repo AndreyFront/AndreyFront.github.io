@@ -56,4 +56,10 @@ export default {
         grid-row-gap: 20px;
         margin-top: 20px;
     }
+
+    @media screen and (max-width: 992px) {
+        .wrapper-cards{
+            grid-template-columns: 1fr;
+        }
+    }
 </style>

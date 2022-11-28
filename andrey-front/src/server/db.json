@@ -2,7 +2,7 @@
     "works": [
         {
             "id": 1,
-            "link": "#",
+            "link": "https://richardmattka.com/",
             "image": "https://threejs.org/files/projects/richardmattka.png",
             "title": "Designing Dashboards 1",
             "year": "2018",
@@ -11,8 +11,8 @@
         },
         {
             "id": 2,
-            "link": "#",
-            "image": "https://threejs.org/files/projects/rainforest.png",
+            "link": "https://leap-for-mankind.com/",
+            "image": "https://threejs.org/files/projects/leap-for-mankind.png",
             "title": "Designing Dashboards 2",
             "year": "2019",
             "type": "Dashboard",
@@ -20,7 +20,7 @@
         },
         {
             "id": 3,
-            "link": "#",
+            "link": "http://cabbi.bo/enough/",
             "image": "https://threejs.org/files/projects/enough.png",
             "title": "Designing Dashboards 3",
             "year": "2020",
@@ -29,7 +29,7 @@
         },
         {
             "id": 4,
-            "link": "#",
+            "link": "https://particle-love.com/",
             "image": "https://threejs.org/files/projects/particlelove.png",
             "title": "Designing Dashboards 4",
             "year": "2021",

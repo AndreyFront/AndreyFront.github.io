@@ -32,7 +32,13 @@
     @import '@/assets/styles/vars';
     @import '@/assets/styles/mixins';
 
-    .main-container {
+    .work {
         padding: 90px 0 58px;
+    }
+
+    @media screen and (max-width: 992px) {
+        .work {
+            padding: 30px 0;
+        }
     }
 </style>

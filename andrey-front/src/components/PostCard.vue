@@ -85,4 +85,10 @@ export default {
             padding-left: 26px;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .post-card {
+            grid-row-gap: 12px;
+        }
+    }
 </style>
