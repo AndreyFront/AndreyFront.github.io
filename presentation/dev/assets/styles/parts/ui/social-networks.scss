@@ -1,0 +1,20 @@
+.social-networks {
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    grid-column-gap: 50px;
+
+    &__link {
+        display: grid;
+        transition: opacity $transition-time;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+    }
+}

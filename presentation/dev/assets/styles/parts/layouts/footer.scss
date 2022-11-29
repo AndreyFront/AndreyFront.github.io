@@ -1,0 +1,16 @@
+.footer {
+    flex: 0 0 auto;
+    padding: 76px 0;
+    background-color: $color-3;
+
+    &__developer {
+        font-weight: 600;
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        align-items: center;
+        justify-content: space-between;
+    }
+}

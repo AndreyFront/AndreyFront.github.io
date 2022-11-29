@@ -1,0 +1,118 @@
+.header {
+    flex: 0 0 auto;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 60px 0;
+    border-bottom: 1px solid;
+    border-bottom-color: transparent;
+    transition: padding $transition-time, background-color $transition-time;
+
+    &.scroll-active {
+        padding: 15px 0;
+        background-color: $color-1;
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &__link-nav,
+    &__logo,
+    &__logo span {
+        font-weight: 600;
+    }
+
+    &__logo {
+        position: relative;
+        text-decoration: none;
+        margin-left: -5px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 46px;
+            height: 34px;
+            background-color: $color-2;
+            border-radius: 7px;
+            transition: width $transition-time, background-color $transition-time;
+        }
+
+        &:hover::before {
+            width: 100%;
+            background-color: $main-color;
+        }
+
+        &:hover span:last-child {
+            color: $color-2;
+        }
+
+        span {
+            position: relative;
+        }
+
+        span:first-child {
+            padding: 0 0 0 5px;
+        }
+
+        span:last-child {
+            display: inline-grid;
+            align-items: center;
+            justify-content: center;
+            padding: 2px 5px;
+            font-weight: 800;
+            color: $main-color;
+            transition: color $transition-time, background-color $transition-time;
+        }
+    }
+
+    &__nav {}
+
+    &__list {
+        display: grid;
+        grid-auto-columns: max-content;
+        grid-auto-flow: column;
+        grid-column-gap: 60px;
+    }
+
+    &__li {}
+
+    &__link-nav {
+        position: relative;
+        font-size: 22px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            opacity: 0;
+            width: 55%;
+            transform: translateY(5px);
+            height: 3px;
+            background-color: $color-2;
+            transition: opacity $transition-time, transform $transition-time;
+        }
+
+        &:hover::before {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        &.active {
+            &::before {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        align-items: center;
+        justify-content: space-between;
+    }
+}

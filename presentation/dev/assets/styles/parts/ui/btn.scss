@@ -1,0 +1,82 @@
+.btn {
+    position: relative;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    transition: background-color $transition-time, border-color $transition-time;
+
+    &:not([disabled]) {
+        cursor: pointer;
+    }
+
+    &[disabled] {
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    &__text {
+        transition: color $transition-time;
+    }
+
+    &--theme--primary {
+        background-color: $color-2;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &:hover .btn__text {
+            color: $color-2;
+        }
+
+        .btn {
+            &__text {
+                color: $color-5;
+            }
+        }
+    }
+
+    &--theme--secondary {
+        background-color: transparent;
+        border-color: $color-2;
+
+        &:hover {
+            border-color: transparent;
+        }
+
+        .btn {
+            &__text {
+                color: $color-2;
+            }
+        }
+    }
+
+    &--size--bg {
+        width: 335px;
+        min-height: 99px;
+
+        .btn {
+            &__text {
+                font-size: 32px;
+                font-weight: 800;
+            }
+        }
+    }
+
+    &--size--md {
+        width: 213px;
+        min-height: 57px;
+
+        .btn {
+            &__text {
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+    }
+}
