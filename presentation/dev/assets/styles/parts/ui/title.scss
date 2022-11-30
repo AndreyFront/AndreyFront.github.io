@@ -1,0 +1,22 @@
+.title {
+    position: relative;
+    text-align: center;
+
+    &__text {
+        font-size: 56px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $color-2;
+    }
+
+    &__line {
+        position: absolute;
+        bottom: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 240px;
+        height: 5px;
+        border-radius: 10px;
+        background-color: $color-2;
+    }
+}

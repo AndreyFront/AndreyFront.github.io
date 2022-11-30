@@ -96,11 +96,6 @@
             transition: opacity $transition-time, transform $transition-time;
         }
 
-        &:hover::before {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
         &.active {
             &::before {
                 opacity: 1;

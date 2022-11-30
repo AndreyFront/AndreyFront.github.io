@@ -1,0 +1,33 @@
+.service-card {
+    display: grid;
+    grid-row-gap: 30px;
+    justify-content: center;
+    padding: 60px 70px;
+    border: 4px solid $color-2;
+    border-radius: 9px;
+
+    &__block-icon {
+        margin: 0 auto;
+    }
+
+    &__icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__title,
+    &__description {
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 32px;
+        color: $color-2;
+    }
+
+    &__description {
+        font-size: 22px;
+        line-height: 1.1em;
+    }
+}

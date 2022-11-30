@@ -79,4 +79,16 @@
             }
         }
     }
+
+    &--size--sm {
+        width: 150px;
+        min-height: 42px;
+
+        .btn {
+            &__text {
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+    }
 }
