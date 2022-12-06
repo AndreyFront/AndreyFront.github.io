@@ -45,7 +45,26 @@ window.onload = () => {
         })
     }
 
+    function reviews() {
+        const main = document.querySelector('[data-reviews="main"]')
+
+        if (!main) return
+
+        const slider = main.querySelector('[data-reviews="slider"]')
+        const btnNext = slider.querySelector('[data-reviews="btn-next"]')
+        const btnPrev = slider.querySelector('[data-reviews="btn-prev"]')
+
+        const swiper = new Swiper(slider, {
+            effect: "fade",
+            navigation: {
+                nextEl: btnNext,
+                prevEl: btnPrev,
+            },
+        })
+    }
+
     page()
     fixedHeader()
     smoothScrolling()
+    reviews()
 }
