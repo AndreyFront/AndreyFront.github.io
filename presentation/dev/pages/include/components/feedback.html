@@ -7,8 +7,6 @@
         <div class="feedback__wrapper-content">
             <form action="" class="form">
                 <div class="form__wrapper-inputs">
-
-
                     <div class="input" data-input="block-input">
                         <div class="input__block-input">
                             <input type="text" class="input__input" data-input="input" data-input-type="name" required minlength="2">
@@ -20,11 +18,58 @@
                             </button>
                         </div>
                     </div>
+                    <div class="input" data-input="block-input">
+                        <div class="input__block-input">
+                            <input type="text" class="input__input" data-input="input" data-input-type="email" required minlength="2">
+                            <span class="input__placeholder" data-input="placeholder">Email</span>
+                            <button type="button" class="input__btn-clearing" data-input="btn-clearing">
+                                <svg class="input__clearing-icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#cross"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="textarea" data-textarea="block-textarea">
+                        <div class="textarea__block-textarea">
+                            <textarea class="textarea__textarea" data-textarea="textarea" data-scrollbar></textarea>
+                            <span class="textarea__placeholder" data-textarea="placeholder">Комментарий</span>
+                        </div>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn--size--bg btn--theme--primary">
                     <span class="btn__text">SUBMIT</span>
                 </button>
             </form>
+            <div class="feedback__wrapper-contacts">
+                <div class="feedback__block-contact">
+                    <span class="feedback__contact-title">Phone</span>
+                    <a href="#" class="feedback__contact-link link-reset">+7 (918)-456-8910</a>
+                </div>
+                <div class="feedback__block-contact">
+                    <span class="feedback__contact-title">Email</span>
+                    <a href="mailto:email@yandex.ru" class="feedback__contact-link link-reset">email@yandex.ru</a>
+                </div>
+                <div class="feedback__block-contact">
+                    <span class="feedback__contact-title">Social Media</span>
+                    <div class="social-networks">
+                        <a href="#" class="social-networks__link link-reset">
+                            <svg class="social-networks__icon">
+                                <use xlink:href="./assets/icons/sprite-svg.svg#Telegram"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-networks__link link-reset">
+                            <svg class="social-networks__icon">
+                                <use xlink:href="./assets/icons/sprite-svg.svg#VK"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-networks__link link-reset">
+                            <svg class="social-networks__icon">
+                                <use xlink:href="./assets/icons/sprite-svg.svg#Github"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

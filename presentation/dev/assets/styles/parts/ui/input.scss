@@ -8,7 +8,7 @@
             }
 
             &__input {
-                padding: 12px 80px;
+                padding: 40px 80px 12px 80px;
             }
         }
     }
@@ -33,7 +33,7 @@
     &__block-input {
         position: relative;
         height: 99px;
-        border: 1px solid;
+        border: 4px solid;
         border-color: $color-2;
         border-radius: 7px;
         background-color: $color-1;
@@ -78,7 +78,7 @@
         position: absolute;
         display: grid;
         top: 50%;
-        right: 12px;
+        right: 80px;
         padding: 0;
         background-color: transparent;
         border: none;
