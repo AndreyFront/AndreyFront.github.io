@@ -185,12 +185,12 @@
             <div class="title__line"></div>
         </div>
         <div class="reviews__wrapper-slider">
-            <div class="swiper reviews__slider" data-reviews="slider">
+            <div class="swiper swiper--arrows reviews__slider" data-reviews="slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="reviews__wrapper-review">
                             <div class="reviews__block-image">
-                                <img src="./assets/images/human.jpg" class="reviews__image" alt="">
+                                <img src="./assets/images/customer-anna.jpg" class="reviews__image" alt="">
                             </div>
                             <div class="reviews__block-info">
                                 <span class="reviews__text">
@@ -201,7 +201,7 @@
                                 </span>
                                 <div class="reviews__block-sign">
                                     <div class="reviews__sign-line"></div>
-                                    <span class="reviews__name">customer 1</span>
+                                    <span class="reviews__name">Anna</span>
                                 </div>
                             </div>
                         </div>
@@ -209,7 +209,7 @@
                     <div class="swiper-slide">
                         <div class="reviews__wrapper-review">
                             <div class="reviews__block-image">
-                                <img src="./assets/images/human.jpg" class="reviews__image" alt="">
+                                <img src="./assets/images/customer-nikita.jpg" class="reviews__image" alt="">
                             </div>
                             <div class="reviews__block-info">
                                 <span class="reviews__text">
@@ -220,15 +220,53 @@
                                 </span>
                                 <div class="reviews__block-sign">
                                     <div class="reviews__sign-line"></div>
-                                    <span class="reviews__name">customer 2</span>
+                                    <span class="reviews__name">nikita</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next" data-reviews="btn-next"></div>
-                <div class="swiper-button-prev" data-reviews="btn-prev"></div>
+                <button type="button" class="arrow swiper__arrow swiper__arrow--prev" data-reviews="btn-prev">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-left"/>
+                    </svg>
+                </button>
+                <button type="button" class="arrow swiper__arrow swiper__arrow--next" data-reviews="btn-next">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"/>
+                    </svg>
+                </button>
             </div>
+        </div>
+    </div>
+</section>
+                <section class="feedback section">
+    <div class="main-container max-width">
+        <div class="title">
+            <span class="title__text">GET IN TOUCH</span>
+            <div class="title__line"></div>
+        </div>
+        <div class="feedback__wrapper-content">
+            <form action="" class="form">
+                <div class="form__wrapper-inputs">
+
+
+                    <div class="input" data-input="block-input">
+                        <div class="input__block-input">
+                            <input type="text" class="input__input" data-input="input" data-input-type="name" required minlength="2">
+                            <span class="input__placeholder" data-input="placeholder">Имя</span>
+                            <button type="button" class="input__btn-clearing" data-input="btn-clearing">
+                                <svg class="input__clearing-icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#cross"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn--size--bg btn--theme--primary">
+                    <span class="btn__text">SUBMIT</span>
+                </button>
+            </form>
         </div>
     </div>
 </section>

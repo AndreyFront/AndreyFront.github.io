@@ -1,0 +1,108 @@
+.input {
+    position: relative;
+
+    &--focus {
+        .input {
+            &__placeholder {
+                transform: translate(-5px, -110%) scale(0.9);
+            }
+
+            &__input {
+                padding: 12px 80px;
+            }
+        }
+    }
+
+    &--viewed {
+        .input {
+            &__block-input {
+                border-color: $main-color;
+            }
+        }
+    }
+
+    &--error {
+
+        .input {
+            &__block-input {
+                border-color: $color-6;
+            }
+        }
+    }
+
+    &__block-input {
+        position: relative;
+        height: 99px;
+        border: 1px solid;
+        border-color: $color-2;
+        border-radius: 7px;
+        background-color: $color-1;
+        overflow: hidden;
+        transition: border-color $transition-time;
+    }
+
+    &__input {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: none;
+        padding: 0 80px;
+        color: $color-2;
+        background-color: transparent;
+        font-size: 32px;
+        transition: padding $transition-time;
+
+        &[required] ~ .input__placeholder {
+            &::after {
+                content: '*';
+                margin-left: 2px;
+                color: $main-color;
+                font-size: 32px;
+            }
+        }
+    }
+
+    &__placeholder {
+        position: absolute;
+        top: 50%;
+        left: 80px;
+        transform: translate(0, -50%);
+        pointer-events: none;
+        font-size: 32px;
+        color: $color-2;
+        opacity: 0.7;
+        transition: transform $transition-time;
+    }
+
+    &__btn-clearing {
+        position: absolute;
+        display: grid;
+        top: 50%;
+        right: 12px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translate(10px, -50%);
+        transition: opacity $transition-time, visibility $transition-time, transform $transition-time;
+
+        &:hover .input__clearing-icon use {
+            fill: $color-4;
+        }
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: translate(0, -50%);
+        }
+    }
+
+    &__clearing-icon {
+        width: 24px;
+        height: 24px;
+    }
+}

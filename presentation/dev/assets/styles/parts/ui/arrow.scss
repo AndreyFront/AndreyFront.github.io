@@ -1,0 +1,26 @@
+.arrow {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border: 1px solid $color-4;
+    border-radius: 7px;
+    background-color: $color-4;
+    cursor: pointer;
+    transition: background-color $transition-time, opacity $transition-time;
+    
+    &:not([disabled]):hover {
+        background-color: transparent;
+    }
+
+    &[disabled] {
+        pointer-events: none;
+        opacity: 0.6;
+    }
+
+    &__icon {
+        width: 32px;
+        height: 32px;
+    }
+}

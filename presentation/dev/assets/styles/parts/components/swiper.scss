@@ -1,0 +1,21 @@
+.swiper {
+
+    &--arrows.swiper {
+        padding: 0 80px;
+    }
+
+    &__arrow {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &--prev {
+            left: 0;
+        }
+
+        &--next {
+            right: 0;
+        }
+    }
+}
