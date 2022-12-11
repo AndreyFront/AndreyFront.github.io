@@ -2,32 +2,20 @@
 
     &__wrapper-content {
         display: grid;
-        grid-template-columns: minmax(552px, 714px) 462px;
-        grid-column-gap: 80px;
         align-items: center;
     }
 
     &__wrapper-contacts {
-        position: relative;
         display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
         grid-row-gap: 54px;
-        padding-left: 80px;
-
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            width: 1px;
-            height: 85%;
-            transform: translateY(-50%);
-            background-color: $color-2;
-        }
     }
 
     &__block-contact {
         display: grid;
-        grid-row-gap: 13px;
+        justify-content: center;
+        grid-row-gap: 14px;
     }
 
     &__contact-title {
