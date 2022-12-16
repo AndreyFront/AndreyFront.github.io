@@ -43,9 +43,11 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center;
+        object-position: top;
         transition: transform $transition-time, filter $transition-time;
     }
 
-    .btn {}
+    .btn {
+        margin: auto;
+    }
 }
