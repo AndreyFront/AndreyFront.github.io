@@ -1,1 +1,49 @@
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .performance {
+        height: max-content;
+
+        &__block-btns {
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+        }
+
+        &__block-social-networks {
+            display: none;
+        }
+
+        &__wrapper-info {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .reviews {
+
+        &__block-image {
+            width: 226px;
+            height: 266px;
+        }
+        
+        &__sign-line {
+            width: 80px;
+        }
+    }
+
+    .feedback {
+        &__wrapper-contacts {
+            grid-template-columns: 1fr;
+            justify-content: start;
+        }
+
+        &__block-contact {
+            justify-content: start;
+        }
+    }
+
+    .footer {
+        
+        .main-container {
+            grid-template-columns: 1fr;
+            grid-row-gap: 40px;
+        }
+    }
+}

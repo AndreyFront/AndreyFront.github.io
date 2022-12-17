@@ -1,1 +1,12 @@
-@media screen and (max-width: 1440px) {}
+@media screen and (max-width: 1440px) {
+    .performance {
+        &__block-image {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    .service-card {
+        padding: 30px 35px;
+    }
+}

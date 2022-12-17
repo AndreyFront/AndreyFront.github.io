@@ -64,7 +64,7 @@
 
         .btn {
             &__text {
-                font-size: 32px;
+                @include adaptiv-font(32, 20);
                 font-weight: 800;
             }
         }
@@ -76,7 +76,7 @@
 
         .btn {
             &__text {
-                font-size: 24px;
+                @include adaptiv-font(24, 20);
                 font-weight: 600;
             }
         }

@@ -40,14 +40,14 @@
     &__greeting {
 
         b {
-            font-size: 88px;
+            @include adaptiv-font(88, 44);
             text-transform: uppercase;
             color: $color-2;
         }
     }
 
     &__description {
-        font-size: 24px;
+        @include adaptiv-font(24, 20);
         color: $color-4;
     }
 

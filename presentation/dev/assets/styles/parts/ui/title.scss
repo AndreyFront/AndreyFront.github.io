@@ -3,7 +3,7 @@
     text-align: center;
 
     &__text {
-        font-size: 56px;
+        @include adaptiv-font(56, 30);
         font-weight: 600;
         text-transform: uppercase;
         color: $color-2;

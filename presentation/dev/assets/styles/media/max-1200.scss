@@ -1,1 +1,40 @@
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+    .performance {
+        &__block-image {
+            display: none;
+        }
+
+        &__wrapper-info {
+            grid-column-gap: 200px;
+            justify-content: start;
+        }
+
+        .main-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .about-me {
+        &__block-image {
+            height: 650px;
+        }
+
+        .main-container {
+            grid-template-columns: 450px auto;
+            grid-column-gap: 68px;
+        }
+    }
+
+    .services {
+        &__wrapper-cards {
+            grid-column-gap: 60px;
+        }
+    }
+
+    .projects {
+        &__block-tab-content {
+            grid-column-gap: 60px;
+            grid-row-gap: 60px;
+        }
+    }
+}

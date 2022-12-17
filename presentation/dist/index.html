@@ -10,29 +10,34 @@
 <title>Main page</title>
     </head>
     <body>
-        <div class="wrapper-page">
+        <div class="wrapper-page" data-smooth-scrolling="home">
             <header class="header" data-header="main">
     <div class="main-container max-width">
         <a href="/" class="header__logo">
             <span>Andrey</span>
             <span>FD</span>
         </a>
-        <nav class="header__nav">
+        <nav class="header__nav" data-header="nav">
             <ul class="header__list list-reset">
                 <li class="header__li">
-                    <a href="#" class="header__link-nav link-reset">Home</a>
+                    <a href="#" class="header__link-nav link-reset" data-smooth-scrolling="#home">Главная</a>
                 </li>
                 <li class="header__li">
-                    <a href="#" class="header__link-nav link-reset">About</a>
+                    <a href="#" class="header__link-nav link-reset" data-smooth-scrolling="#about-me">Обо мне</a>
                 </li>
                 <li class="header__li">
-                    <a href="#" class="header__link-nav link-reset">Services</a>
+                    <a href="#" class="header__link-nav link-reset" data-smooth-scrolling="#services">Услуги</a>
                 </li>
                 <li class="header__li">
-                    <a href="#" class="header__link-nav link-reset">Contact</a>
+                    <a href="#" class="header__link-nav link-reset" data-smooth-scrolling="#contacts">Контакты</a>
                 </li>
             </ul>
         </nav>
+        <div class="header__burger" data-header="btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 </header>
             <main class="page main-page" data-page="main">
@@ -62,15 +67,15 @@
             </div>
             <div class="performance__inner-info">
                 <div class="performance__block-info">
-                    <span class="performance__greeting">Hello, I am <b>Andrey</b></span>
-                    <span class="performance__description">Lorem ipsum sit dolor amet..</span>
+                    <span class="performance__greeting"><b>Андрей</b></span>
+                    <span class="performance__description">Front-end разработчик сайтов</span>
                 </div>
                 <div class="performance__block-btns">
-                    <button class="btn btn--size--md btn--theme--primary">
-                        <span class="btn__text">Hire me</span>
-                    </button>
-                    <button class="btn btn--size--md btn--theme--secondary">
-                        <span class="btn__text">Know more</span>
+                    <button class="btn btn--size--md btn--theme--primary" data-smooth-scrolling="#contacts">
+                        <span class="btn__text">Написать</span>
+                    </button> 
+                    <button class="btn btn--size--md btn--theme--secondary" data-smooth-scrolling="#about-me">
+                        <span class="btn__text">Обо мне</span>
                     </button>
                 </div>
             </div>
@@ -80,14 +85,14 @@
         </div>
     </div>
 </section>
-                <section class="about-me section">
+                <section class="about-me section" data-smooth-scrolling="about-me">
     <div class="main-container max-width">
         <div class="about-me__block-image">
             <img src="./assets/images/about-me.jpg" class="about-me__image" alt="">
         </div>
         <div class="about-me__wrapper-info">
             <div class="title">
-                <span class="title__text">About me</span>
+                <span class="title__text">Обо мне</span>
             </div>
             <div class="about-me__block-text">
                 <p>
@@ -102,16 +107,16 @@
                     magna aliqua.
                 </p>
             </div>
-            <button class="btn btn--size--md btn--theme--secondary">
-                <span class="btn__text">My Projects</span>
+            <button class="btn btn--size--md btn--theme--secondary" data-smooth-scrolling="#projects">
+                <span class="btn__text">Мои проекты</span>
             </button>
         </div>
     </div>
 </section>
-                <section class="services section">
+                <section class="services section" data-smooth-scrolling="services">
     <div class="main-container max-width">
         <div class="title">
-            <span class="title__text">Services i offer</span>
+            <span class="title__text">Что я делаю</span>
             <div class="title__line"></div>
         </div>
         <div class="services__wrapper-cards">
@@ -121,8 +126,8 @@
                         <use xlink:href="./assets/icons/sprite-svg.svg#chrome"/>
                     </svg>
                 </div>
-                <span class="service-card__title">Web Developement</span>
-                <span class="service-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </span>
+                <span class="service-card__title">Разработка веб - приложения</span>
+                <span class="service-card__description">Дизайн, программирование пользовательского интерфейса, серверное программирование</span>
             </div>
             <div class="service-card">
                 <div class="service-card__block-icon">
@@ -130,8 +135,8 @@
                         <use xlink:href="./assets/icons/sprite-svg.svg#chrome"/>
                     </svg>
                 </div>
-                <span class="service-card__title">Web Developement</span>
-                <span class="service-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </span>
+                <span class="service-card__title">Разработка сайта под ключ</span>
+                <span class="service-card__description">Дизайн, верстка, программирование. Размещение сайта в интернете <b>бесплатно</b></span>
             </div>
             <div class="service-card">
                 <div class="service-card__block-icon">
@@ -139,13 +144,13 @@
                         <use xlink:href="./assets/icons/sprite-svg.svg#chrome"/>
                     </svg>
                 </div>
-                <span class="service-card__title">Web Developement</span>
-                <span class="service-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </span>
+                <span class="service-card__title">Поддержка вашего проекта</span>
+                <span class="service-card__description">Поддержка как статического сайта, так и веб-приложения</span>
             </div>
         </div>
     </div>
 </section>
-                <section class="projects section">
+                <section class="projects section" data-smooth-scrolling="projects">
     <div class="main-container max-width">
         <div class="title">
             <span class="title__text">Мои проекты</span>
@@ -209,7 +214,7 @@
                 <section class="reviews section" data-reviews="main">
     <div class="main-container max-width">
         <div class="title">
-            <span class="title__text">Reviews</span>
+            <span class="title__text">Отзывы</span>
             <div class="title__line"></div>
         </div>
         <div class="reviews__wrapper-slider">
@@ -268,10 +273,10 @@
         </div>
     </div>
 </section>
-                <section class="feedback section">
+                <section class="feedback section" data-smooth-scrolling="contacts">
     <div class="main-container max-width">
         <div class="title">
-            <span class="title__text">GET IN TOUCH</span>
+            <span class="title__text">Контакты</span>
             <div class="title__line"></div>
         </div>
         <div class="feedback__wrapper-content">
@@ -312,15 +317,11 @@
             </form> -->
             <div class="feedback__wrapper-contacts">
                 <div class="feedback__block-contact">
-                    <span class="feedback__contact-title">Phone</span>
-                    <a href="tel:79528101302" class="feedback__contact-link link-reset">+7 (952)-810-13-02</a>
+                    <span class="feedback__contact-title">Почта</span>
+                    <a href="mailto:andrey-se-v@yandex.ru" class="feedback__contact-link link-reset">andrey-se-v@yandex.ru</a>
                 </div>
                 <div class="feedback__block-contact">
-                    <span class="feedback__contact-title">Email</span>
-                    <a href="mailto:email@yandex.ru" class="feedback__contact-link link-reset">email@yandex.ru</a>
-                </div>
-                <div class="feedback__block-contact">
-                    <span class="feedback__contact-title">Social Media</span>
+                    <span class="feedback__contact-title">Социальные сети</span>
                     <div class="social-networks">
                         <a href="https://t.me/andreysevfd" class="social-networks__link link-reset">
                             <svg class="social-networks__icon">

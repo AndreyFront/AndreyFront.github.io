@@ -1,1 +1,199 @@
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .header {
+        padding: 20px 0;
+        background-color: $color-1;
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+
+        &.active-menu {
+            .header {
+                &__burger {
+                    span {
+                        &:nth-child(1) {
+                            top: 5px;
+                            transform: rotate(45deg);
+                        }
+        
+                        &:nth-child(2) {
+                            width: 0%;
+                            opacity: 0;
+                        }
+        
+                        &:nth-child(3) {
+                            top: 5px;
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+
+                &__nav {
+                    transform: translateX(0);
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
+                }
+            }
+        }
+
+        &__logo {
+            position: relative;
+            z-index: 2;
+        }
+
+        &__logo::before {
+            width: 40px;
+        }
+
+        &__burger {
+            position: relative;
+            z-index: 1;
+            width: 24px;
+            height: 17px;
+            display: block;
+
+            span {
+                position: absolute;
+                left: 0;
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: $main-color;
+                transition: $transition-time ease-in-out;
+
+                &:nth-child(1) {
+                    top: 0;
+                }
+
+                &:nth-child(2) {
+                    top: 8px;
+                }
+
+                &:nth-child(3) {
+                    top: 100%;
+                }
+            }
+        }
+
+        &__nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 120px 30px;
+            background-color: $color-1;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transform: translateX(-50%);
+            transition: transform 0.5s, opacity $transition-time, visibility $transition-time;
+        }
+
+        &__list {
+            grid-auto-flow: row;
+            grid-row-gap: 20px;
+        }
+    }
+
+    .performance {
+        height: 522px;
+        padding: 50px 0 0 0;
+    }
+
+    .about-me {
+        &__block-image {
+            display: none;
+        }
+
+        &__block-text {
+            grid-row-gap: 20px;
+        }
+
+        .main-container {
+            grid-template-columns: 1fr;
+        }
+
+        .btn {
+            margin-top: 40px;
+        }
+    }
+
+    .section {
+        padding: 90px 0 0 0;
+    }
+
+    .service-card {
+        padding: 15px;
+        grid-row-gap: 15px;
+
+        &__icon {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    .services {
+        &__wrapper-cards {
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+
+            .service-card:nth-child(2) {
+                transform: scale(1);
+            }
+        }
+
+        .main-container {
+            grid-row-gap: 80px;
+        }
+    }
+
+    .projects {
+
+        &__block-tab-content {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .btn {
+        &--size--md {
+            height: 46px;
+        }
+    }
+
+    .reviews {
+
+        &__wrapper-review {
+            grid-template-columns: 1fr;
+            justify-content: center;
+            grid-row-gap: 20px;
+        }
+
+        &__slider.swiper--arrows.swiper {
+            padding: 0;
+
+            .swiper__arrow {
+                display: none;
+            }
+        }
+
+        .main-container {
+            grid-row-gap: 80px;
+        }
+    }
+
+    .feedback {
+        .main-container {
+            grid-row-gap: 80px;
+        }
+    }
+
+    .title {
+        &__line {
+            width: 140px;
+        }
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+}

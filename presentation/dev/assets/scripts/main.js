@@ -30,19 +30,98 @@ window.onload = () => {
         const anchors = document.querySelectorAll('[data-smooth-scrolling*="#"]')
     
         if (!anchors.length) return
-    
-        anchors.forEach(anchor => {
-            anchor.addEventListener('click', (event) => {
+
+        document.addEventListener('click', (event) => {
+            const el = event.target
+
+            if (el.closest('[data-smooth-scrolling*="#"]')) {
                 event.preventDefault()
-                
+
+                const anchor = el.closest('[data-smooth-scrolling*="#"]')
                 const blockID = anchor.getAttribute('data-smooth-scrolling').substr(1)
                 
                 document.querySelector(`[data-smooth-scrolling="${blockID}"]`).scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
                 })
+            }
+        })
+    }
+
+    function navigation() {
+        const header = document.querySelector('[data-header="main"]')
+
+        if (!header) return
+
+        window.addEventListener('scroll', () => {
+            const scrollDistance = window.scrollY
+            const blockNav = header.querySelector('[data-header="nav"]')
+            const navListItem = blockNav.querySelectorAll('li')
+            const navLink = blockNav.querySelectorAll('a')
+    
+            const removeActive = () => {
+                navLink.forEach((el) => {
+                    if (el.classList.contains('active')) {
+                        el.classList.remove('active')
+                    }
+                })
+            }
+    
+            let heightValue,
+                replacementBlockNav
+    
+            if (window.matchMedia("(max-width: 992px)").matches) {
+                heightValue = 400
+                replacementBlockNav = header
+            } else {
+                heightValue = 700
+                replacementBlockNav = blockNav
+            }
+    
+            if (window.pageYOffset <= heightValue) {
+                removeActive()
+                navLink[0].classList.add('active')
+            } else {
+                navLink[0].classList.remove('active')
+            }
+    
+            document.querySelectorAll('section[data-smooth-scrolling]').forEach((el, index) => {
+                if (el.offsetTop - replacementBlockNav.clientHeight <= scrollDistance) {
+                    removeActive()
+                    let localIndex = index
+                    navListItem[localIndex + 1].querySelector('a').classList.add('active')
+                }
+
+                if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+                    removeActive()
+                    navListItem[navListItem.length - 1].querySelector('a').classList.add('active')
+                }
             })
         })
+    }
+
+    function menu() {
+        const header = document.querySelector('[data-header="main"]')
+    
+        if (!header) return
+    
+        if (window.matchMedia("(max-width: 992px)").matches) {
+            const btnMenu = header.querySelector('[data-header="btn-menu"]')
+    
+            btnMenu.addEventListener('click', () => {
+                header.classList.toggle('active-menu')
+            })
+
+            document.addEventListener('click', (event) => {
+                const el = event.target
+
+                if (el.closest('[data-header="nav"]')) {
+                    if (el.closest('a[data-smooth-scrolling]')) {
+                        header.classList.remove('active-menu')
+                    }
+                }
+            })
+        }
     }
 
     function reviews() {
@@ -167,6 +246,8 @@ window.onload = () => {
 
     page()
     fixedHeader()
+    menu()
+    navigation()
     smoothScrolling()
     reviews()
     input()

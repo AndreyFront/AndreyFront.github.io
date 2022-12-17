@@ -34,7 +34,7 @@
     }
 
     &__text {
-        font-size: 32px;
+        @include adaptiv-font(32, 20);
         line-height: 1.5em;
     }
 
@@ -54,7 +54,7 @@
 
     &__name {
         font-weight: 600;
-        font-size: 32px;
+        @include adaptiv-font(32, 20);
         color: $color-2;
         text-transform: uppercase;
     }

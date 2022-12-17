@@ -16,6 +16,10 @@
         border-bottom-color: rgba(255, 255, 255, 0.1);
     }
 
+    &__burger {
+        display: none;
+    }
+
     &__link-nav,
     &__logo,
     &__logo span {
@@ -81,7 +85,7 @@
 
     &__link-nav {
         position: relative;
-        font-size: 22px;
+        @include adaptiv-font(22, 18);
 
         &::before {
             content: '';
