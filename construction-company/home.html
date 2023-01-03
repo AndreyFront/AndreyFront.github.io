@@ -7,7 +7,7 @@
 <link type="image/x-icon" href="./assets/static/favicon.ico" rel="shortcut icon">
 <link type="Image/x-icon" href="./assets/static/favicon.ico" rel="icon">
 <link rel="stylesheet" href="./assets/styles/main.css">
-<title>Main page</title>
+<title>Главная страница</title>
     </head>
     <body>
         <div class="wrapper-page">
@@ -292,6 +292,166 @@
 </header>
             <main class="page main-page">
 
+                <section class="performance section">
+    <div class="performance__block-bg">
+        <img src="./assets/images/photo-4.jpg" class="performance__bg" alt="">
+    </div>
+    <div class="main-container max-width">
+        <div class="performance__wrapper-info">
+            <div class="block-title">
+                <h1 class="title title--h1 title-reset">Ремонт однокомнатных квартир в москве с гарантией 5 лет</h1>
+                <span class="performance__sign-title text text--large">С выгодой до 100 000 рублей за счет оптовых цен на материалы</span>
+            </div>
+            <ul class="performance__list list-reset">
+                <li class="performance__li">Рассрочка 0% на 6 месяцев без банка</li>
+                <li class="performance__li">Оплата по факту выполненных работ</li>
+                <li class="performance__li">Дизайн проект вашего ремонта в подарок</li>
+                <li class="performance__li">У нас материалы дешевле на 20%</li>
+            </ul>
+            <div class="performance__block-info-btns">
+                <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                    <span class="btn__text">Скачать договор</span>
+                    <svg class="btn__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                    </svg>
+                </a>
+                <a href="#" class="btn btn--size--lg btn--theme--tertiary">
+                    <span class="btn__text">Пример сметы</span>
+                </a>
+            </div>
+        </div>
+        <form action="" class="performance__form">
+            <div class="repair-calculator">
+    <div class="repair-calculator__wrapper-setting">
+        <div class="repair-calculator__block-checkboxes">
+            <span class="repair-calculator__title">Тип ремонта</span>
+            <div class="repair-calculator__inner-checkboxes">
+                <div class="checkbox">
+                    <label data-role="" class="checkbox__label">
+                        <input type="radio" class="checkbox__input" name="1" value="">
+                        <span class="checkbox__text">Черновой</span>
+                        <span class="checkbox__decore"></span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label data-role="" class="checkbox__label">
+                        <input type="radio" class="checkbox__input" name="1" value="">
+                        <span class="checkbox__text">Косметический</span>
+                        <span class="checkbox__decore"></span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label data-role="" class="checkbox__label">
+                        <input type="radio" class="checkbox__input" name="1" value="">
+                        <span class="checkbox__text">Капитальный</span>
+                        <span class="checkbox__decore"></span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label data-role="" class="checkbox__label">
+                        <input type="radio" class="checkbox__input" name="1" value="">
+                        <span class="checkbox__text">Элитный</span>
+                        <span class="checkbox__decore"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="repair-calculator__block-checkboxes">
+            <span class="repair-calculator__title">Где делаем?</span>
+            <div class="repair-calculator__inner-checkboxes">
+                <div class="checkbox">
+                    <label data-role="" class="checkbox__label">
+                        <input type="radio" class="checkbox__input" name="2" value="">
+                        <span class="checkbox__text">Комната</span>
+                        <span class="checkbox__decore"></span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label data-role="" class="checkbox__label">
+                        <input type="radio" class="checkbox__input" name="2" value="">
+                        <span class="checkbox__text">Квартира</span>
+                        <span class="checkbox__decore"></span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label data-role="" class="checkbox__label">
+                        <input type="radio" class="checkbox__input" name="2" value="">
+                        <span class="checkbox__text">Дом</span>
+                        <span class="checkbox__decore"></span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label data-role="" class="checkbox__label">
+                        <input type="radio" class="checkbox__input" name="2" value="">
+                        <span class="checkbox__text">Офис</span>
+                        <span class="checkbox__decore"></span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label data-role="" class="checkbox__label">
+                        <input type="radio" class="checkbox__input" name="2" value="">
+                        <span class="checkbox__text">Коммерция</span>
+                        <span class="checkbox__decore"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="repair-calculator__block-range">
+            <span class="repair-calculator__title">Площадь помещения, м<sup>2</sup></span>
+            <div class="slider-range" 
+                data-slider-range="main"
+                data-slider-range-start="50"
+                data-slider-range-min="0"
+                data-slider-range-max="120"
+            >
+                <div class="slider-range__slider" data-slider-range="slider"></div>
+
+                <div class="counter" data-counter="counter">
+                    <button type="button" class="counter__btn" data-counter="remove">
+                        <svg class="counter__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#minus"/>
+                        </svg>
+                    </button>
+                    <input type="number" class="counter__input" value="1" min="1" max="500" step="1" data-step="1" data-counter="input">
+                    <button type="button" class="counter__btn" data-counter="add">
+                        <svg class="counter__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#plus"/>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="repair-calculator__block-result">
+        <span class="repair-calculator__title">Итоговая стоимость</span>
+        <span class="repair-calculator__total-cost">550 000 ₽</span>
+    </div>
+</div>
+            <div class="performance__block-form">
+                <span class="performance__form-title">Заполните форму <br> и получите рассчет сметы ремонта</span>
+                <div class="performance__form-block-input">
+                    <input type="text" class="input" placeholder="Ваше имя">
+                    <button type="submit" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                        <span class="btn__text">Отправить</span>
+                        <svg class="btn__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                        </svg>
+                    </abutton>
+                </div>
+                <div class="privacy-policy">
+                    <div class="checkbox">
+                        <label data-role="" class="checkbox__label">
+                            <input type="checkbox" class="checkbox__input" name="" value="">
+                            <span class="checkbox__text">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
+                            <span class="checkbox__decore"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
                 <section class="cost-repair-tabs section" data-tabs="main">
     <div class="main-container max-width">
         <div class="block-title">
@@ -449,12 +609,24 @@
         </div>
     </div>
 </section>
-                <section class="repair-cost section">
+                <section class="repair-cost section" data-slider-cards-mob="main">
     <div class="main-container max-width">
         <div class="block-title">
             <h2 class="title title--h2 title-reset">стоимость ремонта</h2>
+            <div class="block-title__block-btns">
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-slider-cards-mob="btn-prev">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                    </svg>
+                </button>
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-slider-cards-mob="btn-next">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                    </svg>
+                </button>
+            </div>
         </div>
-        <div class="slider-cards-mob" data-slider-cards-mob="main">
+        <div class="slider-cards-mob">
             <div class="swiper" data-slider-cards-mob="slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -1353,12 +1525,12 @@
         <div class="ratings__wrapper-content">
             <div class="ratings__wrapper-platforms">
                 <div class="ratings__platform">
-                    <img src="./assets/images/photo-7.jpg" class="ratings__platform-image" alt="">
+                    <img src="./assets/images/image-13.png" class="ratings__platform-image" alt="">
                     <h4 class="title title--h4 title-reset">Наша оценка на Яндекс Картах</h4>
                     <a href="#" class="ratings__platform-link link-reset">Читать отзывы на Яндекс Картах</a>
                 </div>
                 <div class="ratings__platform">
-                    <img src="./assets/images/photo-8.jpg" class="ratings__platform-image" alt="">
+                    <img src="./assets/images/image-14.png" class="ratings__platform-image" alt="">
                     <h4 class="title title--h4 title-reset">Наша оценка на Yell</h4>
                     <a href="#" class="ratings__platform-link link-reset">Читать отзывы на Yell</a>
                 </div>

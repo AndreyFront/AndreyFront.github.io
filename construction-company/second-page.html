@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="image/x-icon" href="./assets/static/favicon.ico" rel="shortcut icon">
+<link type="Image/x-icon" href="./assets/static/favicon.ico" rel="icon">
+<link rel="stylesheet" href="./assets/styles/main.css">
+<title>Вторая страница</title>
+    </head>
+    <body>
+        <div class="wrapper-page">
+            <header class="header" data-header="header">
+    <div class="info-bar">
+    <div class="info-bar__content">
+        <img src="./assets/images/info.svg" class="info-bar__content-icon" alt="">
+        <span class="info-bar__info">Текстовый блок для объявлении акции или информации</span>
+    </div>
+    <button type="button" class="info-bar__btn-close">
+        <svg class="info-bar__close-icon">
+            <use xlink:href="./assets/icons/sprite-svg.svg#cross"/>
+        </svg>
+    </button>
+</div>
+    <div class="header__wrapper-nav" data-header="wrapper-nav">
+        <div class="main-container max-width">
+            <nav class="header__nav" data-header="nav">
+                <ul class="header__nav-list list-reset">
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">О компании</a>
+                    </li>
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">Рассрочка</a>
+                    </li>
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">Цены</a>
+                    </li>
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">Акции и скидки</a>
+                    </li>
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">Вакансии</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search" data-header="search">
+                <form action="" class="search__form">
+                    <input type="text" class="search__field" placeholder="Поиск">
+                    <button class="search__btn">
+                        <svg class="search__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#magnifier"></use>
+                        </svg>
+                    </button>
+                </form>
+                <div class="search__wrapper-results">
+            
+                </div>
+            </div>
+            <button class="header__mob-btn header__mob-btn--search" data-header="btn-search">
+                <svg class="header__mob-btn-icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#search"/>
+                </svg>
+            </button>
+            <button class="header__mob-btn" data-header="btn-menu">
+                <svg class="header__mob-btn-icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#menu"/>
+                </svg>
+            </button>
+        </div>
+        <div class="header__wrapper-mob-search" data-header="wrapper-mob-search"></div>
+    </div>
+    <div class="header__wrapper-info">
+        <div class="main-container max-width">
+            <a href="#" class="logo" data-header="logo">
+                <img src="./assets/images/logo-main.svg" class="logo__icon" alt="">
+                <div class="logo__block-info">
+                    <span class="logo__name">стройкомпания</span>
+                    <span class="logo__sign">Слоган - продающая фраза, возможно в две строки</span>
+                </div>
+            </a>
+            <div class="geolocation-card">
+    <div class="geolocation-card__wrapper-info">
+        <img src="./assets/images/photo-1.jpg" alt="" class="geolocation-card__image">
+        <div class="geolocation-card__block-info">
+            <a href="#" class="geolocation-card__location">
+                <svg class="geolocation-card__location-icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#map-point"/>
+                </svg>
+                <span class="geolocation-card__location-name">Москва</span>
+            </a>
+            <div class="geolocation-card__inner-info">
+                <span class="geolocation-card__info-title">Ваш прораб: <br> <b>Дудин Олег</b></span>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn--size--md btn--theme--quaternary">
+        <span class="btn__text">Заказать замер</span>
+        <svg class="btn__icon">
+            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"/>
+        </svg>
+    </button>
+</div>
+            <a href="#" class="link-calculator link-reset">
+    <picture class="link-calculator__image">
+        <source srcset="./assets/images/calculator-mini.svg" media="(max-width: 1200px)" />
+        <img src="./assets/images/calculator.png" alt=""/>
+      </picture>
+    <span class="link-calculator__title">Калькулятор</span>
+</a>
+            <div class="contact-block">
+                <a href="tel:78005551590" class="contact contact--theme--dark link-reset">
+                    <div class="contact__block-icon">
+                        <svg class="contact__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#phone"/>
+                        </svg>
+                    </div>
+                    <span class="contact__info text--large">+7 800 555-15-90</span>
+                </a>
+                <div class="contact-block__block-info" data-header="block-info">
+                    <span class="contact-block__info">C 9:00 до 21:00 без выходных</span>
+                    <span class="contact-block__info">Директор: <a href="#">director@domen.ru</a></span>
+                </div>
+                <div class="social-network social-network--theme--dark" data-header="social-network">
+                    <ul class="social-network__list list-reset">
+                        <li class="social-network__li">
+                            <a href="#" class="social-network__link link-resest">
+                                <svg class="social-network__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__li">
+                            <a href="#" class="social-network__link link-resest">
+                                <svg class="social-network__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#whatsApp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__li">
+                            <a href="#" class="social-network__link link-resest">
+                                <svg class="social-network__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__li">
+                            <a href="#" class="social-network__link link-resest">
+                                <svg class="social-network__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#ringing-phone"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__block-info-btn">
+                <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                    <span class="btn__text">Рассчитать смету</span>
+                    <svg class="btn__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"/>
+                    </svg>
+                </a>
+                <span class="header__info-btn-sign">Прием заявок круглосуточно</span>
+            </div>
+        </div>
+    </div>
+    <div class="header__wrapper-menu" data-header="wrapper-menu">
+        <div class="main-container max-width">
+            <ul class="header__menu list-reset">
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Ремонт квартир</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                    <div class="header__menu-block-body header__menu-nested-menus" data-header="body">
+                        <ul class="header__menu-list list-reset">
+                            <li class="header__menu-list-li">
+                                <div class="header__menu-block-head" data-header="head">
+                                    <a href="#" class="header__menu-head-name link-reset">Ремонт квартир</a>
+                                    <svg class="header__menu-head-icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#small-arrow-right"></use>
+                                    </svg>
+                                </div>
+                                <div class="header__menu-block-body header__menu-block-body--last" data-header="body">
+                                    <ul class="header__menu-list list-reset">
+                                        <li class="header__menu-list-li">
+                                            <div class="header__menu-block-head" data-header="head">
+                                                <span class="header__menu-head-sign">По количеству комнат</span>
+                                                <a href="#" class="header__menu-head-name link-reset">Ремонт квартир</a>
+                                                <svg class="header__menu-head-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#small-arrow-right"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="header__menu-block-body header__menu-block-body--mode" data-header="body">
+                                                <ul class="header__menu-list list-reset">
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">1 комнатная квартира</a>
+                                                    </li>
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">2 комнатная квартира</a>
+                                                    </li>
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">3 комнатная квартира</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header__menu-list-li">
+                                            <div class="header__menu-block-head" data-header="head">
+                                                <span class="header__menu-head-sign">По типу</span>
+                                                <a href="#" class="header__menu-head-name link-reset">Ремонт в новостройке</a>
+                                                <svg class="header__menu-head-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#small-arrow-right"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="header__menu-block-body header__menu-block-body--mode" data-header="body">
+                                                <ul class="header__menu-list list-reset">
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">1 комнатная квартира</a>
+                                                    </li>
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">2 комнатная квартира</a>
+                                                    </li>
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">3 комнатная квартира</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Дизайн интерьера</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Ремонт комнат</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Дома и коттеджи</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Другие услуги</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Портфолио</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Отзывы</a>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Контакты</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+            <main class="page second-page-page">
+
+                <section class="info-section section section--theme--primary">
+    <div class="main-container max-width">
+        <div class="block-title">
+            <h2 class="title title--h2 title-reset">Ремонт 1-комнатной квартиры — в чем особенность?</h2>
+        </div>
+        <div class="info-section__block-content">
+            <p>
+                Кажется, что выполнить ремонт в «однушке» – простая задача, ведь площадь здесь небольшая, не требуется большой объем работы. Однако перед специалистами стоит ряд задач:
+            </p>
+
+            <ul>
+                <li>визуальное расширение пространства;</li>
+                <li>зонирование помещения;</li>
+                <li>размещение на маленькой площади и спальни, и гостиной, и детской, и рабочего кабинета;</li>
+                <li>создание уютной обстановки;</li>
+                <li>обеспечение комфорта для всех.</li>
+            </ul>
+
+            <p>
+                Если сделать ремонт в 1-комнатной квартире холостяка проще, то с семейной парой или молодыми родителями ситуация усложняется — нужно предусмотреть пространство для каждого человека, но не загромождать помещение.
+            </p>
+
+            <img src="./assets/images/photo-7.jpg" alt="">
+        </div>
+    </div>
+</section>
+                <section class="certificates section section--theme--secondary" data-certificates="main">
+    <div class="main-container max-width">
+        <div class="block-title">
+            <h2 class="title title--h2 title-reset">Сертификаты и дипломы</h2>
+            <div class="block-title__block-btns">
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-certificates="btn-prev">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                    </svg>
+                </button>
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-certificates="btn-next">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="swiper certificates__slider" data-certificates="slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="certificates__block-certificate">
+                        <img src="./assets/images/image-16.png" class="certificates__certificate" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="certificates__block-certificate">
+                        <img src="./assets/images/image-17.png" class="certificates__certificate" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="certificates__block-certificate">
+                        <img src="./assets/images/image-16.png" class="certificates__certificate" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="certificates__block-certificate">
+                        <img src="./assets/images/image-17.png" class="certificates__certificate" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="certificates__block-certificate">
+                        <img src="./assets/images/image-16.png" class="certificates__certificate" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="certificates__block-certificate">
+                        <img src="./assets/images/image-17.png" class="certificates__certificate" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination" data-certificates="pagination"></div>
+        </div>
+    </div>
+</section>
+                <section class="our-specialists section section--theme--secondary" data-our-specialists="main" data-tabs="main">
+    <div class="main-container max-width">
+        <div class="block-title">
+            <h2 class="title title--h2 title-reset">Наши специалисты</h2>
+            <div class="tabs">
+                <ul class="tabs__list list-reset">
+                    <li class="tabs__li active" data-tabs="li">
+                        <span class="tabs__link">Мастера</span>
+                    </li>
+                    <li class="tabs__li" data-tabs="li">
+                        <span class="tabs__link">Дизайнеры и технологи</span>
+                    </li>
+                    <li class="tabs__li" data-tabs="li">
+                        <span class="tabs__link">Прорабы</span>
+                    </li>
+                    <li class="tabs__li" data-tabs="li">
+                        <span class="tabs__link">Сметчики</span>
+                    </li>
+                    <li class="tabs__li" data-tabs="li">
+                        <span class="tabs__link">Администрация</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="our-specialists__wrapper-cards">
+            <div class="specialist-card active" data-specialist-card="main" data-tabs="tab">
+                <div class="swiper specialist-card__slider-specialists" data-specialist-card="slider-specialists">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-image">
+                                <img src="./assets/images/photo-8.jpg" class="specialist-card__image" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-image">
+                                <img src="./assets/images/photo-8.jpg" class="specialist-card__image" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-specialist-card="btn-prev">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-specialist-card="btn-next">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="swiper specialist-card__slider-info-specialists" data-specialist-card="slider-info-specialists">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-info">
+                                <span class="specialist-card__name">Дарина Бирюкова 1</span>
+                                <div class="specialist-card__wrapper-group-info">
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Направление:</span>
+                                        <span class="specialist-card__group-value">Дизайн интерьера</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Навыки:</span>
+                                        <span class="specialist-card__group-value">Составление дизайн-проекта кухни, ванной комнаты с применением в визуализации дорогих стройматериалов.</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Опыт:</span>
+                                        <span class="specialist-card__group-value">12 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-info">
+                                <span class="specialist-card__name">Дарина Бирюкова 2</span>
+                                <div class="specialist-card__wrapper-group-info">
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Направление:</span>
+                                        <span class="specialist-card__group-value">Дизайн интерьера</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Навыки:</span>
+                                        <span class="specialist-card__group-value">Составление дизайн-проекта кухни, ванной комнаты с применением в визуализации дорогих стройматериалов.</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Опыт:</span>
+                                        <span class="specialist-card__group-value">12 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="specialist-card" data-specialist-card="main" data-tabs="tab">
+                <div class="swiper specialist-card__slider-specialists" data-specialist-card="slider-specialists">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-image">
+                                <img src="./assets/images/photo-8.jpg" class="specialist-card__image" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-image">
+                                <img src="./assets/images/photo-8.jpg" class="specialist-card__image" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-specialist-card="btn-prev">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-specialist-card="btn-next">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="swiper specialist-card__slider-info-specialists" data-specialist-card="slider-info-specialists">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-info">
+                                <span class="specialist-card__name">Дарина Бирюкова 1</span>
+                                <div class="specialist-card__wrapper-group-info">
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Направление:</span>
+                                        <span class="specialist-card__group-value">Дизайн интерьера</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Навыки:</span>
+                                        <span class="specialist-card__group-value">Составление дизайн-проекта кухни, ванной комнаты с применением в визуализации дорогих стройматериалов.</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Опыт:</span>
+                                        <span class="specialist-card__group-value">12 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-info">
+                                <span class="specialist-card__name">Дарина Бирюкова 2</span>
+                                <div class="specialist-card__wrapper-group-info">
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Направление:</span>
+                                        <span class="specialist-card__group-value">Дизайн интерьера</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Навыки:</span>
+                                        <span class="specialist-card__group-value">Составление дизайн-проекта кухни, ванной комнаты с применением в визуализации дорогих стройматериалов.</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Опыт:</span>
+                                        <span class="specialist-card__group-value">12 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="specialist-card" data-specialist-card="main" data-tabs="tab">
+                <div class="swiper specialist-card__slider-specialists" data-specialist-card="slider-specialists">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-image">
+                                <img src="./assets/images/photo-8.jpg" class="specialist-card__image" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-image">
+                                <img src="./assets/images/photo-8.jpg" class="specialist-card__image" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-specialist-card="btn-prev">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-specialist-card="btn-next">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="swiper specialist-card__slider-info-specialists" data-specialist-card="slider-info-specialists">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-info">
+                                <span class="specialist-card__name">Дарина Бирюкова 1</span>
+                                <div class="specialist-card__wrapper-group-info">
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Направление:</span>
+                                        <span class="specialist-card__group-value">Дизайн интерьера</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Навыки:</span>
+                                        <span class="specialist-card__group-value">Составление дизайн-проекта кухни, ванной комнаты с применением в визуализации дорогих стройматериалов.</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Опыт:</span>
+                                        <span class="specialist-card__group-value">12 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-info">
+                                <span class="specialist-card__name">Дарина Бирюкова 2</span>
+                                <div class="specialist-card__wrapper-group-info">
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Направление:</span>
+                                        <span class="specialist-card__group-value">Дизайн интерьера</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Навыки:</span>
+                                        <span class="specialist-card__group-value">Составление дизайн-проекта кухни, ванной комнаты с применением в визуализации дорогих стройматериалов.</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Опыт:</span>
+                                        <span class="specialist-card__group-value">12 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="specialist-card" data-specialist-card="main" data-tabs="tab">
+                <div class="swiper specialist-card__slider-specialists" data-specialist-card="slider-specialists">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-image">
+                                <img src="./assets/images/photo-8.jpg" class="specialist-card__image" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-image">
+                                <img src="./assets/images/photo-8.jpg" class="specialist-card__image" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-specialist-card="btn-prev">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-specialist-card="btn-next">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="swiper specialist-card__slider-info-specialists" data-specialist-card="slider-info-specialists">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-info">
+                                <span class="specialist-card__name">Дарина Бирюкова 1</span>
+                                <div class="specialist-card__wrapper-group-info">
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Направление:</span>
+                                        <span class="specialist-card__group-value">Дизайн интерьера</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Навыки:</span>
+                                        <span class="specialist-card__group-value">Составление дизайн-проекта кухни, ванной комнаты с применением в визуализации дорогих стройматериалов.</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Опыт:</span>
+                                        <span class="specialist-card__group-value">12 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-info">
+                                <span class="specialist-card__name">Дарина Бирюкова 2</span>
+                                <div class="specialist-card__wrapper-group-info">
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Направление:</span>
+                                        <span class="specialist-card__group-value">Дизайн интерьера</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Навыки:</span>
+                                        <span class="specialist-card__group-value">Составление дизайн-проекта кухни, ванной комнаты с применением в визуализации дорогих стройматериалов.</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Опыт:</span>
+                                        <span class="specialist-card__group-value">12 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="specialist-card" data-specialist-card="main" data-tabs="tab">
+                <div class="swiper specialist-card__slider-specialists" data-specialist-card="slider-specialists">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-image">
+                                <img src="./assets/images/photo-8.jpg" class="specialist-card__image" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-image">
+                                <img src="./assets/images/photo-8.jpg" class="specialist-card__image" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-specialist-card="btn-prev">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-specialist-card="btn-next">
+                        <svg class="arrow__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="swiper specialist-card__slider-info-specialists" data-specialist-card="slider-info-specialists">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-info">
+                                <span class="specialist-card__name">Дарина Бирюкова 1</span>
+                                <div class="specialist-card__wrapper-group-info">
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Направление:</span>
+                                        <span class="specialist-card__group-value">Дизайн интерьера</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Навыки:</span>
+                                        <span class="specialist-card__group-value">Составление дизайн-проекта кухни, ванной комнаты с применением в визуализации дорогих стройматериалов.</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Опыт:</span>
+                                        <span class="specialist-card__group-value">12 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialist-card__block-info">
+                                <span class="specialist-card__name">Дарина Бирюкова 2</span>
+                                <div class="specialist-card__wrapper-group-info">
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Направление:</span>
+                                        <span class="specialist-card__group-value">Дизайн интерьера</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Навыки:</span>
+                                        <span class="specialist-card__group-value">Составление дизайн-проекта кухни, ванной комнаты с применением в визуализации дорогих стройматериалов.</span>
+                                    </div>
+                                    <div class="specialist-card__group-info">
+                                        <span class="specialist-card__group-title">Опыт:</span>
+                                        <span class="specialist-card__group-value">12 лет</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- data-tabs="tab" -->
+    </div>
+</section>
+                
+            </main>
+            <footer class="footer">
+    <div class="footer__wrapper-info">
+        <div class="main-container max-width">
+            <div class="footer__wrapper-links">
+                <a href="#" class="logo" data-header="logo">
+                    <img src="./assets/images/logo-main-2.svg" class="logo__icon" alt="">
+                    <div class="logo__block-info">
+                        <span class="logo__sign">Copyright 2014 – 2022. «ООО Стройкомпания» — Ремонт и отделка квартир в «городе»</span>
+                    </div>
+                </a>
+                <div class="footer__block-btns">
+                    <button class="btn btn--size--lg btn--theme--primary">
+                        <svg class="btn__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#calculator-mini-light"/>
+                        </svg>
+                        <span class="btn__text">Калькулятор ремонта</span>
+                    </button>
+                    <button class="btn btn--size--lg btn--theme--primary">
+                        <svg class="btn__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#phone"/>
+                        </svg>
+                        <span class="btn__text">Обратный звонок</span>
+                    </button>
+                </div>
+                <div class="payment-options">
+                    <span class="payment-options__title">Принимаем к оплате:</span>
+                    <ul class="payment-options__list list-reset">
+                        <li class="payment-options__li">
+                            <img src="./assets/images/visa.png" class="payment-options__image" alt="">
+                        </li>
+                        <li class="payment-options__li">
+                            <img src="./assets/images/mastercard.png" class="payment-options__image" alt="">
+                        </li>
+                        <li class="payment-options__li">
+                            <img src="./assets/images/mir.png" class="payment-options__image" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper-contacts">
+                <div class="contact contact--theme--light">
+                    <div class="contact__block-icon">
+                        <svg class="contact__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#phone"/>
+                        </svg>
+                    </div>
+                    <div class="contact__block-info">
+                        <a href="#" class="contact__info text--large link-reset">+7 800 555-15-90</a>
+                        <span class="contact__sign">C 9:00 до 21:00 без выходных</span>
+                    </div>
+                </div>
+                <div class="contact contact--theme--light">
+                    <div class="contact__block-icon">
+                        <svg class="contact__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#map-point"/>
+                        </svg>
+                    </div>
+                    <div class="contact__block-info">
+                        <span class="contact__sign">106721, г.Москва, Пресненская набережная д. 6, стр. 2, м. Выставочная </span>
+                    </div>
+                </div>
+                <div class="contact contact--theme--light">
+                    <div class="contact__block-icon">
+                        <svg class="contact__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#text-files"/>
+                        </svg>
+                    </div>
+                    <div class="contact__block-info">
+                        <span class="contact__sign">
+                            <a href="#" class="contact__link link-reset">Скачать договор</a>
+                            <br><br>
+                            «ООО Стройкомпания» <br>
+                            ИНН: 9721084860 <br>
+                            Email: info@stroycompany.ru
+                        </span>
+                        <div class="social-network social-network--theme--light">
+                            <ul class="social-network__list list-reset">
+                                <li class="social-network__li">
+                                    <a href="#" class="social-network__link link-resest">
+                                        <svg class="social-network__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#telegram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-network__li">
+                                    <a href="#" class="social-network__link link-resest">
+                                        <svg class="social-network__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#whatsApp"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-network__li">
+                                    <a href="#" class="social-network__link link-resest">
+                                        <svg class="social-network__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-network__li">
+                                    <a href="#" class="social-network__link link-resest">
+                                        <svg class="social-network__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#ringing-phone"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__wrapper-nav">
+                <div class="footer__block-nav">
+                    <span class="footer__nav-title">О компании</span>
+                    <ul class="footer__nav-list list-reset">
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Рассрочка</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Цены</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Акции и скидки</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Вакансии</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Карта сайта</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Политика конфиденциальности</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Пользовательское соглашение</a>
+                        </li>
+                    </ul>
+                    <div class="footer__nav-block-offer">
+                        <span class="footer__nav-title">Спецпредложение для ремонтных компаний</span>
+                        <a href="#" class="btn btn--size--md btn--theme--sevenfold">
+                            <span class="btn__text">Партнерам</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__block-nav">
+                    <span class="footer__nav-title">Услуги</span>
+                    <ul class="footer__nav-list list-reset">
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Дизайн-проект</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Чистовой ремонт</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Капитальный ремонт</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Ремонт однокомнатной квартиры</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Ремонт двухкомнатной квартиры</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Ремонт трехкомнатной квартиры</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Ремонт четырехкомнатной квартиры</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__wrapper-legal-info">
+        <div class="main-container max-width">
+            <span class="footer__legal-info">Вся предоставленная на сайте информация, носит информационный характер и ни при каких условиях не является публичной офертой.</span>
+        </div>
+    </div>
+</footer>
+            <script src="./assets/scripts/libs.js"></script>
+<script src="./assets/scripts/main.js"></script>
+        </div>
+    </body>
+</html>
