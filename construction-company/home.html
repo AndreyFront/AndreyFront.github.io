@@ -12,17 +12,29 @@
     <body>
         <div class="wrapper-page">
             <header class="header" data-header="header">
-    <div class="info-bar">
+    <div class="info-bar" data-info-bar="main">
     <div class="info-bar__content">
         <img src="./assets/images/info.svg" class="info-bar__content-icon" alt="">
         <span class="info-bar__info">Текстовый блок для объявлении акции или информации</span>
     </div>
-    <button type="button" class="info-bar__btn-close">
+    <button type="button" class="info-bar__btn-close" data-info-bar="btn-close">
         <svg class="info-bar__close-icon">
             <use xlink:href="./assets/icons/sprite-svg.svg#cross"/>
         </svg>
     </button>
 </div>
+    <div class="bread-crumbs">
+        <div class="main-container max-width">
+            <ul class="bread-crumbs__list list-reset">
+                <li class="bread-crumbs__li">
+                    <a href="#" class="bread-crumbs__link link-reset">Главная</a>
+                </li>
+                <li class="bread-crumbs__li">
+                    <a href="#" class="bread-crumbs__link bread-crumbs__link--current-page link-reset">Страница ...</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="header__wrapper-nav" data-header="wrapper-nav">
         <div class="main-container max-width">
             <nav class="header__nav" data-header="nav">
@@ -290,7 +302,7 @@
         </div>
     </div>
 </header>
-            <main class="page main-page">
+            <main class="page main-page" data-page="page">
 
                 <section class="performance section">
     <div class="performance__block-bg">
@@ -1918,6 +1930,334 @@
                     <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
                 </svg>
             </a>
+        </div>
+    </div>
+</section>
+                <section class="contacts section section--theme--primary" data-contacts="main">
+    <div class="main-container max-width">
+        <div class="block-title">
+            <h2 class="title title--h2 title-reset">Наши контакты</h2>
+        </div>
+        <div class="contacts__wrapper-info">
+            <div class="contacts__block-info" data-contacts="block-info">
+                <div class="contacts__info-head" data-contacts="head">
+                    <span class="contacts__info-title"><b>01</b>Основной офис</span>
+                    <div class="contacts__info-icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="contacts__info-body" data-contacts="body">
+                    <div class="contacts__info-box">
+                        <span class="contacts__property">Название компании:</span>
+                        <a href="#" class="contacts__value">Стройкомпания</a>
+                    </div>
+                    <div class="contacts__info-box">
+                        <span class="contacts__property">Адрес:</span>
+                        <span class="contacts__value">г.Москва, Пресненская набережная д. 6, стр. 2, м. Выставочная</span>
+                    </div>
+                    <div class="contacts__info-box">
+                        <span class="contacts__property">Время работы:</span>
+                        <span class="contacts__value">с 9:00 до 21:00 без выходных</span>
+                    </div>
+                    <div class="contacts__info-box">
+                        <span class="contacts__property">Телефон:</span>
+                        <a href="tel:78005551590" class="contacts__value">+7 800 555-15-90</a>
+                    </div>
+                    <div class="contacts__info-box">
+                        <span class="contacts__property">E-mail:</span>
+                        <a href="mailto:info@stroycompany.ru" class="contacts__value">info@stroycompany.ru</a>
+                    </div>
+                    <div class="contacts__info-box">
+                        <span class="contacts__property">Мы в социальных сетях:</span>
+                        <div class="social-network social-network--theme--dark">
+    <ul class="social-network__list list-reset">
+        <li class="social-network__li">
+            <a href="#" class="social-network__link link-resest">
+                <svg class="social-network__icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#telegram"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="social-network__li">
+            <a href="#" class="social-network__link link-resest">
+                <svg class="social-network__icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#whatsApp"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="social-network__li">
+            <a href="#" class="social-network__link link-resest">
+                <svg class="social-network__icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#vk"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="social-network__li">
+            <a href="#" class="social-network__link link-resest">
+                <svg class="social-network__icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#ringing-phone"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__block-info" data-contacts="block-info">
+                <div class="contacts__info-head" data-contacts="head">
+                    <span class="contacts__info-title"><b>02</b>Офис на Шабловке</span>
+                    <div class="contacts__info-icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="contacts__info-body" data-contacts="body">
+                    <div class="contacts__info-box">
+                        <span class="contacts__property">Адрес:</span>
+                        <span class="contacts__value">г.Москва, м. Шаболовская, ул. Хавская дом 11. Офис 505</span>
+                    </div>
+                    <div class="contacts__info-box">
+                        <span class="contacts__property">Телефон:</span>
+                        <a href="tel:78005551590" class="contacts__value">+7 800 555-15-90</a>
+                    </div>
+                    <div class="contacts__info-box">
+                        <span class="contacts__property">E-mail:</span>
+                        <a href="mailto:info@stroycompany.ru" class="contacts__value">info@stroycompany.ru</a>
+                    </div>
+                    <div class="contacts__info-box">
+                        <span class="contacts__property">По вопросам снабжения:</span>
+                        <a href="mailto:finance@stroycompany.ru" class="contacts__value">finance@stroycompany.ru</a>
+                    </div>
+                    <div class="contacts__info-box">
+                        <span class="contacts__property">Трудоустройство:</span>
+                        <span class="contacts__value"><a href="mailto:staff@stroycompany.ru">staff@stroycompany.ru</a>, либо телефон <a href="tel:78005551590">+7 800 555-15-90</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__block-info" data-contacts="block-info">
+                <div class="contacts__info-head" data-contacts="head">
+                    <span class="contacts__info-title"><b>03</b>Схема в проезда</span>
+                    <div class="contacts__info-icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="contacts__info-body" data-contacts="body">
+                    <div class="contacts__info-map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A41985fbe997438da486382603b447c252dbd9ab788635aede40f9b1419f6d24e&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                <section class="agents section section--theme--secondary" data-tabs="main">
+    <div class="main-container max-width">
+        <div class="block-title">
+            <h2 class="title title--h2 title-reset">Наши представители есть в городах:</h2>
+            <div class="tabs">
+                <ul class="tabs__list list-reset">
+                    <li class="tabs__li active" data-tabs="li">
+                        <span class="tabs__link">ЦФО</span>
+                    </li>
+                    <li class="tabs__li" data-tabs="li">
+                        <span class="tabs__link">СЭФО</span>
+                    </li>
+                    <li class="tabs__li" data-tabs="li">
+                        <span class="tabs__link">ЮФО</span>
+                    </li>
+                    <li class="tabs__li" data-tabs="li">
+                        <span class="tabs__link">ПФО</span>
+                    </li>
+                    <li class="tabs__li" data-tabs="li">
+                        <span class="tabs__link">УРФО</span>
+                    </li>
+                    <li class="tabs__li" data-tabs="li">
+                        <span class="tabs__link">СФО</span>
+                    </li>
+                    <li class="tabs__li" data-tabs="li">
+                        <span class="tabs__link">ДФО</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="agents__wrapper-tabs">
+            <div class="agents__wrapper-cities active" data-tabs="tab">
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+            </div>
+            <div class="agents__wrapper-cities" data-tabs="tab">
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+            </div>
+            <div class="agents__wrapper-cities" data-tabs="tab">
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+            </div>
+            <div class="agents__wrapper-cities" data-tabs="tab">
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+            </div>
+            <div class="agents__wrapper-cities" data-tabs="tab">
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+            </div>
+            <div class="agents__wrapper-cities" data-tabs="tab">
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+            </div>
+            <div class="agents__wrapper-cities" data-tabs="tab">
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+                <ul class="agents__list-cities list-reset">
+                    <li class="agents__li-cities">Белгород</li>
+                    <li class="agents__li-cities">Кострома</li>
+                    <li class="agents__li-cities">Смоленск</li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>

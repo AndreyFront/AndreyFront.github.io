@@ -12,17 +12,29 @@
     <body>
         <div class="wrapper-page">
             <header class="header" data-header="header">
-    <div class="info-bar">
+    <div class="info-bar" data-info-bar="main">
     <div class="info-bar__content">
         <img src="./assets/images/info.svg" class="info-bar__content-icon" alt="">
         <span class="info-bar__info">Текстовый блок для объявлении акции или информации</span>
     </div>
-    <button type="button" class="info-bar__btn-close">
+    <button type="button" class="info-bar__btn-close" data-info-bar="btn-close">
         <svg class="info-bar__close-icon">
             <use xlink:href="./assets/icons/sprite-svg.svg#cross"/>
         </svg>
     </button>
 </div>
+    <div class="bread-crumbs">
+        <div class="main-container max-width">
+            <ul class="bread-crumbs__list list-reset">
+                <li class="bread-crumbs__li">
+                    <a href="#" class="bread-crumbs__link link-reset">Главная</a>
+                </li>
+                <li class="bread-crumbs__li">
+                    <a href="#" class="bread-crumbs__link bread-crumbs__link--current-page link-reset">Страница ...</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="header__wrapper-nav" data-header="wrapper-nav">
         <div class="main-container max-width">
             <nav class="header__nav" data-header="nav">
@@ -290,7 +302,7 @@
         </div>
     </div>
 </header>
-            <main class="page second-page-page">
+            <main class="page second-page-page" data-page="page">
 
                 <section class="info-section section section--theme--primary">
     <div class="main-container max-width">
@@ -369,6 +381,90 @@
                 </div>
             </div>
             <div class="swiper-pagination" data-certificates="pagination"></div>
+        </div>
+    </div>
+</section>
+                <section class="order-work section section--theme--primary" data-order-work="main">
+    <div class="main-container max-width">
+        <div class="block-title">
+            <h2 class="title title--h2 title-reset">Порядок работы по ремонту квартиры</h2>
+            <div class="block-title__block-btns">
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-order-work="btn-prev">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                    </svg>
+                </button>
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-order-work="btn-next">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="swiper order-work__slider" data-order-work="slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="order-work__card">
+                        <img src="./assets/images/phone.svg" alt="" class="order-work__card-icon">
+                        <span class="order-work__card-title">Телефонный звонок или встреча в офисе</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="order-work__card">
+                        <img src="./assets/images/document-protection.svg" alt="" class="order-work__card-icon">
+                        <span class="order-work__card-title">Составление детальной сметы по дизайн-проекту</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="order-work__card">
+                        <img src="./assets/images/discussion.svg" alt="" class="order-work__card-icon">
+                        <span class="order-work__card-title">Обсуждение и корректировка договора</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="order-work__card">
+                        <img src="./assets/images/signing-agreement.svg" alt="" class="order-work__card-icon">
+                        <span class="order-work__card-title">Заключение договора</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="order-work__card">
+                        <img src="./assets/images/car-rides.svg" alt="" class="order-work__card-icon">
+                        <span class="order-work__card-title">Выход на объект и поставка материалов</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="order-work__card">
+                        <img src="./assets/images/phone.svg" alt="" class="order-work__card-icon">
+                        <span class="order-work__card-title">Телефонный звонок или встреча в офисе</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="order-work__card">
+                        <img src="./assets/images/document-protection.svg" alt="" class="order-work__card-icon">
+                        <span class="order-work__card-title">Составление детальной сметы по дизайн-проекту</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="order-work__card">
+                        <img src="./assets/images/discussion.svg" alt="" class="order-work__card-icon">
+                        <span class="order-work__card-title">Обсуждение и корректировка договора</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="order-work__card">
+                        <img src="./assets/images/signing-agreement.svg" alt="" class="order-work__card-icon">
+                        <span class="order-work__card-title">Заключение договора</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="order-work__card">
+                        <img src="./assets/images/car-rides.svg" alt="" class="order-work__card-icon">
+                        <span class="order-work__card-title">Выход на объект и поставка материалов</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination" data-order-work="pagination"></div>
         </div>
     </div>
 </section>
@@ -741,7 +837,121 @@
         <!-- data-tabs="tab" -->
     </div>
 </section>
-                
+                <section class="feedback section section--theme--primary" data-feedback="main">
+    <div class="main-container max-width">
+        <div class="block-title">
+            <h2 class="title title--h2 title-reset">Отзыв</h2>
+            <div class="block-title__block-btns">
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-feedback="btn-prev">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                    </svg>
+                </button>
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-feedback="btn-next">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="swiper feedback__slider" data-feedback="slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="review-card">
+    <div class="review-card__block-avatar">
+        <img src="./assets/images/image-18.png" class="review-card__avatar" alt="">
+    </div>
+    <div class="review-card__wrapper-info">
+        <div class="review-card__inner-info">
+            <div class="review-card__block-info">
+                <img src="./assets/images/calendar.svg" class="review-card__icon-info" alt="">
+                <span class="review-card__text-info">30.11.2018</span>
+            </div>
+            <div class="review-card__block-info">
+                <img src="./assets/images/map-pin.svg" class="review-card__icon-info" alt="">
+                <span class="review-card__text-info">ул. Нижегородская, д. 84</span>
+            </div>
+        </div>
+        <div class="review-card__wrapper-text">
+            <span class="review-card__name">Марина Овсянникова</span>
+            <div class="review-card__block-text">
+                <p>
+                    Всем добрый день. Напишу четко и по делу. Ребята мне создали сам дизайн, сделали ремонт, закупили все материалы и изготовили у себя на производстве кухню, шкафы. Дизайн в стиле ар-деко- ну вы понимаете, воссоздать то, что нарисовали в этом стиле не так и легко, но у них все получилось. Согласовали сразу, потому что дизайнер сотворил красоту.
+                </p>
+                <p>
+                    А что касается самого ремонта и материалов - вообще никаких проблем. Материалы подобрали в офисе. По срокам все четко. Бригада ремонтная не подвела - все выполнено профессионально. вообще не напрягался в период ремонта, только подписывал акты и выдавал денежку. А кухня и шкаф в спальню получились на европейском уровне. Даже не скажешь, что делали наши, и я не ожидала, что вообще они так умеют. Я осталась довольна всем.Спасибо, ребят. Вы и правда лучшие.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-card">
+    <div class="review-card__block-avatar">
+        <img src="./assets/images/image-18.png" class="review-card__avatar" alt="">
+    </div>
+    <div class="review-card__wrapper-info">
+        <div class="review-card__inner-info">
+            <div class="review-card__block-info">
+                <img src="./assets/images/calendar.svg" class="review-card__icon-info" alt="">
+                <span class="review-card__text-info">30.11.2018</span>
+            </div>
+            <div class="review-card__block-info">
+                <img src="./assets/images/map-pin.svg" class="review-card__icon-info" alt="">
+                <span class="review-card__text-info">ул. Нижегородская, д. 84</span>
+            </div>
+        </div>
+        <div class="review-card__wrapper-text">
+            <span class="review-card__name">Марина Овсянникова</span>
+            <div class="review-card__block-text">
+                <p>
+                    Всем добрый день. Напишу четко и по делу. Ребята мне создали сам дизайн, сделали ремонт, закупили все материалы и изготовили у себя на производстве кухню, шкафы. Дизайн в стиле ар-деко- ну вы понимаете, воссоздать то, что нарисовали в этом стиле не так и легко, но у них все получилось. Согласовали сразу, потому что дизайнер сотворил красоту.
+                </p>
+                <p>
+                    А что касается самого ремонта и материалов - вообще никаких проблем. Материалы подобрали в офисе. По срокам все четко. Бригада ремонтная не подвела - все выполнено профессионально. вообще не напрягался в период ремонта, только подписывал акты и выдавал денежку. А кухня и шкаф в спальню получились на европейском уровне. Даже не скажешь, что делали наши, и я не ожидала, что вообще они так умеют. Я осталась довольна всем.Спасибо, ребят. Вы и правда лучшие.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review-card">
+    <div class="review-card__block-avatar">
+        <img src="./assets/images/image-18.png" class="review-card__avatar" alt="">
+    </div>
+    <div class="review-card__wrapper-info">
+        <div class="review-card__inner-info">
+            <div class="review-card__block-info">
+                <img src="./assets/images/calendar.svg" class="review-card__icon-info" alt="">
+                <span class="review-card__text-info">30.11.2018</span>
+            </div>
+            <div class="review-card__block-info">
+                <img src="./assets/images/map-pin.svg" class="review-card__icon-info" alt="">
+                <span class="review-card__text-info">ул. Нижегородская, д. 84</span>
+            </div>
+        </div>
+        <div class="review-card__wrapper-text">
+            <span class="review-card__name">Марина Овсянникова</span>
+            <div class="review-card__block-text">
+                <p>
+                    Всем добрый день. Напишу четко и по делу. Ребята мне создали сам дизайн, сделали ремонт, закупили все материалы и изготовили у себя на производстве кухню, шкафы. Дизайн в стиле ар-деко- ну вы понимаете, воссоздать то, что нарисовали в этом стиле не так и легко, но у них все получилось. Согласовали сразу, потому что дизайнер сотворил красоту.
+                </p>
+                <p>
+                    А что касается самого ремонта и материалов - вообще никаких проблем. Материалы подобрали в офисе. По срокам все четко. Бригада ремонтная не подвела - все выполнено профессионально. вообще не напрягался в период ремонта, только подписывал акты и выдавал денежку. А кухня и шкаф в спальню получились на европейском уровне. Даже не скажешь, что делали наши, и я не ожидала, что вообще они так умеют. Я осталась довольна всем.Спасибо, ребят. Вы и правда лучшие.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="swiper-pagination" data-feedback="pagination"></div>
+        </div>
+    </div>
+</section>
+
             </main>
             <footer class="footer">
     <div class="footer__wrapper-info">

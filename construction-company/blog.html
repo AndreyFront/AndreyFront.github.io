@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="image/x-icon" href="./assets/static/favicon.ico" rel="shortcut icon">
+<link type="Image/x-icon" href="./assets/static/favicon.ico" rel="icon">
+<link rel="stylesheet" href="./assets/styles/main.css">
+<title>Блог</title>
+    </head>
+    <body>
+        <div class="wrapper-page">
+            <header class="header" data-header="header">
+    <div class="info-bar" data-info-bar="main">
+    <div class="info-bar__content">
+        <img src="./assets/images/info.svg" class="info-bar__content-icon" alt="">
+        <span class="info-bar__info">Текстовый блок для объявлении акции или информации</span>
+    </div>
+    <button type="button" class="info-bar__btn-close" data-info-bar="btn-close">
+        <svg class="info-bar__close-icon">
+            <use xlink:href="./assets/icons/sprite-svg.svg#cross"/>
+        </svg>
+    </button>
+</div>
+    <div class="bread-crumbs">
+        <div class="main-container max-width">
+            <ul class="bread-crumbs__list list-reset">
+                <li class="bread-crumbs__li">
+                    <a href="#" class="bread-crumbs__link link-reset">Главная</a>
+                </li>
+                <li class="bread-crumbs__li">
+                    <a href="#" class="bread-crumbs__link bread-crumbs__link--current-page link-reset">Страница ...</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header__wrapper-nav" data-header="wrapper-nav">
+        <div class="main-container max-width">
+            <nav class="header__nav" data-header="nav">
+                <ul class="header__nav-list list-reset">
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">О компании</a>
+                    </li>
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">Рассрочка</a>
+                    </li>
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">Цены</a>
+                    </li>
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">Акции и скидки</a>
+                    </li>
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">Вакансии</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search" data-header="search">
+                <form action="" class="search__form">
+                    <input type="text" class="search__field" placeholder="Поиск">
+                    <button class="search__btn">
+                        <svg class="search__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#magnifier"></use>
+                        </svg>
+                    </button>
+                </form>
+                <div class="search__wrapper-results">
+            
+                </div>
+            </div>
+            <button class="header__mob-btn header__mob-btn--search" data-header="btn-search">
+                <svg class="header__mob-btn-icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#search"/>
+                </svg>
+            </button>
+            <button class="header__mob-btn" data-header="btn-menu">
+                <svg class="header__mob-btn-icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#menu"/>
+                </svg>
+            </button>
+        </div>
+        <div class="header__wrapper-mob-search" data-header="wrapper-mob-search"></div>
+    </div>
+    <div class="header__wrapper-info">
+        <div class="main-container max-width">
+            <a href="#" class="logo" data-header="logo">
+                <img src="./assets/images/logo-main.svg" class="logo__icon" alt="">
+                <div class="logo__block-info">
+                    <span class="logo__name">стройкомпания</span>
+                    <span class="logo__sign">Слоган - продающая фраза, возможно в две строки</span>
+                </div>
+            </a>
+            <div class="geolocation-card">
+    <div class="geolocation-card__wrapper-info">
+        <img src="./assets/images/photo-1.jpg" alt="" class="geolocation-card__image">
+        <div class="geolocation-card__block-info">
+            <a href="#" class="geolocation-card__location">
+                <svg class="geolocation-card__location-icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#map-point"/>
+                </svg>
+                <span class="geolocation-card__location-name">Москва</span>
+            </a>
+            <div class="geolocation-card__inner-info">
+                <span class="geolocation-card__info-title">Ваш прораб: <br> <b>Дудин Олег</b></span>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn--size--md btn--theme--quaternary">
+        <span class="btn__text">Заказать замер</span>
+        <svg class="btn__icon">
+            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"/>
+        </svg>
+    </button>
+</div>
+            <a href="#" class="link-calculator link-reset">
+    <picture class="link-calculator__image">
+        <source srcset="./assets/images/calculator-mini.svg" media="(max-width: 1200px)" />
+        <img src="./assets/images/calculator.png" alt=""/>
+      </picture>
+    <span class="link-calculator__title">Калькулятор</span>
+</a>
+            <div class="contact-block">
+                <a href="tel:78005551590" class="contact contact--theme--dark link-reset">
+                    <div class="contact__block-icon">
+                        <svg class="contact__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#phone"/>
+                        </svg>
+                    </div>
+                    <span class="contact__info text--large">+7 800 555-15-90</span>
+                </a>
+                <div class="contact-block__block-info" data-header="block-info">
+                    <span class="contact-block__info">C 9:00 до 21:00 без выходных</span>
+                    <span class="contact-block__info">Директор: <a href="#">director@domen.ru</a></span>
+                </div>
+                <div class="social-network social-network--theme--dark" data-header="social-network">
+                    <ul class="social-network__list list-reset">
+                        <li class="social-network__li">
+                            <a href="#" class="social-network__link link-resest">
+                                <svg class="social-network__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__li">
+                            <a href="#" class="social-network__link link-resest">
+                                <svg class="social-network__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#whatsApp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__li">
+                            <a href="#" class="social-network__link link-resest">
+                                <svg class="social-network__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__li">
+                            <a href="#" class="social-network__link link-resest">
+                                <svg class="social-network__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#ringing-phone"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__block-info-btn">
+                <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                    <span class="btn__text">Рассчитать смету</span>
+                    <svg class="btn__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"/>
+                    </svg>
+                </a>
+                <span class="header__info-btn-sign">Прием заявок круглосуточно</span>
+            </div>
+        </div>
+    </div>
+    <div class="header__wrapper-menu" data-header="wrapper-menu">
+        <div class="main-container max-width">
+            <ul class="header__menu list-reset">
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Ремонт квартир</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                    <div class="header__menu-block-body header__menu-nested-menus" data-header="body">
+                        <ul class="header__menu-list list-reset">
+                            <li class="header__menu-list-li">
+                                <div class="header__menu-block-head" data-header="head">
+                                    <a href="#" class="header__menu-head-name link-reset">Ремонт квартир</a>
+                                    <svg class="header__menu-head-icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#small-arrow-right"></use>
+                                    </svg>
+                                </div>
+                                <div class="header__menu-block-body header__menu-block-body--last" data-header="body">
+                                    <ul class="header__menu-list list-reset">
+                                        <li class="header__menu-list-li">
+                                            <div class="header__menu-block-head" data-header="head">
+                                                <span class="header__menu-head-sign">По количеству комнат</span>
+                                                <a href="#" class="header__menu-head-name link-reset">Ремонт квартир</a>
+                                                <svg class="header__menu-head-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#small-arrow-right"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="header__menu-block-body header__menu-block-body--mode" data-header="body">
+                                                <ul class="header__menu-list list-reset">
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">1 комнатная квартира</a>
+                                                    </li>
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">2 комнатная квартира</a>
+                                                    </li>
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">3 комнатная квартира</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header__menu-list-li">
+                                            <div class="header__menu-block-head" data-header="head">
+                                                <span class="header__menu-head-sign">По типу</span>
+                                                <a href="#" class="header__menu-head-name link-reset">Ремонт в новостройке</a>
+                                                <svg class="header__menu-head-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#small-arrow-right"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="header__menu-block-body header__menu-block-body--mode" data-header="body">
+                                                <ul class="header__menu-list list-reset">
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">1 комнатная квартира</a>
+                                                    </li>
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">2 комнатная квартира</a>
+                                                    </li>
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">3 комнатная квартира</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Дизайн интерьера</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Ремонт комнат</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Дома и коттеджи</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Другие услуги</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Портфолио</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Отзывы</a>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Контакты</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+            <main class="page blog-page" data-page="page">
+
+                <section class="blog section section--theme--secondary">
+    <div class="main-container max-width">
+        <div class="block-title">
+            <h2 class="title title--h2 title-reset">Блог о дизайне и ремонте</h2>
+        </div>
+        <div class="blog__wrapper-tags">
+            <a href="#" class="tag active">
+                <span class="tag__name">Весь блог</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Ремонт квартир</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Дизайн интерьера</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Дизайн кухни</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Ремонт под ключ</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Советы дизайнеров интерьера</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Стили интерьеров</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Дизайн квартир</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Дизайн гостиных комнат</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Дизайн ванных комнат</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Дизайн спальни</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Дизайн загородных домов</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Перепланировка квартир</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Типовые квартиры</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Дизайн детских комнат</span>
+            </a>
+            <a href="#" class="tag">
+                <span class="tag__name">Квартиры звезд</span>
+            </a>
+        </div>
+        <div class="blog__wrapper-cards">
+            <a href="#" class="article-card">
+    <div class="article-card__block-image">
+        <img src="./assets/images/photo-2.jpg" class="article-card__image" alt="">
+    </div>
+    <div class="article-card__wrapper-info">
+        <span class="article-card__title">Плитка в интерьере ванной: самые модные варианты</span>
+        <div class="article-card__inner-info">
+            <div class="article-card__block-info">
+                <img src="./assets/images/calendar.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">01.11.2022</span>
+            </div>
+            <div class="article-card__block-info">
+                <img src="./assets/images/time.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">Время прочтения: 4 минуты</span>
+            </div>
+        </div>
+        <div class="article-card__block-text">
+            <span class="article-card__text">В нашей статье мы рассмотрим разные типы плитки: под мрамор, под дерево, в форме гексагонов, с геометричным рисунком, под кирпич (кабанчик), марокканский зеллидж и терраццо. Эти и некоторые другие варианты смотрите в нашей новой статье.</span>
+        </div>
+    </div>
+</a>
+            <a href="#" class="article-card">
+    <div class="article-card__block-image">
+        <img src="./assets/images/photo-2.jpg" class="article-card__image" alt="">
+    </div>
+    <div class="article-card__wrapper-info">
+        <span class="article-card__title">Плитка в интерьере ванной: самые модные варианты</span>
+        <div class="article-card__inner-info">
+            <div class="article-card__block-info">
+                <img src="./assets/images/calendar.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">01.11.2022</span>
+            </div>
+            <div class="article-card__block-info">
+                <img src="./assets/images/time.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">Время прочтения: 4 минуты</span>
+            </div>
+        </div>
+        <div class="article-card__block-text">
+            <span class="article-card__text">В нашей статье мы рассмотрим разные типы плитки: под мрамор, под дерево, в форме гексагонов, с геометричным рисунком, под кирпич (кабанчик), марокканский зеллидж и терраццо. Эти и некоторые другие варианты смотрите в нашей новой статье.</span>
+        </div>
+    </div>
+</a>
+            <a href="#" class="article-card">
+    <div class="article-card__block-image">
+        <img src="./assets/images/photo-2.jpg" class="article-card__image" alt="">
+    </div>
+    <div class="article-card__wrapper-info">
+        <span class="article-card__title">Плитка в интерьере ванной: самые модные варианты</span>
+        <div class="article-card__inner-info">
+            <div class="article-card__block-info">
+                <img src="./assets/images/calendar.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">01.11.2022</span>
+            </div>
+            <div class="article-card__block-info">
+                <img src="./assets/images/time.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">Время прочтения: 4 минуты</span>
+            </div>
+        </div>
+        <div class="article-card__block-text">
+            <span class="article-card__text">В нашей статье мы рассмотрим разные типы плитки: под мрамор, под дерево, в форме гексагонов, с геометричным рисунком, под кирпич (кабанчик), марокканский зеллидж и терраццо. Эти и некоторые другие варианты смотрите в нашей новой статье.</span>
+        </div>
+    </div>
+</a>
+            <a href="#" class="article-card">
+    <div class="article-card__block-image">
+        <img src="./assets/images/photo-2.jpg" class="article-card__image" alt="">
+    </div>
+    <div class="article-card__wrapper-info">
+        <span class="article-card__title">Плитка в интерьере ванной: самые модные варианты</span>
+        <div class="article-card__inner-info">
+            <div class="article-card__block-info">
+                <img src="./assets/images/calendar.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">01.11.2022</span>
+            </div>
+            <div class="article-card__block-info">
+                <img src="./assets/images/time.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">Время прочтения: 4 минуты</span>
+            </div>
+        </div>
+        <div class="article-card__block-text">
+            <span class="article-card__text">В нашей статье мы рассмотрим разные типы плитки: под мрамор, под дерево, в форме гексагонов, с геометричным рисунком, под кирпич (кабанчик), марокканский зеллидж и терраццо. Эти и некоторые другие варианты смотрите в нашей новой статье.</span>
+        </div>
+    </div>
+</a>
+            <a href="#" class="article-card">
+    <div class="article-card__block-image">
+        <img src="./assets/images/photo-2.jpg" class="article-card__image" alt="">
+    </div>
+    <div class="article-card__wrapper-info">
+        <span class="article-card__title">Плитка в интерьере ванной: самые модные варианты</span>
+        <div class="article-card__inner-info">
+            <div class="article-card__block-info">
+                <img src="./assets/images/calendar.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">01.11.2022</span>
+            </div>
+            <div class="article-card__block-info">
+                <img src="./assets/images/time.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">Время прочтения: 4 минуты</span>
+            </div>
+        </div>
+        <div class="article-card__block-text">
+            <span class="article-card__text">В нашей статье мы рассмотрим разные типы плитки: под мрамор, под дерево, в форме гексагонов, с геометричным рисунком, под кирпич (кабанчик), марокканский зеллидж и терраццо. Эти и некоторые другие варианты смотрите в нашей новой статье.</span>
+        </div>
+    </div>
+</a>
+            <a href="#" class="article-card">
+    <div class="article-card__block-image">
+        <img src="./assets/images/photo-2.jpg" class="article-card__image" alt="">
+    </div>
+    <div class="article-card__wrapper-info">
+        <span class="article-card__title">Плитка в интерьере ванной: самые модные варианты</span>
+        <div class="article-card__inner-info">
+            <div class="article-card__block-info">
+                <img src="./assets/images/calendar.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">01.11.2022</span>
+            </div>
+            <div class="article-card__block-info">
+                <img src="./assets/images/time.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">Время прочтения: 4 минуты</span>
+            </div>
+        </div>
+        <div class="article-card__block-text">
+            <span class="article-card__text">В нашей статье мы рассмотрим разные типы плитки: под мрамор, под дерево, в форме гексагонов, с геометричным рисунком, под кирпич (кабанчик), марокканский зеллидж и терраццо. Эти и некоторые другие варианты смотрите в нашей новой статье.</span>
+        </div>
+    </div>
+</a>
+            <a href="#" class="article-card">
+    <div class="article-card__block-image">
+        <img src="./assets/images/photo-2.jpg" class="article-card__image" alt="">
+    </div>
+    <div class="article-card__wrapper-info">
+        <span class="article-card__title">Плитка в интерьере ванной: самые модные варианты</span>
+        <div class="article-card__inner-info">
+            <div class="article-card__block-info">
+                <img src="./assets/images/calendar.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">01.11.2022</span>
+            </div>
+            <div class="article-card__block-info">
+                <img src="./assets/images/time.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">Время прочтения: 4 минуты</span>
+            </div>
+        </div>
+        <div class="article-card__block-text">
+            <span class="article-card__text">В нашей статье мы рассмотрим разные типы плитки: под мрамор, под дерево, в форме гексагонов, с геометричным рисунком, под кирпич (кабанчик), марокканский зеллидж и терраццо. Эти и некоторые другие варианты смотрите в нашей новой статье.</span>
+        </div>
+    </div>
+</a>
+            <a href="#" class="article-card">
+    <div class="article-card__block-image">
+        <img src="./assets/images/photo-2.jpg" class="article-card__image" alt="">
+    </div>
+    <div class="article-card__wrapper-info">
+        <span class="article-card__title">Плитка в интерьере ванной: самые модные варианты</span>
+        <div class="article-card__inner-info">
+            <div class="article-card__block-info">
+                <img src="./assets/images/calendar.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">01.11.2022</span>
+            </div>
+            <div class="article-card__block-info">
+                <img src="./assets/images/time.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">Время прочтения: 4 минуты</span>
+            </div>
+        </div>
+        <div class="article-card__block-text">
+            <span class="article-card__text">В нашей статье мы рассмотрим разные типы плитки: под мрамор, под дерево, в форме гексагонов, с геометричным рисунком, под кирпич (кабанчик), марокканский зеллидж и терраццо. Эти и некоторые другие варианты смотрите в нашей новой статье.</span>
+        </div>
+    </div>
+</a>
+            <a href="#" class="article-card">
+    <div class="article-card__block-image">
+        <img src="./assets/images/photo-2.jpg" class="article-card__image" alt="">
+    </div>
+    <div class="article-card__wrapper-info">
+        <span class="article-card__title">Плитка в интерьере ванной: самые модные варианты</span>
+        <div class="article-card__inner-info">
+            <div class="article-card__block-info">
+                <img src="./assets/images/calendar.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">01.11.2022</span>
+            </div>
+            <div class="article-card__block-info">
+                <img src="./assets/images/time.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">Время прочтения: 4 минуты</span>
+            </div>
+        </div>
+        <div class="article-card__block-text">
+            <span class="article-card__text">В нашей статье мы рассмотрим разные типы плитки: под мрамор, под дерево, в форме гексагонов, с геометричным рисунком, под кирпич (кабанчик), марокканский зеллидж и терраццо. Эти и некоторые другие варианты смотрите в нашей новой статье.</span>
+        </div>
+    </div>
+</a>
+            <a href="#" class="article-card">
+    <div class="article-card__block-image">
+        <img src="./assets/images/photo-2.jpg" class="article-card__image" alt="">
+    </div>
+    <div class="article-card__wrapper-info">
+        <span class="article-card__title">Плитка в интерьере ванной: самые модные варианты</span>
+        <div class="article-card__inner-info">
+            <div class="article-card__block-info">
+                <img src="./assets/images/calendar.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">01.11.2022</span>
+            </div>
+            <div class="article-card__block-info">
+                <img src="./assets/images/time.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">Время прочтения: 4 минуты</span>
+            </div>
+        </div>
+        <div class="article-card__block-text">
+            <span class="article-card__text">В нашей статье мы рассмотрим разные типы плитки: под мрамор, под дерево, в форме гексагонов, с геометричным рисунком, под кирпич (кабанчик), марокканский зеллидж и терраццо. Эти и некоторые другие варианты смотрите в нашей новой статье.</span>
+        </div>
+    </div>
+</a>
+            <a href="#" class="article-card">
+    <div class="article-card__block-image">
+        <img src="./assets/images/photo-2.jpg" class="article-card__image" alt="">
+    </div>
+    <div class="article-card__wrapper-info">
+        <span class="article-card__title">Плитка в интерьере ванной: самые модные варианты</span>
+        <div class="article-card__inner-info">
+            <div class="article-card__block-info">
+                <img src="./assets/images/calendar.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">01.11.2022</span>
+            </div>
+            <div class="article-card__block-info">
+                <img src="./assets/images/time.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">Время прочтения: 4 минуты</span>
+            </div>
+        </div>
+        <div class="article-card__block-text">
+            <span class="article-card__text">В нашей статье мы рассмотрим разные типы плитки: под мрамор, под дерево, в форме гексагонов, с геометричным рисунком, под кирпич (кабанчик), марокканский зеллидж и терраццо. Эти и некоторые другие варианты смотрите в нашей новой статье.</span>
+        </div>
+    </div>
+</a>
+            <a href="#" class="article-card">
+    <div class="article-card__block-image">
+        <img src="./assets/images/photo-2.jpg" class="article-card__image" alt="">
+    </div>
+    <div class="article-card__wrapper-info">
+        <span class="article-card__title">Плитка в интерьере ванной: самые модные варианты</span>
+        <div class="article-card__inner-info">
+            <div class="article-card__block-info">
+                <img src="./assets/images/calendar.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">01.11.2022</span>
+            </div>
+            <div class="article-card__block-info">
+                <img src="./assets/images/time.svg" class="article-card__icon-info" alt="">
+                <span class="article-card__text-info">Время прочтения: 4 минуты</span>
+            </div>
+        </div>
+        <div class="article-card__block-text">
+            <span class="article-card__text">В нашей статье мы рассмотрим разные типы плитки: под мрамор, под дерево, в форме гексагонов, с геометричным рисунком, под кирпич (кабанчик), марокканский зеллидж и терраццо. Эти и некоторые другие варианты смотрите в нашей новой статье.</span>
+        </div>
+    </div>
+</a>
+        </div>
+        <div class="blog__block-btn">
+            <a href="#" class="btn btn--size--lg btn--theme--quaternary btn--theme--more">
+                <span class="btn__text">Показать больше</span>
+                <svg class="btn__icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#arrow-bottom"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="pagination">
+    <a href="#" class="pagination__link link-reset" disabled>
+        <svg class="pagination__icon">
+            <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+        </svg>
+        <span class="pagination__link-text">Назад</span>
+    </a>
+    <ul class="pagination__list list-reset">
+        <li class="pagination__li active">
+            <a href="#" class="pagination__link-number-page link-reset">1</a>
+        </li>
+        <li class="pagination__li">
+            <a href="#" class="pagination__link-number-page link-reset">2</a>
+        </li>
+        <li class="pagination__li pagination__li--ellipsis">
+            <a href="##" class="pagination__link-number-page link-reset">...</a>
+        </li>
+        <li class="pagination__li">
+            <a href="#" class="pagination__link-number-page link-reset">5</a>
+        </li>
+        <li class="pagination__li">
+            <a href="#" class="pagination__link-number-page link-reset">6</a>
+        </li>
+    </ul>
+    <a href="#" class="pagination__link link-reset">
+        <span class="pagination__link-text">Далее</span>
+        <svg class="pagination__icon">
+            <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+        </svg>
+    </a>
+</div>
+    </div>
+</section>
+
+            </main>
+            <footer class="footer">
+    <div class="footer__wrapper-info">
+        <div class="main-container max-width">
+            <div class="footer__wrapper-links">
+                <a href="#" class="logo" data-header="logo">
+                    <img src="./assets/images/logo-main-2.svg" class="logo__icon" alt="">
+                    <div class="logo__block-info">
+                        <span class="logo__sign">Copyright 2014 – 2022. «ООО Стройкомпания» — Ремонт и отделка квартир в «городе»</span>
+                    </div>
+                </a>
+                <div class="footer__block-btns">
+                    <button class="btn btn--size--lg btn--theme--primary">
+                        <svg class="btn__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#calculator-mini-light"/>
+                        </svg>
+                        <span class="btn__text">Калькулятор ремонта</span>
+                    </button>
+                    <button class="btn btn--size--lg btn--theme--primary">
+                        <svg class="btn__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#phone"/>
+                        </svg>
+                        <span class="btn__text">Обратный звонок</span>
+                    </button>
+                </div>
+                <div class="payment-options">
+                    <span class="payment-options__title">Принимаем к оплате:</span>
+                    <ul class="payment-options__list list-reset">
+                        <li class="payment-options__li">
+                            <img src="./assets/images/visa.png" class="payment-options__image" alt="">
+                        </li>
+                        <li class="payment-options__li">
+                            <img src="./assets/images/mastercard.png" class="payment-options__image" alt="">
+                        </li>
+                        <li class="payment-options__li">
+                            <img src="./assets/images/mir.png" class="payment-options__image" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper-contacts">
+                <div class="contact contact--theme--light">
+                    <div class="contact__block-icon">
+                        <svg class="contact__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#phone"/>
+                        </svg>
+                    </div>
+                    <div class="contact__block-info">
+                        <a href="#" class="contact__info text--large link-reset">+7 800 555-15-90</a>
+                        <span class="contact__sign">C 9:00 до 21:00 без выходных</span>
+                    </div>
+                </div>
+                <div class="contact contact--theme--light">
+                    <div class="contact__block-icon">
+                        <svg class="contact__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#map-point"/>
+                        </svg>
+                    </div>
+                    <div class="contact__block-info">
+                        <span class="contact__sign">106721, г.Москва, Пресненская набережная д. 6, стр. 2, м. Выставочная </span>
+                    </div>
+                </div>
+                <div class="contact contact--theme--light">
+                    <div class="contact__block-icon">
+                        <svg class="contact__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#text-files"/>
+                        </svg>
+                    </div>
+                    <div class="contact__block-info">
+                        <span class="contact__sign">
+                            <a href="#" class="contact__link link-reset">Скачать договор</a>
+                            <br><br>
+                            «ООО Стройкомпания» <br>
+                            ИНН: 9721084860 <br>
+                            Email: info@stroycompany.ru
+                        </span>
+                        <div class="social-network social-network--theme--light">
+                            <ul class="social-network__list list-reset">
+                                <li class="social-network__li">
+                                    <a href="#" class="social-network__link link-resest">
+                                        <svg class="social-network__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#telegram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-network__li">
+                                    <a href="#" class="social-network__link link-resest">
+                                        <svg class="social-network__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#whatsApp"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-network__li">
+                                    <a href="#" class="social-network__link link-resest">
+                                        <svg class="social-network__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-network__li">
+                                    <a href="#" class="social-network__link link-resest">
+                                        <svg class="social-network__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#ringing-phone"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__wrapper-nav">
+                <div class="footer__block-nav">
+                    <span class="footer__nav-title">О компании</span>
+                    <ul class="footer__nav-list list-reset">
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Рассрочка</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Цены</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Акции и скидки</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Вакансии</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Карта сайта</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Политика конфиденциальности</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Пользовательское соглашение</a>
+                        </li>
+                    </ul>
+                    <div class="footer__nav-block-offer">
+                        <span class="footer__nav-title">Спецпредложение для ремонтных компаний</span>
+                        <a href="#" class="btn btn--size--md btn--theme--sevenfold">
+                            <span class="btn__text">Партнерам</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__block-nav">
+                    <span class="footer__nav-title">Услуги</span>
+                    <ul class="footer__nav-list list-reset">
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Дизайн-проект</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Чистовой ремонт</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Капитальный ремонт</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Ремонт однокомнатной квартиры</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Ремонт двухкомнатной квартиры</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Ремонт трехкомнатной квартиры</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Ремонт четырехкомнатной квартиры</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__wrapper-legal-info">
+        <div class="main-container max-width">
+            <span class="footer__legal-info">Вся предоставленная на сайте информация, носит информационный характер и ни при каких условиях не является публичной офертой.</span>
+        </div>
+    </div>
+</footer>
+            <script src="./assets/scripts/libs.js"></script>
+<script src="./assets/scripts/main.js"></script>
+        </div>
+    </body>
+</html>
