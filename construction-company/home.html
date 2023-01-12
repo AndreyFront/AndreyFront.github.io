@@ -449,7 +449,7 @@
             <div class="performance__block-form">
                 <span class="performance__form-title">Заполните форму <br> и получите рассчет сметы ремонта</span>
                 <div class="performance__form-block-input">
-                    <input type="text" class="input" placeholder="Ваше имя">
+                    <input type="text" class="input" placeholder="Ваш телефон*" required>
                     <button type="submit" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
                         <span class="btn__text">Отправить</span>
                         <svg class="btn__icon">
@@ -460,7 +460,7 @@
                 <div class="privacy-policy">
                     <div class="checkbox">
                         <label data-role="" class="checkbox__label">
-                            <input type="checkbox" class="checkbox__input" name="" value="">
+                            <input type="checkbox" class="checkbox__input" name="" value="" checked required>
                             <span class="checkbox__text">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
                             <span class="checkbox__decore"></span>
                         </label>
@@ -1501,6 +1501,381 @@
         </div>
     </div>
 </section>
+                <section class="quiz" data-quiz="main">
+    <div class="quiz__performance active" data-quiz="performance">
+        <div class="quiz__block-bg">
+            <img src="./assets/images/image-25.png" class="quiz__bg" alt="">
+            <img src="./assets/images/image-26.png" class="quiz__bg" alt="">
+        </div>
+        <img src="./assets/images/illustration-4.png" class="quiz__performance-illustration" alt="">
+        <div class="main-container max-width">
+            <span class="quiz__performance-title">Узнайте стоимость вашего ремонта за 1 минуту + подарок</span>
+            <div class="quiz__performance-wrapper-info">
+                <div class="quiz__performance-block-info">
+                    <img src="./assets/images/gift-2.svg" alt="" class="quiz__performance-icon-info">
+                    <div class="quiz__performance-box-info">
+                        <span class="quiz__performance-title-info">Ваши бонусы в конце теста:</span>
+                        <ul class="quiz__performance-list-info list-reset">
+                            <li class="quiz__performance-li-info">— Расчет стоимости и прайс-лист.</li>
+                            <li class="quiz__performance-li-info">— 1 из 3 подарков на выбор.</li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="btn btn--size--lg btn--theme--primary btn--mode--indent" data-quiz="btn-start">
+                    <span class="btn__text">Рассчитать ремонт</span>
+                    <svg class="btn__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <form class="quiz__quiz" data-quiz="quiz">
+        <img src="./assets/images/image-27.png" class="quiz__quiz-bg" alt="">
+        <div class="main-container max-width">
+            <h2 class="title title--h2 title-reset">Узнайте стоимость Вашего ремонта за 1 минуту + подарок!</h2>
+            <div class="quiz__slider-nav">
+                <ul class="quiz__slider-nav-list list-reset" data-quiz="nav-list"></ul>
+            </div>
+            <div class="swiper quiz__slider" data-quiz="slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="quiz__block-slide">
+                            <div class="quiz__slide-block-title">
+                                <span class="quiz__slide-title-number">1</span>
+                                <span class="quiz__slide-title">Укажите тип помещения</span>
+                            </div>
+                            <div class="quiz__slider-wrapper-variants">
+                                <label class="radio active">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-1" value="">
+                                        <span class="radio__text">Новостройка</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-1" value="">
+                                        <span class="radio__text">Вторичное жилье</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-1" value="">
+                                        <span class="radio__text">Дом или коттедж</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-1" value="">
+                                        <span class="radio__text">Коммерция</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="quiz__block-slide">
+                            <div class="quiz__slide-block-title">
+                                <span class="quiz__slide-title-number">2</span>
+                                <span class="quiz__slide-title">Укажите общую площадь помещения</span>
+                            </div>
+                            <div class="quiz__slider-wrapper-variants">
+                                <label class="radio active">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-2" value="">
+                                        <span class="radio__text">До 30м<sup>2</sup></span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-2" value="">
+                                        <span class="radio__text">От 30м<sup>2</sup> до 60м<sup>2</sup></span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-2" value="">
+                                        <span class="radio__text">Более 60м<sup>2</sup></span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="quiz__block-slide">
+                            <div class="quiz__slide-block-title">
+                                <span class="quiz__slide-title-number">3</span>
+                                <span class="quiz__slide-title">Сколько комнат надо отремонтировать</span>
+                            </div>
+                            <div class="quiz__slider-wrapper-variants">
+                                <label class="radio active">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-3" value="">
+                                        <span class="radio__text">Одну комнату</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-3" value="">
+                                        <span class="radio__text">Несколько комнат</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-3" value="">
+                                        <span class="radio__text">Всю квартиру</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="quiz__block-slide">
+                            <div class="quiz__slide-block-title">
+                                <span class="quiz__slide-title-number">4</span>
+                                <span class="quiz__slide-title">Какаой вид ремонта требуется?</span>
+                            </div>
+                            <div class="quiz__slider-wrapper-variants">
+                                <label class="radio active">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-4" value="">
+                                        <span class="radio__text">Черновой ремонт</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-4" value="">
+                                        <span class="radio__text">Косметический ремонт</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-4" value="">
+                                        <span class="radio__text">Капитальный ремонт</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-4" value="">
+                                        <span class="radio__text">Элитный ремонт</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="quiz__block-slide">
+                            <div class="quiz__slide-block-title">
+                                <span class="quiz__slide-title-number">5</span>
+                                <span class="quiz__slide-title">Когда вы планируете начать ремонт?</span>
+                            </div>
+                            <div class="quiz__slider-wrapper-variants">
+                                <label class="radio active">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-5" value="">
+                                        <span class="radio__text">В течение 3х дней</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-5" value="">
+                                        <span class="radio__text">В течении месяца</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-5" value="">
+                                        <span class="radio__text">В течение полугода</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-5" value="">
+                                        <span class="radio__text">Более длительный срок</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="quiz__block-slide">
+                            <div class="quiz__slide-block-title">
+                                <span class="quiz__slide-title-number">6</span>
+                                <span class="quiz__slide-title">Какой бы Вам хотелось получить подарок после ремонта?</span>
+                            </div>
+                            <div class="quiz__slider-wrapper-variants">
+                                <label class="radio active">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-6" value="">
+                                        <span class="radio__text">Каталог дизайн-проекта</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-6" value="">
+                                        <span class="radio__text">Фотоссесия ремонта</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div class="quiz__slider-variant-block-image">
+                                        <img src="./assets/images/photo-2.jpg" class="quiz__slider-variant-image" alt="">
+                                    </div>
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-6" value="">
+                                        <span class="radio__text">Мне не нужен подарок</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="quiz__block-slide quiz__block-slide--final">
+                            <img src="./assets/images/gift-box.png" class="quiz__quiz-final-image" alt="">
+                            <div class="quiz__slide-block-title">
+                                <span class="quiz__slide-title">Мы уже приступили к расчету!</span>
+                            </div>
+                            <div class="quiz__slider-wrapper-variants">
+                                <label class="radio active">
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-7" value="">
+                                        <span class="radio__text">Перезвонить мне, у меня остались вопросы</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-7" value="">
+                                        <span class="radio__text">Пришлите мне все на Whatsapp</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                                <label class="radio">
+                                    <div data-role="" class="radio__label">
+                                        <input type="radio" class="radio__input" name="quiz-7" value="">
+                                        <span class="radio__text">Пришлите мне все на Telegram</span>
+                                        <span class="radio__decore"></span>
+                                    </div>
+                                </label>
+                            </div>
+                            <input type="text" class="input" placeholder="Ваш номер телефона *" required>
+                            <div class="privacy-policy">
+                                <div class="checkbox">
+                                    <label data-role="" class="checkbox__label">
+                                        <input type="checkbox" class="checkbox__input" name="" value="" checked required>
+                                        <span class="checkbox__text">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
+                                        <span class="checkbox__decore"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                                <span class="btn__text">Отправить расчет и получить подарок</span>
+                                <svg class="btn__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz__block-nav">
+                <button type="button" class="btn btn--size--lg btn--theme--fivefold btn--mode--indent" data-quiz="btn-prev">
+                    <svg class="btn__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow_to_left"></use>
+                    </svg>
+                    <span class="btn__text">Предыдущий шаг</span>
+                </button>
+                <div class="swiper-pagination quiz__pagination" data-quiz="pagination"></div>
+                <button type="button" class="btn btn--size--lg btn--theme--secondary btn--mode--indent" data-quiz="btn-next">
+                    <span class="btn__text">Следующий шаг</span>
+                    <svg class="btn__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </form>
+</section>
                 <section class="best-works section" data-slider-cards="main">
     <div class="main-container max-width">
         <div class="block-title">
@@ -2167,7 +2542,7 @@
                             <form action="" class="form__form">
                                 <div class="form__content">
                                     <input type="text" class="input" placeholder="Как вас зовут?">
-                                    <input type="text" class="input" placeholder="Ваш телефон">
+                                    <input type="text" class="input" placeholder="Ваш телефон *" required>
                                     <button type="submit" class="btn btn--size--lg btn--theme--secondary btn--mode--indent">
                                         <span class="btn__text">Получить скидку</span>
                                         <svg class="btn__icon">
@@ -2178,7 +2553,7 @@
                                 <div class="privacy-policy">
                                     <div class="checkbox">
                                         <label data-role="" class="checkbox__label">
-                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <input type="checkbox" class="checkbox__input" name="" value="" checked required>
                                             <span class="checkbox__text">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
                                             <span class="checkbox__decore"></span>
                                         </label>
@@ -2226,7 +2601,7 @@
                 <span class="tag__name">Отделочные работы</span>
             </a>
         </div>
-        <div class="prices-type-work__wrapper-table">
+        <div class="prices-type-work__wrapper-table" data-prices-type-work="wrapper-table">
             <table data-prices-type-work="table">
                 <tr class="prices-type-work__main-tr">
                     <td>Наименование:</td>
@@ -2631,7 +3006,7 @@
                     <div class="repair-calculator-m__block-variants">
                         <div class="radio">
                             <label data-role="" class="radio__label">
-                                <input type="radio" class="radio__input" name="1" value="">
+                                <input type="radio" class="radio__input" name="1" value="" checked>
                                 <span class="radio__text">Черновой</span>
                                 <span class="radio__decore"></span>
                             </label>
@@ -2664,7 +3039,7 @@
                     <div class="repair-calculator-m__block-variants">
                         <div class="radio">
                             <label data-role="" class="radio__label">
-                                <input type="radio" class="radio__input" name="2" value="">
+                                <input type="radio" class="radio__input" name="2" value="" checked>
                                 <span class="radio__text">Новостройка</span>
                                 <span class="radio__decore"></span>
                             </label>
@@ -2692,7 +3067,7 @@
                     <div class="repair-calculator-m__block-variants">
                         <div class="radio">
                             <label data-role="" class="radio__label">
-                                <input type="radio" class="radio__input" name="3" value="">
+                                <input type="radio" class="radio__input" name="3" value="" checked>
                                 <span class="radio__text">Перепланировка</span>
                                 <span class="radio__decore"></span>
                             </label>
@@ -2757,7 +3132,7 @@
                 <span class="repair-calculator-m__title-block">Количество комнат:</span>
                 <div class="repair-calculator-m__wrapper-radio">
                     <label class="repair-calculator-m__radio">
-                        <input type="radio" name="5" class="repair-calculator-m__radio-input">
+                        <input type="radio" name="5" class="repair-calculator-m__radio-input" checked>
                         <span class="repair-calculator-m__radio-title">1</span>
                     </label>
                     <label class="repair-calculator-m__radio">
@@ -2778,7 +3153,7 @@
                 <span class="repair-calculator-m__title-block">Высота потолков:</span>
                 <div class="repair-calculator-m__wrapper-radio">
                     <label class="repair-calculator-m__radio">
-                        <input type="radio" name="6" class="repair-calculator-m__radio-input">
+                        <input type="radio" name="6" class="repair-calculator-m__radio-input" checked>
                         <span class="repair-calculator-m__radio-title">2.5</span>
                     </label>
                     <label class="repair-calculator-m__radio">
@@ -3002,7 +3377,7 @@
                             <form action="" class="form__form">
                                 <div class="form__content">
                                     <input type="text" class="input" placeholder="Как вас зовут?">
-                                    <input type="text" class="input" placeholder="Ваш телефон">
+                                    <input type="text" class="input" placeholder="Ваш телефон *" required>
                                     <button type="submit" class="btn btn--size--lg btn--theme--secondary btn--mode--indent">
                                         <span class="btn__text">Задать вопрос</span>
                                         <svg class="btn__icon">
@@ -3013,7 +3388,7 @@
                                 <div class="privacy-policy">
                                     <div class="checkbox">
                                         <label data-role="" class="checkbox__label">
-                                            <input type="checkbox" class="checkbox__input" name="" value="">
+                                            <input type="checkbox" class="checkbox__input" name="" value="" checked required>
                                             <span class="checkbox__text">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
                                             <span class="checkbox__decore"></span>
                                         </label>
@@ -3867,13 +4242,13 @@
         </div>
     </div>
 </section>
-                <section class="reviews section section--theme--secondary">
+                <section class="reviews section section--theme--secondary" data-reviews="main">
     <div class="main-container max-width">
         <div class="block-title">
             <h2 class="title title--h2 title-reset">Отзывы наших клиентов в интернете</h2>
         </div>
-        <div class="reviews__wrapper-reviews">
-            <div class="reviews__wrap-inner-reviews">
+        <div class="reviews__wrapper-reviews" data-reviews="wrapper-reviews">
+            <div class="reviews__wrap-inner-reviews" data-reviews="wrap-inner-reviews">
                 <div class="reviews__wrap-platform">
                     <div class="reviews__block-platform">
                         <span class="reviews__platform-text">Мы в</span>
@@ -3900,7 +4275,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="reviews__inner-reviews">
+                <div class="reviews__inner-reviews" data-reviews="inner-reviews">
                     <div class="reviews__block-review">
                         <div class="reviews__block-user">
                             <div class="reviews__block-ava-user">
@@ -4010,14 +4385,14 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn--size--lg btn--theme--quaternary btn--theme--more reviews__btn-column-more">
+                <button type="button" class="btn btn--size--lg btn--theme--quaternary btn--theme--more reviews__btn-column-more" data-reviews="btn-column-more">
                     <span class="btn__text" data-popular-services="btn-more-tags-text">Показать больше</span>
                     <svg class="btn__icon">
                         <use xlink:href="./assets/icons/sprite-svg.svg#arrow-bottom"></use>
                     </svg>
                 </button>
             </div>
-            <div class="reviews__wrap-inner-reviews">
+            <div class="reviews__wrap-inner-reviews" data-reviews="wrap-inner-reviews">
                 <div class="reviews__wrap-platform">
                     <div class="reviews__block-platform">
                         <span class="reviews__platform-text">Мы в</span>
@@ -4044,7 +4419,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="reviews__inner-reviews">
+                <div class="reviews__inner-reviews" data-reviews="inner-reviews">
                     <div class="reviews__block-review">
                         <div class="reviews__block-user">
                             <div class="reviews__block-ava-user">
@@ -4154,14 +4529,14 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn--size--lg btn--theme--quaternary btn--theme--more reviews__btn-column-more">
+                <button type="button" class="btn btn--size--lg btn--theme--quaternary btn--theme--more reviews__btn-column-more" data-reviews="btn-column-more">
                     <span class="btn__text" data-popular-services="btn-more-tags-text">Показать больше</span>
                     <svg class="btn__icon">
                         <use xlink:href="./assets/icons/sprite-svg.svg#arrow-bottom"></use>
                     </svg>
                 </button>
             </div>
-            <div class="reviews__wrap-inner-reviews">
+            <div class="reviews__wrap-inner-reviews" data-reviews="wrap-inner-reviews">
                 <div class="reviews__wrap-platform">
                     <div class="reviews__block-platform">
                         <span class="reviews__platform-text">Мы в</span>
@@ -4188,7 +4563,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="reviews__inner-reviews">
+                <div class="reviews__inner-reviews" data-reviews="inner-reviews">
                     <div class="reviews__block-review">
                         <div class="reviews__block-user">
                             <div class="reviews__block-ava-user">
@@ -4298,7 +4673,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn--size--lg btn--theme--quaternary btn--theme--more reviews__btn-column-more">
+                <button type="button" class="btn btn--size--lg btn--theme--quaternary btn--theme--more reviews__btn-column-more" data-reviews="btn-column-more">
                     <span class="btn__text" data-popular-services="btn-more-tags-text">Показать больше</span>
                     <svg class="btn__icon">
                         <use xlink:href="./assets/icons/sprite-svg.svg#arrow-bottom"></use>
@@ -4306,7 +4681,7 @@
                 </button>
             </div>
         </div>
-        <button type="button" class="btn btn--size--lg btn--theme--quaternary btn--theme--more reviews__btn-more">
+        <button type="button" class="btn btn--size--lg btn--theme--quaternary btn--theme--more reviews__btn-more" data-reviews="btn-more">
             <span class="btn__text" data-popular-services="btn-more-tags-text">Показать больше</span>
             <svg class="btn__icon">
                 <use xlink:href="./assets/icons/sprite-svg.svg#arrow-bottom"></use>
@@ -4374,7 +4749,7 @@
                                 <form action="" class="form__form">
                                     <div class="form__content">
                                         <input type="text" class="input" placeholder="Как вас зовут?">
-                                        <input type="text" class="input" placeholder="Ваш телефон">
+                                        <input type="text" class="input" placeholder="Ваш телефон *" required>
                                         <button type="submit" class="btn btn--size--lg btn--theme--secondary btn--mode--indent">
                                             <span class="btn__text">Получить скидку</span>
                                             <svg class="btn__icon">
@@ -4385,7 +4760,7 @@
                                     <div class="privacy-policy">
                                         <div class="checkbox">
                                             <label data-role="" class="checkbox__label">
-                                                <input type="checkbox" class="checkbox__input" name="" value="">
+                                                <input type="checkbox" class="checkbox__input" name="" value="" checked required>
                                                 <span class="checkbox__text">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
                                                 <span class="checkbox__decore"></span>
                                             </label>
