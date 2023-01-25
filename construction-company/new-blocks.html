@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="image/x-icon" href="./assets/static/favicon.ico" rel="shortcut icon">
+<link type="Image/x-icon" href="./assets/static/favicon.ico" rel="icon">
+<link rel="stylesheet" href="./assets/styles/main.css">
+<title>Новые блоки</title>
+    </head>
+    <body>
+        <div class="wrapper-page">
+            <header class="header" data-header="header">
+    <div class="info-bar" data-info-bar="main">
+    <div class="info-bar__content">
+        <img src="./assets/images/info.svg" class="info-bar__content-icon" alt="">
+        <span class="info-bar__info">Текстовый блок для объявлении акции или информации</span>
+    </div>
+    <button type="button" class="info-bar__btn-close" data-info-bar="btn-close">
+        <svg class="info-bar__close-icon">
+            <use xlink:href="./assets/icons/sprite-svg.svg#cross"/>
+        </svg>
+    </button>
+</div>
+    <div class="bread-crumbs">
+        <div class="main-container max-width">
+            <ul class="bread-crumbs__list list-reset">
+                <li class="bread-crumbs__li">
+                    <a href="#" class="bread-crumbs__link link-reset">Главная</a>
+                </li>
+                <li class="bread-crumbs__li">
+                    <a href="#" class="bread-crumbs__link bread-crumbs__link--current-page link-reset">Страница ...</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header__wrapper-nav" data-header="wrapper-nav">
+        <div class="main-container max-width">
+            <nav class="header__nav" data-header="nav">
+                <ul class="header__nav-list list-reset">
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">О компании</a>
+                    </li>
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">Рассрочка</a>
+                    </li>
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">Цены</a>
+                    </li>
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">Акции и скидки</a>
+                    </li>
+                    <li class="header__nav-li">
+                        <a href="#" class="header__nav-link link-reset">Вакансии</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search" data-header="search">
+                <form action="" class="search__form">
+                    <input type="text" class="search__field" placeholder="Поиск">
+                    <button class="search__btn">
+                        <svg class="search__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#magnifier"></use>
+                        </svg>
+                    </button>
+                </form>
+                <div class="search__wrapper-results">
+            
+                </div>
+            </div>
+            <button class="header__mob-btn header__mob-btn--search" data-header="btn-search">
+                <svg class="header__mob-btn-icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#search"/>
+                </svg>
+            </button>
+            <button class="header__mob-btn" data-header="btn-menu">
+                <svg class="header__mob-btn-icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#menu"/>
+                </svg>
+            </button>
+        </div>
+        <div class="header__wrapper-mob-search" data-header="wrapper-mob-search"></div>
+    </div>
+    <div class="header__wrapper-info">
+        <div class="main-container max-width">
+            <a href="#" class="logo" data-header="logo">
+                <img src="./assets/images/logo-main.svg" class="logo__icon" alt="">
+                <div class="logo__block-info">
+                    <span class="logo__name">стройкомпания</span>
+                    <span class="logo__sign">Слоган - продающая фраза, возможно в две строки</span>
+                </div>
+            </a>
+            <div class="geolocation-card">
+    <div class="geolocation-card__wrapper-info">
+        <img src="./assets/images/photo-1.jpg" alt="" class="geolocation-card__image">
+        <div class="geolocation-card__block-info">
+            <a href="#" class="geolocation-card__location">
+                <svg class="geolocation-card__location-icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#map-point"/>
+                </svg>
+                <span class="geolocation-card__location-name">Москва</span>
+            </a>
+            <div class="geolocation-card__inner-info">
+                <span class="geolocation-card__info-title">Ваш прораб: <br> <b>Дудин Олег</b></span>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn--size--md btn--theme--quaternary">
+        <span class="btn__text">Заказать замер</span>
+        <svg class="btn__icon">
+            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"/>
+        </svg>
+    </button>
+</div>
+            <a href="#" class="link-calculator link-reset">
+    <picture class="link-calculator__image">
+        <source srcset="./assets/images/calculator-mini.svg" media="(max-width: 1200px)" />
+        <img src="./assets/images/calculator.png" alt=""/>
+      </picture>
+    <span class="link-calculator__title">Калькулятор</span>
+</a>
+            <div class="contact-block">
+                <a href="tel:78005551590" class="contact contact--theme--dark link-reset">
+                    <div class="contact__block-icon">
+                        <svg class="contact__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#phone"/>
+                        </svg>
+                    </div>
+                    <span class="contact__info text--large">+7 800 555-15-90</span>
+                </a>
+                <div class="contact-block__block-info" data-header="block-info">
+                    <span class="contact-block__info">C 9:00 до 21:00 без выходных</span>
+                    <span class="contact-block__info">Директор: <a href="#">director@domen.ru</a></span>
+                </div>
+                <div class="social-network social-network--theme--dark" data-header="social-network">
+                    <ul class="social-network__list list-reset">
+                        <li class="social-network__li">
+                            <a href="#" class="social-network__link link-resest">
+                                <svg class="social-network__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__li">
+                            <a href="#" class="social-network__link link-resest">
+                                <svg class="social-network__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#whatsApp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__li">
+                            <a href="#" class="social-network__link link-resest">
+                                <svg class="social-network__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-network__li">
+                            <a href="#" class="social-network__link link-resest">
+                                <svg class="social-network__icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#ringing-phone"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__block-info-btn">
+                <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                    <span class="btn__text">Рассчитать смету</span>
+                    <svg class="btn__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"/>
+                    </svg>
+                </a>
+                <span class="header__info-btn-sign">Прием заявок круглосуточно</span>
+            </div>
+        </div>
+    </div>
+    <div class="header__wrapper-menu" data-header="wrapper-menu">
+        <div class="main-container max-width">
+            <a href="#" class="logo" data-header="logo">
+                <img src="./assets/images/logo-main.svg" class="logo__icon" alt="">
+            </a>
+            <ul class="header__menu list-reset">
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Ремонт квартир</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                    <div class="header__menu-block-body header__menu-nested-menus" data-header="body">
+                        <ul class="header__menu-list list-reset">
+                            <li class="header__menu-list-li">
+                                <div class="header__menu-block-head" data-header="head">
+                                    <a href="#" class="header__menu-head-name link-reset">Ремонт квартир</a>
+                                    <svg class="header__menu-head-icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#small-arrow-right"></use>
+                                    </svg>
+                                </div>
+                                <div class="header__menu-block-body header__menu-block-body--last" data-header="body">
+                                    <ul class="header__menu-list list-reset">
+                                        <li class="header__menu-list-li">
+                                            <div class="header__menu-block-head" data-header="head">
+                                                <span class="header__menu-head-sign">По количеству комнат</span>
+                                                <a href="#" class="header__menu-head-name link-reset">Ремонт квартир</a>
+                                                <svg class="header__menu-head-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#small-arrow-right"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="header__menu-block-body header__menu-block-body--mode" data-header="body">
+                                                <ul class="header__menu-list list-reset">
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">1 комнатная квартира</a>
+                                                    </li>
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">2 комнатная квартира</a>
+                                                    </li>
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">3 комнатная квартира</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header__menu-list-li">
+                                            <div class="header__menu-block-head" data-header="head">
+                                                <span class="header__menu-head-sign">По типу</span>
+                                                <a href="#" class="header__menu-head-name link-reset">Ремонт в новостройке</a>
+                                                <svg class="header__menu-head-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#small-arrow-right"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="header__menu-block-body header__menu-block-body--mode" data-header="body">
+                                                <ul class="header__menu-list list-reset">
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">1 комнатная квартира</a>
+                                                    </li>
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">2 комнатная квартира</a>
+                                                    </li>
+                                                    <li class="header__menu-list-li">
+                                                        <a href="#" class="header__menu-link link-reset">3 комнатная квартира</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Дизайн интерьера</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Ремонт комнат</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Дома и коттеджи</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Другие услуги</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Портфолио</a>
+                        <svg class="header__menu-head-icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Отзывы</a>
+                    </div>
+                </li>
+                <li class="header__menu-li">
+                    <div class="header__menu-block-head header__menu-first-level" data-header="head">
+                        <a href="#" class="header__menu-head-name link-reset">Контакты</a>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="btn btn--size--md btn--theme--primary" data-hystmodal="#m-contact-us">
+                <span class="btn__text">Связаться</span>
+            </a>
+        </div>
+    </div>
+</header>
+            <div class="floating-block" data-floating-block="main">
+    <div class="floating-block__block-image">
+        <img src="./assets/images/photo-1.jpg" class="floating-block__image" alt="">
+    </div>
+    <div class="floating-block__wrap-links">
+        <a href="##" class="floating-block__link link-reset">
+            <svg class="floating-block__icon-link">
+                <use xlink:href="./assets/icons/sprite-svg.svg#whatsApp"/>
+            </svg>
+            <span class="floating-block__title-link">whatsApp</span>
+        </a>
+        <a href="##" class="floating-block__link link-reset">
+            <svg class="floating-block__icon-link">
+                <use xlink:href="./assets/icons/sprite-svg.svg#call"/>
+            </svg>
+            <span class="floating-block__title-link">Позвонить</span>
+        </a>
+    </div>
+</div>
+            <main class="page new-blocks-page" data-page="page">
+
+                <section class="atv-rental section">
+    <div class="main-container max-width">
+        <div class="block-title">
+            <h2 class="title title--h2 title-reset">Прокат квадрациклов в москве</h2>
+            <span class="atv-rental__subtitle">Аренда квадроциклов в московской области</span>
+        </div>
+        <div class="atv-rental__wrap-cards">
+            <div class="project-card" data-project-card="main">
+                <div class="project-card__block-image" data-modal-picture="main">
+                    <a 
+                        href="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                        data-img="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                        data-thumb="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                        data-alt="Example"
+                        data-height="2500"
+                        data-width="1667"
+                        data-modal-picture="link"
+                    >
+                        <img src="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg" class="project-card__image" alt="">
+                    </a>
+                </div>
+                <div class="project-card__wrapper-info">
+                    <div class="project-card__block-info">
+                        <span class="project-card__name">Прокат квадроцикла на маршруте "Лайт"</span>
+                        <ul class="project-card__list list-reset">
+                            <li class="project-card__li">
+                                <span class="project-card__li-text">от 1 часа</span>
+                            </li>
+                            <li class="project-card__li">
+                                <span class="project-card__li-text">фотосъемка</span>
+                            </li>
+                            <li class="project-card__li">
+                                <span class="project-card__li-text">животные на пути</span>
+                            </li>
+                        </ul>
+                        <span class="project-card__title">Стоимость</span>
+                        <span class="project-card__price">от 2 500 ₽</span>
+                        <a href="#" class="project-card__link">Подробнее</a>
+                    </div>
+                    <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                        <span class="btn__text">Заказать</span>
+                        <svg class="btn__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="project-card" data-project-card="main">
+                <div class="project-card__block-image" data-modal-picture="main">
+                    <a 
+                        href="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                        data-img="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                        data-thumb="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                        data-alt="Example"
+                        data-height="2500"
+                        data-width="1667"
+                        data-modal-picture="link"
+                    >
+                        <img src="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg" class="project-card__image" alt="">
+                    </a>
+                </div>
+                <div class="project-card__wrapper-info">
+                    <div class="project-card__block-info">
+                        <span class="project-card__name">Прокат квадроцикла на маршруте "Смешанный"</span>
+                        <ul class="project-card__list list-reset">
+                            <li class="project-card__li">
+                                <span class="project-card__li-text">от 1 часа</span>
+                            </li>
+                            <li class="project-card__li">
+                                <span class="project-card__li-text">фотосъемка</span>
+                            </li>
+                            <li class="project-card__li">
+                                <span class="project-card__li-text">животные на пути</span>
+                            </li>
+                        </ul>
+                        <span class="project-card__title">Стоимость</span>
+                        <span class="project-card__price">от 3 000 ₽</span>
+                        <a href="#" class="project-card__link">Подробнее</a>
+                    </div>
+                    <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                        <span class="btn__text">Заказать</span>
+                        <svg class="btn__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="project-card" data-project-card="main">
+                <div class="project-card__block-image" data-modal-picture="main">
+                    <a 
+                        href="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                        data-img="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                        data-thumb="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                        data-alt="Example"
+                        data-height="2500"
+                        data-width="1667"
+                        data-modal-picture="link"
+                    >
+                        <img src="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg" class="project-card__image" alt="">
+                    </a>
+                </div>
+                <div class="project-card__wrapper-info">
+                    <div class="project-card__block-info">
+                        <span class="project-card__name">Прокат квадроцикла на маршруте "Грязь"</span>
+                        <ul class="project-card__list list-reset">
+                            <li class="project-card__li">
+                                <span class="project-card__li-text">от 1 часа</span>
+                            </li>
+                            <li class="project-card__li">
+                                <span class="project-card__li-text">фотосъемка</span>
+                            </li>
+                            <li class="project-card__li">
+                                <span class="project-card__li-text">животные на пути</span>
+                            </li>
+                        </ul>
+                        <span class="project-card__title">Стоимость</span>
+                        <span class="project-card__price">от 6 000 ₽</span>
+                        <a href="#" class="project-card__link">Подробнее</a>
+                    </div>
+                    <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                        <span class="btn__text">Заказать</span>
+                        <svg class="btn__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                <section class="best-works section section--theme--secondary" data-best-works="main" data-slider-cards="main">
+                    <div class="main-container max-width">
+                        <div class="block-title">
+                            <h2 class="title title--h2 title-reset">Мы есть в инстаграм</h2>
+                            <div class="block-title__block-btns">
+                                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-slider-cards="btn-prev">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-slider-cards="btn-next">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="slider-cards">
+                            <div class="swiper" data-slider-cards="slider" data-slider-cards-lines="2" data-modal-picture="main">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://static.tildacdn.com/tild3338-3539-4934-a564-373666313434/IMG_8958.JPG"
+                                                data-img="https://static.tildacdn.com/tild3338-3539-4934-a564-373666313434/IMG_8958.JPG"
+                                                data-thumb="https://static.tildacdn.com/tild3338-3539-4934-a564-373666313434/IMG_8958.JPG"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://static.tildacdn.com/tild3338-3539-4934-a564-373666313434/IMG_8958.JPG" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://static.tildacdn.com/tild3533-6662-4838-b764-383233616561/hKNTT_m0coA.jpg"
+                                                data-img="https://static.tildacdn.com/tild3533-6662-4838-b764-383233616561/hKNTT_m0coA.jpg"
+                                                data-thumb="https://static.tildacdn.com/tild3533-6662-4838-b764-383233616561/hKNTT_m0coA.jpg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://static.tildacdn.com/tild3533-6662-4838-b764-383233616561/hKNTT_m0coA.jpg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://i6.photo.2gis.com/images/branch/9/1266637425595605_d02f.jpg"
+                                                data-img="https://i6.photo.2gis.com/images/branch/9/1266637425595605_d02f.jpg"
+                                                data-thumb="https://i6.photo.2gis.com/images/branch/9/1266637425595605_d02f.jpg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://i6.photo.2gis.com/images/branch/9/1266637425595605_d02f.jpg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://экстриммана.рф/assets/templates/mana/images/gallerey_fotograf/foto15.jpg"
+                                                data-img="https://экстриммана.рф/assets/templates/mana/images/gallerey_fotograf/foto15.jpg"
+                                                data-thumb="https://экстриммана.рф/assets/templates/mana/images/gallerey_fotograf/foto15.jpg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://экстриммана.рф/assets/templates/mana/images/gallerey_fotograf/foto15.jpg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://motodel.su/wp-content/uploads/2019/06/sh-arenda-prokat-kvadrociklov-v-yalte-krym.jpg"
+                                                data-img="https://motodel.su/wp-content/uploads/2019/06/sh-arenda-prokat-kvadrociklov-v-yalte-krym.jpg"
+                                                data-thumb="https://motodel.su/wp-content/uploads/2019/06/sh-arenda-prokat-kvadrociklov-v-yalte-krym.jpg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://motodel.su/wp-content/uploads/2019/06/sh-arenda-prokat-kvadrociklov-v-yalte-krym.jpg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://static.tildacdn.com/tild3763-3738-4433-b436-393431633132/image-31-07-20-10-37.jpeg"
+                                                data-img="https://static.tildacdn.com/tild3763-3738-4433-b436-393431633132/image-31-07-20-10-37.jpeg"
+                                                data-thumb="https://static.tildacdn.com/tild3763-3738-4433-b436-393431633132/image-31-07-20-10-37.jpeg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://static.tildacdn.com/tild3763-3738-4433-b436-393431633132/image-31-07-20-10-37.jpeg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://experience-ireland.s3.amazonaws.com/thumbs2/8da1c71c-656c-11e7-9d61-6e714efd800d.800x600.jpg"
+                                                data-img="https://experience-ireland.s3.amazonaws.com/thumbs2/8da1c71c-656c-11e7-9d61-6e714efd800d.800x600.jpg"
+                                                data-thumb="https://experience-ireland.s3.amazonaws.com/thumbs2/8da1c71c-656c-11e7-9d61-6e714efd800d.800x600.jpg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://experience-ireland.s3.amazonaws.com/thumbs2/8da1c71c-656c-11e7-9d61-6e714efd800d.800x600.jpg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://gidriki.ru/wp-content/uploads/2017/04/image072.jpg"
+                                                data-img="https://gidriki.ru/wp-content/uploads/2017/04/image072.jpg"
+                                                data-thumb="https://gidriki.ru/wp-content/uploads/2017/04/image072.jpg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://gidriki.ru/wp-content/uploads/2017/04/image072.jpg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://artpiknik.ru/wp-content/uploads/2018/01/33-24.jpg"
+                                                data-img="https://artpiknik.ru/wp-content/uploads/2018/01/33-24.jpg"
+                                                data-thumb="https://artpiknik.ru/wp-content/uploads/2018/01/33-24.jpg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://artpiknik.ru/wp-content/uploads/2018/01/33-24.jpg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://static.tildacdn.com/tild3033-6665-4733-a264-636664633262/photo.jpg"
+                                                data-img="https://static.tildacdn.com/tild3033-6665-4733-a264-636664633262/photo.jpg"
+                                                data-thumb="https://static.tildacdn.com/tild3033-6665-4733-a264-636664633262/photo.jpg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://static.tildacdn.com/tild3033-6665-4733-a264-636664633262/photo.jpg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://perm.kvadroklub.ru/media/pic_folder/service_main_photo/main_s_0WxyFqR.jpg"
+                                                data-img="https://perm.kvadroklub.ru/media/pic_folder/service_main_photo/main_s_0WxyFqR.jpg"
+                                                data-thumb="https://perm.kvadroklub.ru/media/pic_folder/service_main_photo/main_s_0WxyFqR.jpg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://perm.kvadroklub.ru/media/pic_folder/service_main_photo/main_s_0WxyFqR.jpg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://buygiroscooter.ru/wp-content/uploads/4/c/b/4cbe9271524e92de8f07033db43e8ec9.jpeg"
+                                                data-img="https://buygiroscooter.ru/wp-content/uploads/4/c/b/4cbe9271524e92de8f07033db43e8ec9.jpeg"
+                                                data-thumb="https://buygiroscooter.ru/wp-content/uploads/4/c/b/4cbe9271524e92de8f07033db43e8ec9.jpeg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://buygiroscooter.ru/wp-content/uploads/4/c/b/4cbe9271524e92de8f07033db43e8ec9.jpeg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://krasnoyarsk.bonodono.ru/upload/iblock/a18/5f2fdla057qdl7fm7bn0c7qaxd6epuuv.jpg"
+                                                data-img="https://krasnoyarsk.bonodono.ru/upload/iblock/a18/5f2fdla057qdl7fm7bn0c7qaxd6epuuv.jpg"
+                                                data-thumb="https://krasnoyarsk.bonodono.ru/upload/iblock/a18/5f2fdla057qdl7fm7bn0c7qaxd6epuuv.jpg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://krasnoyarsk.bonodono.ru/upload/iblock/a18/5f2fdla057qdl7fm7bn0c7qaxd6epuuv.jpg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://i9.photo.2gis.com/images/branch/9/1266637425595575_f62a.jpg"
+                                                data-img="https://i9.photo.2gis.com/images/branch/9/1266637425595575_f62a.jpg"
+                                                data-thumb="https://i9.photo.2gis.com/images/branch/9/1266637425595575_f62a.jpg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://i9.photo.2gis.com/images/branch/9/1266637425595575_f62a.jpg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://omsk.bonodono.ru/upload/iblock/c6c/c6cf06a33842b2a25881cda18fccebe6.jpg"
+                                                data-img="https://omsk.bonodono.ru/upload/iblock/c6c/c6cf06a33842b2a25881cda18fccebe6.jpg"
+                                                data-thumb="https://omsk.bonodono.ru/upload/iblock/c6c/c6cf06a33842b2a25881cda18fccebe6.jpg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://omsk.bonodono.ru/upload/iblock/c6c/c6cf06a33842b2a25881cda18fccebe6.jpg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="best-works__block-image">
+                                            <a 
+                                                href="https://static.tildacdn.com/tild3037-3461-4436-a262-643935363231/photo_2021-09-23_16-.jpg"
+                                                data-img="https://static.tildacdn.com/tild3037-3461-4436-a262-643935363231/photo_2021-09-23_16-.jpg"
+                                                data-thumb="https://static.tildacdn.com/tild3037-3461-4436-a262-643935363231/photo_2021-09-23_16-.jpg"
+                                                data-alt="Example"
+                                                data-height="2500"
+                                                data-width="1667"
+                                                data-modal-picture="link"
+                                            >
+                                                <img src="https://static.tildacdn.com/tild3037-3461-4436-a262-643935363231/photo_2021-09-23_16-.jpg" class="best-works__image" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination" data-slider-cards="pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="video section" data-video="main">
+    <div class="main-container max-width">
+        <div class="block-title">
+            <h2 class="title title--h2 title-reset">Видео с наших трасс</h2>
+            <div class="block-title__block-btns">
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-video="btn-prev">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                    </svg>
+                </button>
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-video="btn-next">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <span class="video__subtitle">Небольшая подборка того, как вас будет ждать у нас</span>
+        <div class="video__wrap-video">
+            <div class="swiper video__slider" data-video="slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <iframe src="https://www.youtube.com/embed/AYg45-ZpygA" title="Самый доступный полный привод! Квадроцикл Linhai Yamaha D400" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide">
+                        <iframe src="https://www.youtube.com/embed/3A6u5JWfr00" title="На что способны дешевые квадроциклы Tiger? Ураганим на все деньги!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                <section class="repair-cost repair-cost--theme--second section" data-slider-cards-mob="main">
+                    <div class="main-container max-width">
+                        <div class="block-title">
+                            <h2 class="title title--h2 title-reset">Корпоративные программы на квадроциклах</h2>
+                            <div class="block-title__block-btns">
+                                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-slider-cards-mob="btn-prev">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-slider-cards-mob="btn-next">
+                                    <svg class="arrow__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <span class="repair-cost__subtitle">
+                            Для корпоративных клиентов у нас есть специальные предложения. Перед проведением веселого корпоратива программа проговаривается, в нее вносятся
+                            корректировки, планируется музыкальное и техническое сопровождение. Хотите воплотить несколько сценариев за один день? Это возможно! Мы совместим отдых
+                            на природе с активными развлечениями, объединяющими команду и способствующими повышению корпоративного духа.
+                        </span>
+                        <div class="slider-cards-mob">
+                            <div class="swiper" data-slider-cards-mob="slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="service-card">
+                                            <div class="service-card__block-image">
+                                                <img src="https://kvadrotur24.ru/images/prokat-kvadrotsiklov/618999992.jpg" class="service-card__image" alt="">
+                                                <div class="label">
+                                                    <span class="label__text">Квадро-квест</span>
+                                                </div>
+                                            </div>
+                                            <div class="service-card__wrapper-info">
+                                                <span class="service-card__title">Игра на две команды. Скартой местности и заданиями</span>
+                                                <div class="service-card__block-price">
+                                                    <span class="service-card__sign-price">Стоимость:</span>
+                                                    <span class="service-card__price">от 35 000 ₽</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="service-card">
+                                            <div class="service-card__block-image">
+                                                <img src="https://sun9-17.userapi.com/impf/vp5lxiQ45EHrmWdG8opXlXHJA-mETib-hxR42g/KgSu-nrchRM.jpg?size=2560x1707&quality=96&sign=be9ae55ee6ed82c676d0db5dd8ffed02&c_uniq_tag=2TgOITmBfIOpPDuUift2zd7Vm-z3ymsDO2cBlN7svaw&type=album" class="service-card__image" alt="">
+                                                <div class="label">
+                                                    <span class="label__text">Гонки на квадроциклах</span>
+                                                </div>
+                                            </div>
+                                            <div class="service-card__wrapper-info">
+                                                <span class="service-card__title">На трассе с препядствиями и со скоростными участками</span>
+                                                <div class="service-card__block-price">
+                                                    <span class="service-card__sign-price">Стоимость:</span>
+                                                    <span class="service-card__price">от 40 000 ₽</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="service-card">
+                                            <div class="service-card__block-image">
+                                                <img src="https://buygiroscooter.ru/wp-content/uploads/2/a/8/2a84015da5f23cf7d957f993fc273787.jpeg" class="service-card__image" alt="">
+                                                <div class="label">
+                                                    <span class="label__text">Квадро-биатлон</span>
+                                                </div>
+                                            </div>
+                                            <div class="service-card__wrapper-info">
+                                                <span class="service-card__title">Трасса с эстакадами, стрелковыми рубежами, мостами</span>
+                                                <div class="service-card__block-price">
+                                                    <span class="service-card__sign-price">Стоимость:</span>
+                                                    <span class="service-card__price">от 50 000 ₽</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination" data-slider-cards-mob="pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="technic section" data-technic="main">
+    <div class="main-container max-width">
+        <div class="block-title">
+            <h2 class="title title--h2 title-reset">Наша техника</h2>
+            <div class="block-title__block-btns">
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-technic="btn-prev">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                    </svg>
+                </button>
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-technic="btn-next">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="technic__wrap-slider">
+            <div class="swiper technic__slider" data-technic="slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="equipment-card">
+    <div class="equipment-card__block-image">
+        <img src="https://bestsled.ru/wp-content/uploads/2021/08/outlander1.jpg" class="equipment-card__image" alt="">
+    </div>
+    <div class="equipment-card__block-info">
+        <span class="equipment-card__name">CF MOTO 625 X6</span>
+        <ul class="equipment-card__list list-reset">
+            <li class="equipment-card__li">Максимальная мощьность: 90 км/ч</li>
+            <li class="equipment-card__li">Мощьность: 635 см<sup>3</sup> 38 л.ч.</li>
+            <li class="equipment-card__li">Дорожный просвет: 275 мм</li>
+            <li class="equipment-card__li">Емкость топливного бака: 19 л</li>
+            <li class="equipment-card__li">Режим работы: 2WD/4WD</li>
+            <li class="equipment-card__li">Комплектация: зеркала заднего вида, спинка сиденья пассажира, передняя и задняя грузовые решетки, защита рук водителя.</li>
+            <li class="equipment-card__li">Наличие полного привода и блокировок позволит Вам уверенно двигаться по бездорожью</li>
+            <li class="equipment-card__li">Наличие вместительных грузовых платформ</li>
+        </ul>
+    </div>
+</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="equipment-card">
+    <div class="equipment-card__block-image">
+        <img src="https://bestsled.ru/wp-content/uploads/2021/08/outlander1.jpg" class="equipment-card__image" alt="">
+    </div>
+    <div class="equipment-card__block-info">
+        <span class="equipment-card__name">CF MOTO 625 X6</span>
+        <ul class="equipment-card__list list-reset">
+            <li class="equipment-card__li">Максимальная мощьность: 90 км/ч</li>
+            <li class="equipment-card__li">Мощьность: 635 см<sup>3</sup> 38 л.ч.</li>
+            <li class="equipment-card__li">Дорожный просвет: 275 мм</li>
+            <li class="equipment-card__li">Емкость топливного бака: 19 л</li>
+            <li class="equipment-card__li">Режим работы: 2WD/4WD</li>
+            <li class="equipment-card__li">Комплектация: зеркала заднего вида, спинка сиденья пассажира, передняя и задняя грузовые решетки, защита рук водителя.</li>
+            <li class="equipment-card__li">Наличие полного привода и блокировок позволит Вам уверенно двигаться по бездорожью</li>
+            <li class="equipment-card__li">Наличие вместительных грузовых платформ</li>
+        </ul>
+    </div>
+</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="equipment-card">
+    <div class="equipment-card__block-image">
+        <img src="https://bestsled.ru/wp-content/uploads/2021/08/outlander1.jpg" class="equipment-card__image" alt="">
+    </div>
+    <div class="equipment-card__block-info">
+        <span class="equipment-card__name">CF MOTO 625 X6</span>
+        <ul class="equipment-card__list list-reset">
+            <li class="equipment-card__li">Максимальная мощьность: 90 км/ч</li>
+            <li class="equipment-card__li">Мощьность: 635 см<sup>3</sup> 38 л.ч.</li>
+            <li class="equipment-card__li">Дорожный просвет: 275 мм</li>
+            <li class="equipment-card__li">Емкость топливного бака: 19 л</li>
+            <li class="equipment-card__li">Режим работы: 2WD/4WD</li>
+            <li class="equipment-card__li">Комплектация: зеркала заднего вида, спинка сиденья пассажира, передняя и задняя грузовые решетки, защита рук водителя.</li>
+            <li class="equipment-card__li">Наличие полного привода и блокировок позволит Вам уверенно двигаться по бездорожью</li>
+            <li class="equipment-card__li">Наличие вместительных грузовых платформ</li>
+        </ul>
+    </div>
+</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="equipment-card">
+    <div class="equipment-card__block-image">
+        <img src="https://bestsled.ru/wp-content/uploads/2021/08/outlander1.jpg" class="equipment-card__image" alt="">
+    </div>
+    <div class="equipment-card__block-info">
+        <span class="equipment-card__name">CF MOTO 625 X6</span>
+        <ul class="equipment-card__list list-reset">
+            <li class="equipment-card__li">Максимальная мощьность: 90 км/ч</li>
+            <li class="equipment-card__li">Мощьность: 635 см<sup>3</sup> 38 л.ч.</li>
+            <li class="equipment-card__li">Дорожный просвет: 275 мм</li>
+            <li class="equipment-card__li">Емкость топливного бака: 19 л</li>
+            <li class="equipment-card__li">Режим работы: 2WD/4WD</li>
+            <li class="equipment-card__li">Комплектация: зеркала заднего вида, спинка сиденья пассажира, передняя и задняя грузовые решетки, защита рук водителя.</li>
+            <li class="equipment-card__li">Наличие полного привода и блокировок позволит Вам уверенно двигаться по бездорожью</li>
+            <li class="equipment-card__li">Наличие вместительных грузовых платформ</li>
+        </ul>
+    </div>
+</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="equipment-card">
+    <div class="equipment-card__block-image">
+        <img src="https://bestsled.ru/wp-content/uploads/2021/08/outlander1.jpg" class="equipment-card__image" alt="">
+    </div>
+    <div class="equipment-card__block-info">
+        <span class="equipment-card__name">CF MOTO 625 X6</span>
+        <ul class="equipment-card__list list-reset">
+            <li class="equipment-card__li">Максимальная мощьность: 90 км/ч</li>
+            <li class="equipment-card__li">Мощьность: 635 см<sup>3</sup> 38 л.ч.</li>
+            <li class="equipment-card__li">Дорожный просвет: 275 мм</li>
+            <li class="equipment-card__li">Емкость топливного бака: 19 л</li>
+            <li class="equipment-card__li">Режим работы: 2WD/4WD</li>
+            <li class="equipment-card__li">Комплектация: зеркала заднего вида, спинка сиденья пассажира, передняя и задняя грузовые решетки, защита рук водителя.</li>
+            <li class="equipment-card__li">Наличие полного привода и блокировок позволит Вам уверенно двигаться по бездорожью</li>
+            <li class="equipment-card__li">Наличие вместительных грузовых платформ</li>
+        </ul>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                <section class="tours section section--theme--secondary">
+    <div class="main-container max-width">
+        <div class="tours__wrap-tours">
+            <div class="tours__tour">
+                <div class="tours__block-info">
+                    <span class="tours__tour-name">Однодневный тур на Киржач, 9 часов</span>
+                    <div class="tours__tour-block-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem delectus ut explicabo officiis praesentium, error aliquam vero temporibus nam nulla perspiciatis odio enim soluta distinctio provident aliquid. Vitae, ullam ad.
+                        </p>
+                        <ul>
+                            <li>Пункт 1</li>
+                            <li>Пункт 2</li>
+                            <li>Пункт 3</li>
+                        </ul>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam eveniet ratione aliquid rerum quibusdam debitis architecto, porro nulla nisi accusantium pariatur, quae labore nemo excepturi at earum, facere in soluta!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam eveniet ratione aliquid rerum quibusdam debitis architecto, porro nulla nisi accusantium pariatur, quae labore nemo excepturi at earum, facere in soluta!
+                        </p>
+                    </div>
+                </div>
+                <div class="tours__tour-block-image">
+                    <img src="https://www.cf-moto.eu/wp-content/uploads/2017/03/cfmoto_cforce550_009-scaled.jpg" class="tours__tour-image" alt="">
+                </div>
+            </div>
+            <div class="tours__tour">
+                <div class="tours__block-info">
+                    <span class="tours__tour-name">Маршрут "Большое экстрим-путешествие", сложность высокая, 2 часа</span>
+                    <div class="tours__tour-block-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem delectus ut explicabo officiis praesentium, error aliquam vero temporibus nam nulla perspiciatis odio enim soluta distinctio provident aliquid. Vitae, ullam ad.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam eveniet ratione aliquid rerum quibusdam debitis architecto, porro nulla nisi accusantium pariatur, quae labore nemo excepturi at earum, facere in soluta!
+                        </p>
+                        <ul>
+                            <li>Пункт 1</li>
+                            <li>Пункт 2</li>
+                            <li>Пункт 3</li>
+                        </ul>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam eveniet ratione aliquid rerum quibusdam debitis architecto, porro nulla nisi accusantium pariatur, quae labore nemo excepturi at earum, facere in soluta!
+                        </p>
+                    </div>
+                </div>
+                <div class="tours__tour-block-image">
+                    <img src="https://sport-marafon.ru/upload/blog/img/15/1510-005.jpg" class="tours__tour-image" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                <div class="s-price-table section">
+    <div class="main-container max-width">
+        <div class="block-title">
+            <h2 class="title title--h2 title-reset">Прокат, френда, катание и просто покататься на квадроциклах</h2>
+            <span class="s-price-table__subtitle">Стоимость указана за квадроцикл. не важно один человек или с пассажиром!</span>
+        </div>
+        <div class="s-price-table__wrap-table">
+            <div class="secondary-table">
+                <table>
+                    <tbody><tr>
+                        <td>Уровень</td>
+                        <td>Описание</td>
+                        <td>Время</td>
+                        <td>Стоимость</td>
+                    </tr>
+                    <tr>
+                        <td>Новичок</td>
+                        <td>Увлекательная поездка по лесам, пересеченной местности, броды</td>
+                        <td>2 часа</td>
+                        <td>3500 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Смешанная</td>
+                        <td>Самая интересная программа, включающая в себя элементы экстремального маршрута.</td>
+                        <td>2 часа</td>
+                        <td>4000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Сафари тур</td>
+                        <td>Маршрут проложен по живописным лесам, реки Ока, Лопасная, дремучий лес, сосновый бор</td>
+                        <td>3 часа</td>
+                        <td>5500 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Новичок</td>
+                        <td>Увлекательная поездка по лесам, пересеченной местности, броды</td>
+                        <td>2 часа</td>
+                        <td>3500 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Смешанная</td>
+                        <td>Самая интересная программа, включающая в себя элементы экстремального маршрута.</td>
+                        <td>2 часа</td>
+                        <td>4000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Сафари тур</td>
+                        <td>Маршрут проложен по живописным лесам, реки Ока, Лопасная, дремучий лес, сосновый бор</td>
+                        <td>3 часа</td>
+                        <td>5500 руб.</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div class="s-price-table__block-info">
+                <span class="s-price-table__info">При аренде от 4 квадрациклов.</span>
+                <span class="s-price-table__info">Есть возможность индивидуального тура плюс еще 1000 или 500 рублей за квадроцикл.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </main>
+            <footer class="footer">
+    <div class="footer__wrapper-info">
+        <div class="main-container max-width">
+            <div class="footer__wrapper-links">
+                <a href="#" class="logo" data-header="logo">
+                    <img src="./assets/images/logo-main-2.svg" class="logo__icon" alt="">
+                    <div class="logo__block-info">
+                        <span class="logo__sign">Copyright 2014 – 2022. «ООО Стройкомпания» — Ремонт и отделка квартир в «городе»</span>
+                    </div>
+                </a>
+                <div class="footer__block-btns">
+                    <button class="btn btn--size--lg btn--theme--primary">
+                        <svg class="btn__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#calculator-mini-light"/>
+                        </svg>
+                        <span class="btn__text">Калькулятор ремонта</span>
+                    </button>
+                    <button class="btn btn--size--lg btn--theme--primary">
+                        <svg class="btn__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#phone"/>
+                        </svg>
+                        <span class="btn__text">Обратный звонок</span>
+                    </button>
+                </div>
+                <div class="payment-options">
+                    <span class="payment-options__title">Принимаем к оплате:</span>
+                    <ul class="payment-options__list list-reset">
+                        <li class="payment-options__li">
+                            <img src="./assets/images/visa.png" class="payment-options__image" alt="">
+                        </li>
+                        <li class="payment-options__li">
+                            <img src="./assets/images/mastercard.png" class="payment-options__image" alt="">
+                        </li>
+                        <li class="payment-options__li">
+                            <img src="./assets/images/mir.png" class="payment-options__image" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper-contacts">
+                <div class="contact contact--theme--light">
+                    <div class="contact__block-icon">
+                        <svg class="contact__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#phone"/>
+                        </svg>
+                    </div>
+                    <div class="contact__block-info">
+                        <a href="#" class="contact__info text--large link-reset">+7 800 555-15-90</a>
+                        <span class="contact__sign">C 9:00 до 21:00 без выходных</span>
+                    </div>
+                </div>
+                <div class="contact contact--theme--light">
+                    <div class="contact__block-icon">
+                        <svg class="contact__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#map-point"/>
+                        </svg>
+                    </div>
+                    <div class="contact__block-info">
+                        <span class="contact__sign">106721, г.Москва, Пресненская набережная д. 6, стр. 2, м. Выставочная </span>
+                    </div>
+                </div>
+                <div class="contact contact--theme--light">
+                    <div class="contact__block-icon">
+                        <svg class="contact__icon">
+                            <use xlink:href="./assets/icons/sprite-svg.svg#text-files"/>
+                        </svg>
+                    </div>
+                    <div class="contact__block-info">
+                        <span class="contact__sign">
+                            <a href="#" class="contact__link link-reset">Скачать договор</a>
+                            <br><br>
+                            «ООО Стройкомпания» <br>
+                            ИНН: 9721084860 <br>
+                            Email: <a href="#" class="contact__link-contact link-reset">info@stroycompany.ru</a>
+                        </span>
+                        <div class="social-network social-network--theme--light">
+                            <ul class="social-network__list list-reset">
+                                <li class="social-network__li">
+                                    <a href="#" class="social-network__link link-resest">
+                                        <svg class="social-network__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#telegram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-network__li">
+                                    <a href="#" class="social-network__link link-resest">
+                                        <svg class="social-network__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#whatsApp"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-network__li">
+                                    <a href="#" class="social-network__link link-resest">
+                                        <svg class="social-network__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-network__li">
+                                    <a href="#" class="social-network__link link-resest">
+                                        <svg class="social-network__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#ringing-phone"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__wrapper-nav">
+                <div class="footer__block-nav">
+                    <span class="footer__nav-title">О компании</span>
+                    <ul class="footer__nav-list list-reset">
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Рассрочка</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Цены</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Акции и скидки</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Вакансии</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Карта сайта</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Политика конфиденциальности</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Пользовательское соглашение</a>
+                        </li>
+                    </ul>
+                    <div class="footer__nav-block-offer">
+                        <span class="footer__nav-title">Спецпредложение для ремонтных компаний</span>
+                        <a href="#" class="btn btn--size--md btn--theme--sevenfold">
+                            <span class="btn__text">Партнерам</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__block-nav">
+                    <span class="footer__nav-title">Услуги</span>
+                    <ul class="footer__nav-list list-reset">
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Дизайн-проект</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Чистовой ремонт</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Капитальный ремонт</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Ремонт однокомнатной квартиры</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Ремонт двухкомнатной квартиры</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Ремонт трехкомнатной квартиры</a>
+                        </li>
+                        <li class="footer__nav-li">
+                            <a href="#" class="footer__nav-link link-reset">Ремонт четырехкомнатной квартиры</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__wrapper-legal-info">
+        <div class="main-container max-width">
+            <span class="footer__legal-info">Вся предоставленная на сайте информация, носит информационный характер и ни при каких условиях не является публичной офертой.</span>
+        </div>
+    </div>
+</footer>
+            <div class="hystmodal modal m-contact-us" id="m-contact-us" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">
+                <svg class="modal__close-icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#menu-close"/>
+                </svg>
+            </button>
+            <span class="title title--h2 title-reset">Связаться с нами</span>
+            <form action="" class="modal__form">
+                <div class="modal__form-wrapper-fields">
+                    <input type="text" class="input" placeholder="Ваше имя">
+                    <input type="phone" class="input" placeholder="Телефон *" data-phone-mask required>
+                    <textarea class="textarea" placeholder="Сообщение"></textarea>
+                </div>
+                <button type="submit" class="btn btn--size--lg btn--theme--primary" data-hystmodal="#m-success">
+                    <span class="btn__text">Отправить</span>
+                </button>
+                <div class="privacy-policy">
+                    <div class="checkbox">
+                        <label data-role="" class="checkbox__label">
+                            <input type="checkbox" class="checkbox__input" name="" value="" checked="" required="">
+                            <span class="checkbox__text">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
+                            <span class="checkbox__decore"></span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="hystmodal modal m-success" id="m-success" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">
+                <svg class="modal__close-icon">
+                    <use xlink:href="./assets/icons/sprite-svg.svg#menu-close"/>
+                </svg>
+            </button>
+            <span class="title title--h2 title-reset">Заявка отправлена</span>
+            <span class="modal__subtitle-success">Мы скоро свяжется с вами!</span>
+            <button class="btn btn--size--lg btn--theme--primary" data-hystclose>
+                <span class="btn__text">Вернуться</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./assets/scripts/libs.js"></script>
+<script src="./assets/scripts/main.js"></script>
+        </div>
+    </body>
+</html>
