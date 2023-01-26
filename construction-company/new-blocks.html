@@ -329,132 +329,414 @@
 </div>
             <main class="page new-blocks-page" data-page="page">
 
-                <section class="atv-rental section">
+                <section class="atv-rental section" data-atv-rental="main">
     <div class="main-container max-width">
         <div class="block-title">
             <h2 class="title title--h2 title-reset">Прокат квадрациклов в москве</h2>
-            <span class="atv-rental__subtitle">Аренда квадроциклов в московской области</span>
+            <div class="block-title__block-btns">
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-atv-rental="btn-prev">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                    </svg>
+                </button>
+                <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-atv-rental="btn-next">
+                    <svg class="arrow__icon">
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                    </svg>
+                </button>
+            </div>
         </div>
+        <span class="atv-rental__subtitle">Аренда квадроциклов в московской области</span>
         <div class="atv-rental__wrap-cards">
-            <div class="project-card" data-project-card="main">
-                <div class="project-card__block-image" data-modal-picture="main">
-                    <a 
-                        href="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
-                        data-img="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
-                        data-thumb="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
-                        data-alt="Example"
-                        data-height="2500"
-                        data-width="1667"
-                        data-modal-picture="link"
-                    >
-                        <img src="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg" class="project-card__image" alt="">
-                    </a>
-                </div>
-                <div class="project-card__wrapper-info">
-                    <div class="project-card__block-info">
-                        <span class="project-card__name">Прокат квадроцикла на маршруте "Лайт"</span>
-                        <ul class="project-card__list list-reset">
-                            <li class="project-card__li">
-                                <span class="project-card__li-text">от 1 часа</span>
-                            </li>
-                            <li class="project-card__li">
-                                <span class="project-card__li-text">фотосъемка</span>
-                            </li>
-                            <li class="project-card__li">
-                                <span class="project-card__li-text">животные на пути</span>
-                            </li>
-                        </ul>
-                        <span class="project-card__title">Стоимость</span>
-                        <span class="project-card__price">от 2 500 ₽</span>
-                        <a href="#" class="project-card__link">Подробнее</a>
+            <div class="swiper atv-rental__slider" data-atv-rental="slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-card" data-project-card="main">
+                            <div class="project-card__block-image" data-modal-picture="main">
+                                <a 
+                                    href="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-img="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-thumb="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-alt="Example"
+                                    data-height="2500"
+                                    data-width="1667"
+                                    data-modal-picture="link"
+                                >
+                                    <img src="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg" class="project-card__image" alt="">
+                                </a>
+                            </div>
+                            <div class="project-card__wrapper-info">
+                                <div class="project-card__block-info">
+                                    <span class="project-card__name">Прокат квадроцикла на маршруте "Лайт"</span>
+                                    <ul class="project-card__list list-reset">
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">от 1 часа</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">фотосъемка</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">животные на пути</span>
+                                        </li>
+                                    </ul>
+                                    <span class="project-card__title">Стоимость</span>
+                                    <span class="project-card__price">от 2 500 ₽</span>
+                                    <span class="project-card__link" data-tooltip="main">
+                                        <span class="project-card__link-text">Подробнее</span>
+                                        <div class="tooltip" data-tooltip="tooltip">
+                                            <span type="button" class="tooltip__btn-close" data-tooltip="btn-close">
+                                                <svg class="tooltip__close-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#round-cross"></use>
+                                                </svg>
+                                            </span>
+                                            <div class="tooltip__content">
+                                                <span class="tooltip__title">Заголовок</span>
+                                                <span class="tooltip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor architecto blanditiis, natus nemo aspernatur et explicabo, ipsa voluptas, tenetur distinctio ullam? Fugiat voluptate dolores dolore dolorum, omnis consequatur libero nihil?</span>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                                <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                                    <span class="btn__text">Заказать</span>
+                                    <svg class="btn__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
-                        <span class="btn__text">Заказать</span>
-                        <svg class="btn__icon">
-                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="project-card" data-project-card="main">
-                <div class="project-card__block-image" data-modal-picture="main">
-                    <a 
-                        href="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
-                        data-img="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
-                        data-thumb="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
-                        data-alt="Example"
-                        data-height="2500"
-                        data-width="1667"
-                        data-modal-picture="link"
-                    >
-                        <img src="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg" class="project-card__image" alt="">
-                    </a>
-                </div>
-                <div class="project-card__wrapper-info">
-                    <div class="project-card__block-info">
-                        <span class="project-card__name">Прокат квадроцикла на маршруте "Смешанный"</span>
-                        <ul class="project-card__list list-reset">
-                            <li class="project-card__li">
-                                <span class="project-card__li-text">от 1 часа</span>
-                            </li>
-                            <li class="project-card__li">
-                                <span class="project-card__li-text">фотосъемка</span>
-                            </li>
-                            <li class="project-card__li">
-                                <span class="project-card__li-text">животные на пути</span>
-                            </li>
-                        </ul>
-                        <span class="project-card__title">Стоимость</span>
-                        <span class="project-card__price">от 3 000 ₽</span>
-                        <a href="#" class="project-card__link">Подробнее</a>
+                    <div class="swiper-slide">
+                        <div class="project-card" data-project-card="main">
+                            <div class="project-card__block-image" data-modal-picture="main">
+                                <a 
+                                    href="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-img="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-thumb="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-alt="Example"
+                                    data-height="2500"
+                                    data-width="1667"
+                                    data-modal-picture="link"
+                                >
+                                    <img src="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg" class="project-card__image" alt="">
+                                </a>
+                            </div>
+                            <div class="project-card__wrapper-info">
+                                <div class="project-card__block-info">
+                                    <span class="project-card__name">Прокат квадроцикла на маршруте "Лайт"</span>
+                                    <ul class="project-card__list list-reset">
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">от 1 часа</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">фотосъемка</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">животные на пути</span>
+                                        </li>
+                                    </ul>
+                                    <span class="project-card__title">Стоимость</span>
+                                    <span class="project-card__price">от 2 500 ₽</span>
+                                    <span class="project-card__link" data-tooltip="main">
+                                        <span class="project-card__link-text">Подробнее</span>
+                                        <div class="tooltip" data-tooltip="tooltip">
+                                            <span type="button" class="tooltip__btn-close" data-tooltip="btn-close">
+                                                <svg class="tooltip__close-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#round-cross"></use>
+                                                </svg>
+                                            </span>
+                                            <div class="tooltip__content">
+                                                <span class="tooltip__title">Заголовок</span>
+                                                <span class="tooltip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor architecto blanditiis, natus nemo aspernatur et explicabo, ipsa voluptas, tenetur distinctio ullam? Fugiat voluptate dolores dolore dolorum, omnis consequatur libero nihil?</span>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                                <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                                    <span class="btn__text">Заказать</span>
+                                    <svg class="btn__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
-                        <span class="btn__text">Заказать</span>
-                        <svg class="btn__icon">
-                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="project-card" data-project-card="main">
-                <div class="project-card__block-image" data-modal-picture="main">
-                    <a 
-                        href="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
-                        data-img="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
-                        data-thumb="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
-                        data-alt="Example"
-                        data-height="2500"
-                        data-width="1667"
-                        data-modal-picture="link"
-                    >
-                        <img src="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg" class="project-card__image" alt="">
-                    </a>
-                </div>
-                <div class="project-card__wrapper-info">
-                    <div class="project-card__block-info">
-                        <span class="project-card__name">Прокат квадроцикла на маршруте "Грязь"</span>
-                        <ul class="project-card__list list-reset">
-                            <li class="project-card__li">
-                                <span class="project-card__li-text">от 1 часа</span>
-                            </li>
-                            <li class="project-card__li">
-                                <span class="project-card__li-text">фотосъемка</span>
-                            </li>
-                            <li class="project-card__li">
-                                <span class="project-card__li-text">животные на пути</span>
-                            </li>
-                        </ul>
-                        <span class="project-card__title">Стоимость</span>
-                        <span class="project-card__price">от 6 000 ₽</span>
-                        <a href="#" class="project-card__link">Подробнее</a>
+                    <div class="swiper-slide">
+                        <div class="project-card" data-project-card="main">
+                            <div class="project-card__block-image" data-modal-picture="main">
+                                <a 
+                                    href="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-img="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-thumb="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-alt="Example"
+                                    data-height="2500"
+                                    data-width="1667"
+                                    data-modal-picture="link"
+                                >
+                                    <img src="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg" class="project-card__image" alt="">
+                                </a>
+                            </div>
+                            <div class="project-card__wrapper-info">
+                                <div class="project-card__block-info">
+                                    <span class="project-card__name">Прокат квадроцикла на маршруте "Лайт"</span>
+                                    <ul class="project-card__list list-reset">
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">от 1 часа</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">фотосъемка</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">животные на пути</span>
+                                        </li>
+                                    </ul>
+                                    <span class="project-card__title">Стоимость</span>
+                                    <span class="project-card__price">от 2 500 ₽</span>
+                                    <span class="project-card__link" data-tooltip="main">
+                                        <span class="project-card__link-text">Подробнее</span>
+                                        <div class="tooltip" data-tooltip="tooltip">
+                                            <span type="button" class="tooltip__btn-close" data-tooltip="btn-close">
+                                                <svg class="tooltip__close-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#round-cross"></use>
+                                                </svg>
+                                            </span>
+                                            <div class="tooltip__content">
+                                                <span class="tooltip__title">Заголовок</span>
+                                                <span class="tooltip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor architecto blanditiis, natus nemo aspernatur et explicabo, ipsa voluptas, tenetur distinctio ullam? Fugiat voluptate dolores dolore dolorum, omnis consequatur libero nihil?</span>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                                <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                                    <span class="btn__text">Заказать</span>
+                                    <svg class="btn__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
-                        <span class="btn__text">Заказать</span>
-                        <svg class="btn__icon">
-                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
-                        </svg>
-                    </a>
+                    <div class="swiper-slide">
+                        <div class="project-card" data-project-card="main">
+                            <div class="project-card__block-image" data-modal-picture="main">
+                                <a 
+                                    href="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-img="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-thumb="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-alt="Example"
+                                    data-height="2500"
+                                    data-width="1667"
+                                    data-modal-picture="link"
+                                >
+                                    <img src="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg" class="project-card__image" alt="">
+                                </a>
+                            </div>
+                            <div class="project-card__wrapper-info">
+                                <div class="project-card__block-info">
+                                    <span class="project-card__name">Прокат квадроцикла на маршруте "Лайт"</span>
+                                    <ul class="project-card__list list-reset">
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">от 1 часа</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">фотосъемка</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">животные на пути</span>
+                                        </li>
+                                    </ul>
+                                    <span class="project-card__title">Стоимость</span>
+                                    <span class="project-card__price">от 2 500 ₽</span>
+                                    <span class="project-card__link" data-tooltip="main">
+                                        <span class="project-card__link-text">Подробнее</span>
+                                        <div class="tooltip" data-tooltip="tooltip">
+                                            <span type="button" class="tooltip__btn-close" data-tooltip="btn-close">
+                                                <svg class="tooltip__close-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#round-cross"></use>
+                                                </svg>
+                                            </span>
+                                            <div class="tooltip__content">
+                                                <span class="tooltip__title">Заголовок</span>
+                                                <span class="tooltip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor architecto blanditiis, natus nemo aspernatur et explicabo, ipsa voluptas, tenetur distinctio ullam? Fugiat voluptate dolores dolore dolorum, omnis consequatur libero nihil?</span>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                                <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                                    <span class="btn__text">Заказать</span>
+                                    <svg class="btn__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-card" data-project-card="main">
+                            <div class="project-card__block-image" data-modal-picture="main">
+                                <a 
+                                    href="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-img="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-thumb="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-alt="Example"
+                                    data-height="2500"
+                                    data-width="1667"
+                                    data-modal-picture="link"
+                                >
+                                    <img src="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg" class="project-card__image" alt="">
+                                </a>
+                            </div>
+                            <div class="project-card__wrapper-info">
+                                <div class="project-card__block-info">
+                                    <span class="project-card__name">Прокат квадроцикла на маршруте "Лайт"</span>
+                                    <ul class="project-card__list list-reset">
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">от 1 часа</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">фотосъемка</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">животные на пути</span>
+                                        </li>
+                                    </ul>
+                                    <span class="project-card__title">Стоимость</span>
+                                    <span class="project-card__price">от 2 500 ₽</span>
+                                    <span class="project-card__link" data-tooltip="main">
+                                        <span class="project-card__link-text">Подробнее</span>
+                                        <div class="tooltip" data-tooltip="tooltip">
+                                            <span type="button" class="tooltip__btn-close" data-tooltip="btn-close">
+                                                <svg class="tooltip__close-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#round-cross"></use>
+                                                </svg>
+                                            </span>
+                                            <div class="tooltip__content">
+                                                <span class="tooltip__title">Заголовок</span>
+                                                <span class="tooltip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor architecto blanditiis, natus nemo aspernatur et explicabo, ipsa voluptas, tenetur distinctio ullam? Fugiat voluptate dolores dolore dolorum, omnis consequatur libero nihil?</span>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                                <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                                    <span class="btn__text">Заказать</span>
+                                    <svg class="btn__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-card" data-project-card="main">
+                            <div class="project-card__block-image" data-modal-picture="main">
+                                <a 
+                                    href="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-img="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-thumb="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-alt="Example"
+                                    data-height="2500"
+                                    data-width="1667"
+                                    data-modal-picture="link"
+                                >
+                                    <img src="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg" class="project-card__image" alt="">
+                                </a>
+                            </div>
+                            <div class="project-card__wrapper-info">
+                                <div class="project-card__block-info">
+                                    <span class="project-card__name">Прокат квадроцикла на маршруте "Лайт"</span>
+                                    <ul class="project-card__list list-reset">
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">от 1 часа</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">фотосъемка</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">животные на пути</span>
+                                        </li>
+                                    </ul>
+                                    <span class="project-card__title">Стоимость</span>
+                                    <span class="project-card__price">от 2 500 ₽</span>
+                                    <span class="project-card__link" data-tooltip="main">
+                                        <span class="project-card__link-text">Подробнее</span>
+                                        <div class="tooltip" data-tooltip="tooltip">
+                                            <span type="button" class="tooltip__btn-close" data-tooltip="btn-close">
+                                                <svg class="tooltip__close-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#round-cross"></use>
+                                                </svg>
+                                            </span>
+                                            <div class="tooltip__content">
+                                                <span class="tooltip__title">Заголовок</span>
+                                                <span class="tooltip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor architecto blanditiis, natus nemo aspernatur et explicabo, ipsa voluptas, tenetur distinctio ullam? Fugiat voluptate dolores dolore dolorum, omnis consequatur libero nihil?</span>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                                <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                                    <span class="btn__text">Заказать</span>
+                                    <svg class="btn__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-card" data-project-card="main">
+                            <div class="project-card__block-image" data-modal-picture="main">
+                                <a 
+                                    href="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-img="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-thumb="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg"
+                                    data-alt="Example"
+                                    data-height="2500"
+                                    data-width="1667"
+                                    data-modal-picture="link"
+                                >
+                                    <img src="https://static.tildacdn.com/tild6565-6532-4230-a139-613035313863/two-atv-riders-speed.jpg" class="project-card__image" alt="">
+                                </a>
+                            </div>
+                            <div class="project-card__wrapper-info">
+                                <div class="project-card__block-info">
+                                    <span class="project-card__name">Прокат квадроцикла на маршруте "Лайт"</span>
+                                    <ul class="project-card__list list-reset">
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">от 1 часа</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">фотосъемка</span>
+                                        </li>
+                                        <li class="project-card__li">
+                                            <span class="project-card__li-text">животные на пути</span>
+                                        </li>
+                                    </ul>
+                                    <span class="project-card__title">Стоимость</span>
+                                    <span class="project-card__price">от 2 500 ₽</span>
+                                    <span class="project-card__link" data-tooltip="main">
+                                        <span class="project-card__link-text">Подробнее</span>
+                                        <div class="tooltip" data-tooltip="tooltip">
+                                            <span type="button" class="tooltip__btn-close" data-tooltip="btn-close">
+                                                <svg class="tooltip__close-icon">
+                                                    <use xlink:href="./assets/icons/sprite-svg.svg#round-cross"></use>
+                                                </svg>
+                                            </span>
+                                            <div class="tooltip__content">
+                                                <span class="tooltip__title">Заголовок</span>
+                                                <span class="tooltip__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor architecto blanditiis, natus nemo aspernatur et explicabo, ipsa voluptas, tenetur distinctio ullam? Fugiat voluptate dolores dolore dolorum, omnis consequatur libero nihil?</span>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                                <a href="#" class="btn btn--size--lg btn--theme--primary btn--mode--indent">
+                                    <span class="btn__text">Заказать</span>
+                                    <svg class="btn__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-pagination" data-atv-rental="pagination"></div>
             </div>
         </div>
     </div>
