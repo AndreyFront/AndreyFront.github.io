@@ -31,11 +31,7 @@
     .feedback {
         &__wrapper-contacts {
             grid-template-columns: 1fr;
-            justify-content: start;
-        }
-
-        &__block-contact {
-            justify-content: start;
+            grid-row-gap: 30px;
         }
     }
 

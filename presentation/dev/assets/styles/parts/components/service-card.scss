@@ -14,8 +14,13 @@
         transform: scale(1.05)
     }
 
+    &:hover &__block-icon {
+        transform: rotate(90deg);
+    }
+
     &__block-icon {
         margin: 0 auto;
+        transition: transform 0.5s;
     }
 
     &__icon {

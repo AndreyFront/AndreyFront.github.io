@@ -5,12 +5,13 @@
 
     &__developer {
         font-weight: 600;
+        text-align: center;
     }
 
     .main-container {
         display: grid;
         grid-template-columns: repeat(2, max-content);
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
 }
