@@ -2,15 +2,15 @@
     display: grid;
     grid-row-gap: 30px;
     justify-content: center;
-    align-content: start;
     padding: 60px 70px;
     border: 4px solid;
     border-color: $color-2;
     border-radius: 9px;
-    transition: border-color $transition-time, transform $transition-time;
+    transition: border-color $transition-time, transform $transition-time, background-color $transition-time;
 
     &:hover {
         border-color: rgba(255, 166, 136, 0.1);
+        background-color: rgba(255, 255, 255, 0.1);
         transform: scale(1.05)
     }
 
@@ -47,5 +47,9 @@
             font-weight: 600;
             color: $color-2;
         }
+    }
+
+    .btn {
+        justify-self: center;
     }
 }
