@@ -1014,12 +1014,12 @@
             <div class="block-title__block-btns">
                 <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-video="btn-prev">
                     <svg class="arrow__icon">
-                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left"/>
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-left" />
                     </svg>
                 </button>
                 <button type="button" class="arrow arrow--size--lg arrow--theme--primary" data-video="btn-next">
                     <svg class="arrow__icon">
-                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right"/>
+                        <use xlink:href="./assets/icons/sprite-svg.svg#chevron-right" />
                     </svg>
                 </button>
             </div>
@@ -1029,12 +1029,21 @@
             <div class="swiper video__slider" data-video="slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <iframe src="https://www.youtube.com/embed/AYg45-ZpygA" title="Самый доступный полный привод! Квадроцикл Linhai Yamaha D400" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <a data-fancybox class="video__link" href="https://www.youtube.com/embed/AYg45-ZpygA">
+                            <img src="https://i.ytimg.com/vi_webp/AYg45-ZpygA/maxresdefault.webp" class="video__preview"
+                                alt="">
+                            <img src="./assets/images/play.svg" class="video__icon-play" alt="">
+                        </a>
                     </div>
                     <div class="swiper-slide">
-                        <iframe src="https://www.youtube.com/embed/3A6u5JWfr00" title="На что способны дешевые квадроциклы Tiger? Ураганим на все деньги!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <a data-fancybox class="video__link" href="https://www.youtube.com/embed/AYg45-ZpygA">
+                            <img src="https://i.ytimg.com/vi_webp/AYg45-ZpygA/maxresdefault.webp" class="video__preview"
+                                alt="">
+                            <img src="./assets/images/play.svg" class="video__icon-play" alt="">
+                        </a>
                     </div>
                 </div>
+                <div class="swiper-pagination" data-video="pagination"></div>
             </div>
         </div>
     </div>
