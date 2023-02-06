@@ -4,10 +4,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 80px;
-
-        .service-card:nth-child(2) {
-            transform: scale(1.12);
-        }
     }
 
     .main-container {

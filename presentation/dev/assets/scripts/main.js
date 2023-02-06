@@ -2,21 +2,21 @@ window.onload = () => {
     function page() {
         const main = document.querySelector('[data-page="main"]')
         const header = document.querySelector('[data-header="main"]')
-    
-        if (!main && !header ) return
-    
+
+        if (!main && !header) return
+
         main.style.paddingTop = `${header.offsetHeight}px`
     }
 
-    function fixedHeader() {     
+    function fixedHeader() {
         const header = document.querySelector('[data-header="main"]')
-    
+
         if (!header) return
-    
+
         if (window.matchMedia("(min-width: 992px)").matches) {
             window.addEventListener('scroll', (event) => {
                 const scrolled = window.pageYOffset ? window.pageYOffset : document.body.scrollTop;
-    
+
                 if (scrolled >= 20) {
                     header.classList.add('scroll-active')
                 } else {
@@ -28,7 +28,7 @@ window.onload = () => {
 
     function smoothScrolling() {
         const anchors = document.querySelectorAll('[data-smooth-scrolling*="#"]')
-    
+
         if (!anchors.length) return
 
         document.addEventListener('click', (event) => {
@@ -39,7 +39,7 @@ window.onload = () => {
 
                 const anchor = el.closest('[data-smooth-scrolling*="#"]')
                 const blockID = anchor.getAttribute('data-smooth-scrolling').substr(1)
-                
+
                 document.querySelector(`[data-smooth-scrolling="${blockID}"]`).scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
@@ -58,7 +58,7 @@ window.onload = () => {
             const blockNav = header.querySelector('[data-header="nav"]')
             const navListItem = blockNav.querySelectorAll('li')
             const navLink = blockNav.querySelectorAll('a')
-    
+
             const removeActive = () => {
                 navLink.forEach((el) => {
                     if (el.classList.contains('active')) {
@@ -66,35 +66,40 @@ window.onload = () => {
                     }
                 })
             }
-    
-            let heightValue,
-                replacementBlockNav
-    
+
+            let replacementBlockNav
+
+
             if (window.matchMedia("(max-width: 992px)").matches) {
-                heightValue = 400
                 replacementBlockNav = header
             } else {
-                heightValue = 700
                 replacementBlockNav = blockNav
             }
-    
-            if (window.pageYOffset <= heightValue) {
-                removeActive()
-                navLink[0].classList.add('active')
-            } else {
-                navLink[0].classList.remove('active')
-            }
-    
+
             document.querySelectorAll('section[data-smooth-scrolling]').forEach((el, index) => {
                 if (el.offsetTop - replacementBlockNav.clientHeight <= scrollDistance) {
                     removeActive()
-                    let localIndex = index
-                    navListItem[localIndex + 1].querySelector('a').classList.add('active')
+                    // let localIndex = index
+                    const dataValue = el.getAttribute('data-smooth-scrolling')
+                    navListItem.forEach(elNavListItem => {
+                        const anchor = elNavListItem.querySelector('[data-smooth-scrolling*="#"]')
+                        const blockID = anchor.getAttribute('data-smooth-scrolling').substr(1)
+                        if (blockID === dataValue) {
+                            elNavListItem.querySelector('a').classList.add('active')
+                        }
+                    })
                 }
 
                 if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
                     removeActive()
-                    navListItem[navListItem.length - 1].querySelector('a').classList.add('active')
+                    const dataValue = el.getAttribute('data-smooth-scrolling')
+                    navListItem.forEach(elNavListItem => {
+                        const anchor = elNavListItem.querySelector('[data-smooth-scrolling*="#"]')
+                        const blockID = anchor.getAttribute('data-smooth-scrolling').substr(1)
+                        if (blockID === dataValue) {
+                            elNavListItem.querySelector('a').classList.add('active')
+                        }
+                    })
                 }
             })
         })
@@ -102,12 +107,12 @@ window.onload = () => {
 
     function menu() {
         const header = document.querySelector('[data-header="main"]')
-    
+
         if (!header) return
-    
+
         if (window.matchMedia("(max-width: 992px)").matches) {
             const btnMenu = header.querySelector('[data-header="btn-menu"]')
-    
+
             btnMenu.addEventListener('click', () => {
                 header.classList.toggle('active-menu')
             })
@@ -136,8 +141,8 @@ window.onload = () => {
         const swiper = new Swiper(slider, {
             centeredSlides: true,
             autoplay: {
-              delay: 5000,
-              disableOnInteraction: true,
+                delay: 5000,
+                disableOnInteraction: true,
             },
             effect: "fade",
             navigation: {
@@ -149,9 +154,9 @@ window.onload = () => {
 
     function input() {
         const inputs = document.querySelectorAll('[data-input="block-input"]')
-    
+
         if (!inputs.length) return
-    
+
         const removeClass = () => {
             inputs.forEach(elInput => {
                 const input = elInput.querySelector('[data-input="input"]')
@@ -166,28 +171,28 @@ window.onload = () => {
                 }
             })
         }
-    
+
         const logic = (event) => {
             if (event.target.closest('[data-input="block-input"]')) {
                 const blockInput = event.target.closest('[data-input="block-input"]')
                 const input = blockInput.querySelector('[data-input="input"]')
                 const btnClearing = blockInput.querySelector('[data-input="btn-clearing"]')
-    
+
                 removeClass()
-    
+
                 blockInput.classList.add('input--focus')
                 blockInput.classList.add('input--viewed')
-    
+
                 input.addEventListener('input', (event) => {
                     const value = event.target.value
-    
+
                     if (value) {
                         btnClearing.classList.add('active')
                     } else {
                         btnClearing.classList.remove('active')
                     }
                 })
-    
+
                 if (btnClearing.classList.contains('active')) {
                     btnClearing.addEventListener('click', () => {
                         input.value = ''
@@ -199,43 +204,43 @@ window.onload = () => {
                 removeClass()
             }
         }
-    
+
         inputs.forEach(elInput => {
             const input = elInput.querySelector('[data-input="input"]')
             if (input.value) {
                 const btnClearing = elInput.querySelector('[data-input="btn-clearing"]')
-    
+
                 elInput.classList.add('input--focus')
                 btnClearing.classList.add('active')
             }
         })
-    
+
         document.addEventListener('focusin', (event) => logic(event))
-    
+
         document.addEventListener('pointerup', (event) => logic(event))
     }
-    
+
     function textarea() {
         const textareas = document.querySelectorAll('[data-textarea="block-textarea"]')
-    
+
         if (!textareas.length) return
-    
+
         const removeClass = () => {
             textareas.forEach(elTextarea => {
                 const textarea = elTextarea.querySelector('[data-textarea="textarea"]')
                 elTextarea.classList.remove('textarea--viewed')
                 if (!textarea.value) {
                     elTextarea.classList.remove('textarea--focus')
-                } 
+                }
             })
         }
-    
+
         document.addEventListener('click', (event) => {
             if (event.target.closest('[data-textarea="block-textarea"]')) {
                 const blockTextarea = event.target.closest('[data-textarea="block-textarea"]')
-    
+
                 removeClass()
-    
+
                 blockTextarea.classList.add('textarea--focus')
                 blockTextarea.classList.add('textarea--viewed')
             } else {
