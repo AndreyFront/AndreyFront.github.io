@@ -1,0 +1,62 @@
+.footer {
+    flex: 0 0 auto;
+    padding: 50px 0;
+    background-color: $color-3;
+
+    &__wrap-logo {
+        display: grid;
+        grid-row-gap: 40px;
+    }
+
+    &__contacts {
+        display: grid;
+        grid-row-gap: 20px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: $color-5;
+        font-weight: 600;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-2;
+        transition: color $transition-time;
+
+        &:hover {
+            color: $color-6;
+        }
+    }
+
+    &__wrap-nav {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        grid-column-gap: 40px;
+        justify-content: space-between;
+    }
+
+    &__nav {}
+
+    &__nav-list {
+        display: grid;
+        grid-row-gap: 10px;
+        margin-top: 20px;
+    }
+
+    &__nav-li {}
+
+    .logo {
+
+        &__image {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: max-content auto;
+        grid-column-gap: 100px;
+    }
+}

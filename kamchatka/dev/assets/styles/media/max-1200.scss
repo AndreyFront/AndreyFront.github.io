@@ -1,0 +1,15 @@
+@media screen and (max-width: 1200px) {
+
+    .tours {
+        &__wrap-cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .presentation {
+        &__wrap-content {
+            grid-template-columns: minmax(200px, 600px);
+            grid-row-gap: 60px;
+        }
+    }
+}

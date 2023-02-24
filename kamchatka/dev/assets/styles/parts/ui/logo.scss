@@ -1,0 +1,15 @@
+.logo {
+    display: grid;
+    transition: opacity $transition-time;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &__image {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        object-position: left center;
+    }
+}

@@ -1,0 +1,40 @@
+.tour-desc {
+
+    &__wrap-content {}
+
+    &__block-image {
+        height: 400px;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__block-text {
+        display: grid;
+        grid-row-gap: 15px;
+        margin-top: 30px;
+
+        p,
+        ul li {
+            @include adaptiv-font(18, 16);
+            line-height: 1.5em;
+        }
+
+        p,
+        ul {
+            margin: 0;
+        }
+
+        ul {
+            display: grid;
+            grid-row-gap: 5px;
+            padding-left: 20px;
+        }
+    }
+}
