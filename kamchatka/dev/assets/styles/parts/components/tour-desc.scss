@@ -16,25 +16,6 @@
     }
 
     &__block-text {
-        display: grid;
-        grid-row-gap: 15px;
         margin-top: 30px;
-
-        p,
-        ul li {
-            @include adaptiv-font(18, 16);
-            line-height: 1.5em;
-        }
-
-        p,
-        ul {
-            margin: 0;
-        }
-
-        ul {
-            display: grid;
-            grid-row-gap: 5px;
-            padding-left: 20px;
-        }
     }
 }

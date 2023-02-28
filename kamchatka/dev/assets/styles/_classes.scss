@@ -27,6 +27,42 @@
     .title {
         margin-bottom: 40px;
     }
+
+    &__head {
+        display: grid;
+        grid-template-columns: auto max-content;
+        align-items: center;
+        justify-content: space-between;
+        grid-column-gap: 20px;
+        margin-bottom: 40px;
+
+        .title {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.text {
+    display: grid;
+    align-content: start;
+    grid-row-gap: 15px;
+
+    p,
+    ul li {
+        @include adaptiv-font(18, 16);
+        line-height: 1.5em;
+    }
+
+    p,
+    ul {
+        margin: 0;
+    }
+
+    ul {
+        display: grid;
+        grid-row-gap: 5px;
+        padding-left: 20px;
+    }
 }
 
 .scroll-lock {

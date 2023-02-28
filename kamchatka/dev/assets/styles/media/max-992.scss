@@ -9,6 +9,14 @@
         .title {
             margin-bottom: 20px;
         }
+
+        &__head {
+            margin-bottom: 20px;
+
+            .title {
+                margin-bottom: 0;
+            }
+        }
     }
 
     .header {
@@ -140,5 +148,13 @@
 
     .pictures {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .program {
+
+        &__card-wrap-info {
+            grid-template-columns: 1fr;
+            grid-row-gap: 15px;
+        }
     }
 }

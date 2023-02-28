@@ -82,6 +82,28 @@ function modalPicture() {
     })
 }
 
+function program() {
+    const mains = document.querySelectorAll('[data-program="main"]')
+
+    if (!mains.length) return
+
+    mains.forEach(main => {
+        const slider = main.querySelector('[data-program="slider"]')
+        const btnPrev = main.querySelector('[data-program="btn-prev"]')
+        const btnNext = main.querySelector('[data-program="btn-next"]')
+
+        const swiper = new Swiper(slider, {
+            spaceBetween: 20,
+            autoHeight: true,
+            navigation: {
+              nextEl: btnNext,
+              prevEl: btnPrev,
+            },
+        });
+    })
+}
+
 header()
 presentation()
 modalPicture()
+program()

@@ -25,8 +25,11 @@
 
         &__block-text {
             margin-top: 15px;
-            grid-row-gap: 10px;
         }
+    }
+
+    .text {
+        grid-row-gap: 10px;
     }
 
     .sights {
@@ -38,6 +41,34 @@
     .pictures {
         &__link {
             height: 158px;
+        }
+    }
+
+    .program {
+        &__card-wrap-info {
+            margin-top: 20px;
+        }
+
+        &__card-block-image {
+            height: 278px;
+        }
+    }
+
+    .section {
+        &__head {
+            .box-arrows {
+                grid-column-gap: 12px;
+            }
+            
+            .arrow {
+                width: 37px;
+                height: 37px;
+
+                &__icon {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
         }
     }
 }

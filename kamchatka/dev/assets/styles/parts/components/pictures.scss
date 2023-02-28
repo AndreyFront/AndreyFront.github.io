@@ -1,6 +1,7 @@
 .pictures {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    background-color: $color-3;
 
     &__link {
         display: grid;
