@@ -36,5 +36,52 @@ function presentation() {
     })
 }
 
+function modalPicture() {
+
+    const blockPictures = document.querySelectorAll('[data-modal-picture="main"]')
+
+    if (!blockPictures.length) return
+
+    let bp = BiggerPicture({
+        target: document.body,
+    })
+
+    const openGallery = (event, pictures) => {
+        event.preventDefault()
+        bp.open({
+            items: pictures,
+            el: event.currentTarget,
+        })
+    }
+
+    blockPictures.forEach(blockPicture => {
+        const pictures = blockPicture.querySelectorAll('a[data-modal-picture="link"]')
+
+        if (pictures.length) {
+
+            pictures.forEach(picture => {
+                const image = picture.querySelector('img')
+                const imageSource = image.getAttribute('src')
+                const img = new Image()
+
+                img.onload = function () {
+                    const width = this.width
+                    const hight = this.height
+
+                    picture.setAttribute('data-height', hight * 4)
+                    picture.setAttribute('data-width', width * 4)
+                }
+
+                img.src = imageSource;
+
+                picture.addEventListener("click", (event) => {
+                    openGallery(event, pictures)
+                })
+            })
+        }
+    })
+}
+
 header()
 presentation()
+modalPicture()

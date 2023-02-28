@@ -137,4 +137,8 @@
             grid-row-gap: 15px;
         }
     }
+
+    .pictures {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

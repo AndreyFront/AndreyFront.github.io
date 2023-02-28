@@ -36,7 +36,7 @@
 
     &__wrap-content {
         display: grid;
-        grid-template-columns: 610px 490px;
+        grid-template-columns: 610px 504px;
         grid-column-gap: 40px;
         align-items: end;
         justify-content: space-between;
@@ -76,6 +76,7 @@
     }
 
     &__text-conditions {
+        font-weight: 600;
         @include adaptiv-font(30, 20);
     }
 

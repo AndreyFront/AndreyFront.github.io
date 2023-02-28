@@ -12,4 +12,8 @@
             grid-row-gap: 60px;
         }
     }
+
+    .pictures {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

@@ -34,4 +34,10 @@
             grid-template-columns: 1fr;
         }
     }
+
+    .pictures {
+        &__link {
+            height: 158px;
+        }
+    }
 }
