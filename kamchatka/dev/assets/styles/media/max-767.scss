@@ -3,6 +3,13 @@
         &__wrap-cards {
             grid-template-columns: 1fr;
         }
+
+        .section {
+            &__head {
+                grid-template-columns: 1fr;
+                grid-row-gap: 20px;
+            }
+        }
     }
 
     .tour-card {
@@ -14,6 +21,15 @@
     .pictures {
         &__link {
             height: 240px;
+        }
+    }
+
+    .block-sorting {
+        .sorting {
+            &__block-body {
+                right: auto;
+                left: 0;
+            }
         }
     }
 }

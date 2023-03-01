@@ -1,0 +1,49 @@
+.feedback-form {
+
+    &__head {}
+
+    &__subtitle {
+        @include adaptiv-font(24, 18);
+        color: $color-2;
+    }
+
+    &__form {
+        display: grid;
+        grid-row-gap: 15px;
+        max-width: 500px;
+
+        .btn {
+            width: 100%;
+        }
+    }
+
+    &__privacy-policy,
+    &__privacy-policy a {
+        color: $color-2;
+        font-size: 14px;
+    }
+
+    &__privacy-policy {
+
+        a {
+            border-bottom: 1px solid;
+            border-bottom-color: $color-2;
+            transition: border-bottom-color $transition-time;
+
+            &:hover {
+                border-bottom-color: transparent;
+            }
+        }
+    }
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: auto max-content;
+        grid-column-gap: 40px;
+        justify-content: space-between;
+    }
+}

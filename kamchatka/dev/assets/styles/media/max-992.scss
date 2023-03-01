@@ -176,4 +176,11 @@
             grid-row-gap: 20px;
         }
     }
+
+    .feedback-form {
+        .main-container {
+            grid-template-columns: 1fr;
+            grid-row-gap: 40px;
+        }
+    }
 }

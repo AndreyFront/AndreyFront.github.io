@@ -86,4 +86,32 @@
             grid-row-gap: 10px;
         }
     }
+
+    .faq {
+
+        &__block {
+
+            &:not(:first-child) {
+                padding: 15px 0;
+            }
+    
+            &:first-child {
+                padding: 0 0 15px 0;
+            }
+        }
+
+        &__block-body {
+            padding-top: 15px;
+        }
+
+        &__block-icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .block-sorting {
+        grid-auto-flow: row;
+        grid-row-gap: 10px;
+    }
 }

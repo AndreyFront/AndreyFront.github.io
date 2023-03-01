@@ -13,6 +13,29 @@
                     <!-- @include('./include/components/name.html') -->
                     @include('./include/components/presentation.html')
                     @include('./include/components/tours.html')
+                    <section class="feedback-form section section--theme--primary" data-smooth-scrolling="feedback-form">
+                        <div class="main-container max-width">
+                            <div class="feedback-form__head">
+                                <h2 class="title title--h2 title-reset">Оставьте контакты и мы свяжемся с вами</h2>
+                                <!-- <span class="feedback-form__subtitle">Камчатка: три вулкана и океан 78 000 ₽</span> -->
+                            </div>
+                            <form action="" class="feedback-form__form">
+                                <div class="input">
+                                    <input type="text" class="input__field" placeholder="Ваше имя *" required>
+                                </div>
+                                <div class="input">
+                                    <input type="email" class="input__field" placeholder="Ваш email *" required>
+                                </div>
+                                <div class="input">
+                                    <input type="phone" class="input__field" placeholder="Ваш телефон *" data-phone-mask required>
+                                </div>
+                                <button type="submit" class="btn btn--size--bg btn--theme--secondary">
+                                    <span class="btn__text">Отправить</span>
+                                </button>
+                                <span class="feedback-form__privacy-policy">Нажимая кнопку, вы соглашаетесь с <a href="#" class="link-reset">Политикой конфиденциальности</a></span>
+                            </form>
+                        </div>
+                    </section>
                 </div>
             </main>
             @include('./include/layouts/footer.html')

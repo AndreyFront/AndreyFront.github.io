@@ -1,3 +1,57 @@
+function smoothView(btn, el, startHeight = 0) {
+
+    if (!btn && !el) return
+
+    const add = () => {
+        btn.classList.add('not-active')
+        el.classList.add('not-active')
+    }
+
+    const remove = () => {
+        btn.classList.remove('not-active')
+        el.classList.remove('not-active')
+    }
+
+    let heightEl = el.offsetHeight
+    add()
+    el.style.height = `${startHeight}px`
+
+    if (startHeight > 0) {
+        if (heightEl < startHeight) {
+            remove()
+            el.style.height = `${heightEl}px`
+        }
+    }
+
+    const update = () => {
+        el.style.height = 'auto'
+        setTimeout(() => {
+            heightEl = el.offsetHeight
+            el.style.height = `${heightEl}px`
+        }, 100)
+    }
+
+    btn.addEventListener('click', () => {
+        if (el.classList.contains('not-active')) {
+            remove()
+            el.style.height = `${heightEl}px`
+        } else {
+            add()
+            el.style.height = `${startHeight}px`
+        }
+    })
+
+    let observer = new MutationObserver(mutationRecords => {
+        update()
+    })
+
+    observer.observe(el, {
+        childList: true,
+        subtree: true,
+        characterDataOldValue: true
+    })
+}
+
 function header() {
     const header = document.querySelector('[data-header="main"]')
 
@@ -115,8 +169,94 @@ function scrollParallax() {
     })
 }
 
+function faq() {
+    const mains = document.querySelectorAll('[data-faq="main"]')
+
+    if (!mains.length) return
+
+    mains.forEach(main => {
+        const blocks = main.querySelectorAll('[data-faq="block"]')
+
+        blocks.forEach(block => {
+            const head = block.querySelector('[data-faq="head"]')
+            const body = block.querySelector('[data-faq="body"]')
+
+            smoothView(head, body)
+        })
+    })
+}
+
+function smoothScrolling() {
+    const anchors = document.querySelectorAll('[data-smooth-scrolling*="#"]')
+
+    if (!anchors.length) return
+
+    document.addEventListener('click', (event) => {
+        const el = event.target
+
+        if (el.closest('[data-smooth-scrolling*="#"]')) {
+            event.preventDefault()
+            const anchor = el.closest('[data-smooth-scrolling*="#"]')
+            
+            const blockID = anchor.getAttribute('data-smooth-scrolling').substr(1)
+            
+            document.querySelector(`[data-smooth-scrolling="${blockID}"]`).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        }
+    })
+}
+
+function phoneMask() {
+    const phoneMasks = document.querySelectorAll('[data-phone-mask]')
+
+    if (!phoneMasks.length) return
+
+    phoneMasks.forEach(phoneMask => {
+        IMask(phoneMask, {
+            mask: '+{7}(000)000-00-00'
+        }
+        )
+    })
+}
+
+function sorting() {
+    const mains = document.querySelectorAll('[data-sorting="main"]')
+
+    if (!mains.length) return
+
+    document.addEventListener('click', (event) => {
+        const el = event.target
+        if (el.closest('[data-sorting="main"]')) {
+            const sorting = el.closest('[data-sorting="main"]')
+
+            mains.forEach(main => {
+                if (main != sorting) {
+                    main.classList.remove('active')
+                }
+            })
+
+            if (el.closest('[data-sorting="block-head"]')) {
+                sorting.classList.toggle('active')
+            }
+
+            if (el.closest('.radio')) {
+                sorting.classList.remove('active')
+            }
+
+        } else {
+            mains.forEach(main => main.classList.remove('active'))
+        }
+    })
+}
+
 header()
 presentation()
 modalPicture()
 program()
 scrollParallax()
+faq()
+phoneMask()
+smoothScrolling()
+sorting()

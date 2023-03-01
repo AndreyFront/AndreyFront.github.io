@@ -13,7 +13,7 @@
         <div class="wrapper-page">
             <header class="header" data-header="main">
     <a href="##" class="logo">
-        <img src="./assets/images/logo.svg" class="logo__image" alt="">
+        <img src="./assets/images/logo-2.jpg" class="logo__image" alt="">
     </a>
     <div class="header__burger" data-header="btn-menu">
         <span></span>
@@ -65,7 +65,7 @@
                                 <div class="presentation__block-info">
                                     <h1 class="title title--h1 title-reset">Камчатка: три вулкана и океан</h1>
                                     <span class="presentation__desc">Программа по чек-листу « Что нужно сделать на Камчатке». Возраст 12+</span>
-                                    <button type="button" class="btn btn--size--bg btn--theme--secondary presentation__btn">
+                                    <button type="button" class="btn btn--size--bg btn--theme--secondary presentation__btn" data-smooth-scrolling="#feedback-form">
                                         <span class="btn__text">Хочу поехать</span>
                                     </button>
                                 </div>
@@ -500,9 +500,81 @@
         </div>
     </div>
 </section>
-                    <section class="faq section">
+                    <section class="faq section" data-faq="main">
     <div class="main-container max-width">
         <h2 class="title title--h2 title-reset">Частые вопросы о туре</h2>
+        <div class="faq__wrap-cards">
+            <div class="faq__block" data-faq="block">
+                <div class="faq__block-head" data-faq="head">
+                    <span class="faq__block-title">Когда и где старт маршрута?</span>
+                    <img src="./assets/images/plus.svg" class="faq__block-icon" alt="">
+                </div>
+                <div class="faq__block-body text" data-faq="body">
+                    <p>
+                        Старт нашего тура 16 июля, 28 июля или 9 августа 2023г. в 9.00 от хостела Вулкан по адресу г.Петропавловск-Камчатский, ул. Горького, 4А
+                    </p>
+                    <p>
+                        Прилететь нужно 15 июля, 27 июля или 8 августа (в зависимости от выбранных дат), чтобы аклиматизироваться к смене часовых поясов. В 16:00 мы встречаем туристов организованно в аэропорту Елизово.
+                    </p>
+                </div>
+            </div>
+            <div class="faq__block" data-faq="block">
+                <div class="faq__block-head" data-faq="head">
+                    <span class="faq__block-title">Будет ли телефонная связь на маршруте?</span>
+                    <img src="./assets/images/plus.svg" class="faq__block-icon" alt="">
+                </div>
+                <div class="faq__block-body text" data-faq="body">
+                    <p>
+                        Местами связь будет прорываться в зависимости от оператора и погодных условий. Интернет почти не работает, но на стоянках есть возможность позвонить. Операторы Мегафон, МТС и Теле2.
+                    </p>   
+                </div>
+            </div>
+            <div class="faq__block" data-faq="block">
+                <div class="faq__block-head" data-faq="head">
+                    <span class="faq__block-title">Где мы будем жить в путешествии?</span>
+                    <img src="./assets/images/plus.svg" class="faq__block-icon" alt="">
+                </div>
+                <div class="faq__block-body text" data-faq="body">
+                    <p>
+                        Пятый день маршрута предусмотрен с проживанием в комфортном хостеле. На активной части маршрута ночёвки предусмотрены в палатках. Палатки 2-х и 3-х местные, 2-х тамбурные. Расселяем по палатках семьи и компании вместе. Если Вы хотите жить отдельно, можете взять свою палатку.
+                    </p>   
+                </div>
+            </div>
+            <div class="faq__block" data-faq="block">
+                <div class="faq__block-head" data-faq="head">
+                    <span class="faq__block-title">Где мы будем жить до и после тура?</span>
+                    <img src="./assets/images/plus.svg" class="faq__block-icon" alt="">
+                </div>
+                <div class="faq__block-body text" data-faq="body">
+                    <p>
+                        Для вашего удобства мы заранее забронировали проживание (день до тура и день после) в лучшем хостеле Петропавловска-Камчатского. А Для тех кто останется на Морскую прогулку 2 дня после тура.
+                    </p>   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                    <section class="feedback-form section section--theme--primary" data-smooth-scrolling="feedback-form">
+    <div class="main-container max-width">
+        <div class="feedback-form__head">
+            <h2 class="title title--h2 title-reset">Оставьте контакты и мы свяжемся с вами</h2>
+            <span class="feedback-form__subtitle">Камчатка: три вулкана и океан 78 000 ₽</span>
+        </div>
+        <form action="" class="feedback-form__form">
+            <div class="input">
+                <input type="text" class="input__field" placeholder="Ваше имя *" required>
+            </div>
+            <div class="input">
+                <input type="email" class="input__field" placeholder="Ваш email *" required>
+            </div>
+            <div class="input">
+                <input type="phone" class="input__field" placeholder="Ваш телефон *" data-phone-mask required>
+            </div>
+            <button type="submit" class="btn btn--size--bg btn--theme--secondary">
+                <span class="btn__text">Отправить</span>
+            </button>
+            <span class="feedback-form__privacy-policy">Нажимая кнопку, вы соглашаетесь с <a href="#" class="link-reset">Политикой конфиденциальности</a></span>
+        </form>
     </div>
 </section>
                 </div>
@@ -511,7 +583,7 @@
     <div class="main-container max-width">
         <div class="footer__wrap-logo">
             <a href="##" class="logo">
-                <img src="./assets/images/logo.svg" class="logo__image" alt="">
+                <img src="./assets/images/logo-2.jpg" class="logo__image" alt="">
             </a>
             <div class="footer__contacts">
                 <a href="#" class="footer__link">+7 (918) 234-94-45</a>
