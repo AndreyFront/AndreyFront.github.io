@@ -114,4 +114,17 @@
         grid-auto-flow: row;
         grid-row-gap: 10px;
     }
+
+    .review-card {
+        padding: 20px;
+
+        &__block-image {
+            width: 125px;
+            height: 125px;
+        }
+
+        &__text {
+            margin-top: 15px;
+        }
+    }
 }

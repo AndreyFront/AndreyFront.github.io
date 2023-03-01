@@ -153,7 +153,34 @@ function program() {
               nextEl: btnNext,
               prevEl: btnPrev,
             },
-        });
+        })
+    })
+}
+
+function reviews() {
+    const mains = document.querySelectorAll('[data-reviews="main"]')
+
+    if (!mains.length) return
+
+    mains.forEach(main => {
+        const slider = main.querySelector('[data-reviews="slider"]')
+        const btnPrev = main.querySelector('[data-reviews="btn-prev"]')
+        const btnNext = main.querySelector('[data-reviews="btn-next"]')
+
+        const swiper = new Swiper(slider, {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoHeight: true,
+            navigation: {
+              nextEl: btnNext,
+              prevEl: btnPrev,
+            },
+            breakpoints: {
+                992: {
+                  slidesPerView: 2,
+                },
+            }
+        })
     })
 }
 
@@ -255,6 +282,7 @@ header()
 presentation()
 modalPicture()
 program()
+reviews()
 scrollParallax()
 faq()
 phoneMask()

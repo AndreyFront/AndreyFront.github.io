@@ -49,7 +49,7 @@
 
     p,
     ul li {
-        @include adaptiv-font(18, 16);
+        @include adaptiv-font(18, 14);
         line-height: 1.5em;
     }
 

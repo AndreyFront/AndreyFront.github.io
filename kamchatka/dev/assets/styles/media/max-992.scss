@@ -183,4 +183,22 @@
             grid-row-gap: 40px;
         }
     }
+
+    .reviews,
+    .advantages {
+
+        &.section {
+            padding: 0 0 40px 0;
+        }
+    }
+
+    .reviews {
+        .review-card {
+            height: 100%;
+        }
+    
+        .swiper-slide {
+            height: auto !important;
+        }
+    }
 }
