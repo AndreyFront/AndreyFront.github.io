@@ -71,4 +71,19 @@
             }
         }
     }
+
+    .info-card {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &__block-image {
+            width: 100%;
+            height: 200px;
+        }
+
+        &__block-info {
+            padding: 15px;
+            grid-row-gap: 10px;
+        }
+    }
 }

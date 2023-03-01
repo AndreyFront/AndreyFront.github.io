@@ -157,4 +157,23 @@
             grid-row-gap: 15px;
         }
     }
+
+    .advantages {
+
+        &__wrap-cards {
+            grid-template-columns: 1fr;
+            grid-row-gap: 15px;
+        }
+    }
+
+    .price {
+        &__wrap-info {
+            padding: 30px;
+        }
+
+        &__wrap-blocks {
+            grid-template-columns: 1fr;
+            grid-row-gap: 20px;
+        }
+    }
 }
