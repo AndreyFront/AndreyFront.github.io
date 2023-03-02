@@ -178,14 +178,27 @@
     }
 
     .feedback-form {
+
+        &.section {
+            .title {
+                margin-bottom: 0;
+            }
+        }
+
+        &__head {
+            display: grid;
+            grid-row-gap: 20px;
+        }
+
         .main-container {
             grid-template-columns: 1fr;
-            grid-row-gap: 40px;
+            grid-row-gap: 20px;
         }
     }
 
     .reviews,
-    .advantages {
+    .advantages,
+    .feedback-form {
 
         &.section {
             padding: 0 0 40px 0;
@@ -199,6 +212,16 @@
     
         .swiper-slide {
             height: auto !important;
+        }
+    }
+
+    .privacy-policy {
+        &__block-text {
+            margin-top: 60px;
+
+            .title:not(:first-child) {
+                margin-top: 40px;
+            }
         }
     }
 }

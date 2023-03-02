@@ -127,4 +127,50 @@
             margin-top: 15px;
         }
     }
+
+    .privacy-policy {
+
+        &__title {
+            font-size: 28px;
+        }
+    }
+
+    .modal {
+
+        &__subtitle {
+            margin: 10px auto 0 auto;
+        }
+
+        &.m-success {
+
+            &.hystmodal {
+                .hystmodal {
+                    &__window {
+                        padding: 48px 16px 48px 16px;
+                    }
+                }
+            }
+
+            .title {
+                text-align: center;
+            }
+        }
+
+        &.hystmodal {
+            .hystmodal {
+                &__window {
+                    padding: 48px 16px 16px 16px;
+                }
+
+                &__close {
+                    top: 16px;
+                    right: 16px;
+                }
+            }
+        }
+
+        .title {
+            text-align: left;
+        }
+    }
 }

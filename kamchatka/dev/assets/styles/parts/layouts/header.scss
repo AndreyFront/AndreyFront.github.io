@@ -17,6 +17,10 @@
         background-color: $color-3;
     }
 
+    &--theme--primary {
+        background-color: $color-3;
+    }
+
     &__menu {
         display: grid;
         grid-template-columns: auto repeat(2, max-content);

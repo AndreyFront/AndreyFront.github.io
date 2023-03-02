@@ -15,15 +15,22 @@
     }
 
     &__block-image,
-    &__name {
+    &__name,
+    &__date {
         display: grid;
         margin: 0 auto;
         text-align: center;
     }
 
     &__name {
-        margin-top: 10px;
+        margin-top: 15px;
         font-weight: 600;
+    }
+
+    &__date {
+        font-size: 14px;
+        margin-top: 10px;
+        font-weight: 500;
     }
 
     &__image {

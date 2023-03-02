@@ -52,6 +52,22 @@ function smoothView(btn, el, startHeight = 0) {
     })
 }
 
+function page() {
+    const main = document.querySelector('[data-page="main"]')
+    const header = document.querySelector('[data-header="main"]')
+
+    if (!main) return
+    if (!header) return
+    
+    const wrapperContent = main.querySelector('[data-page="wrapper-content"]')
+
+    if (wrapperContent) {
+        wrapperContent.style.paddingTop = `${header.offsetHeight}px`
+    } else {
+        main.style.paddingTop = `${header.offsetHeight}px`
+    }
+}
+
 function header() {
     const header = document.querySelector('[data-header="main"]')
 
@@ -278,6 +294,14 @@ function sorting() {
     })
 }
 
+function modal() {
+    return new HystModal({
+        linkAttributeName: "data-hystmodal",
+        waitTransitions: true,
+    })
+}
+
+page()
 header()
 presentation()
 modalPicture()
@@ -288,3 +312,4 @@ faq()
 phoneMask()
 smoothScrolling()
 sorting()
+modal()
