@@ -32,4 +32,11 @@
             }
         }
     }
+
+    .footer {
+        &__wrap-copy {
+            grid-template-columns: max-content;
+            grid-row-gap: 15px;
+        }
+    }
 }
