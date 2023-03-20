@@ -41,10 +41,10 @@
     <div class="main-container">
         <div class="performance__block-title">
             <h2 class="title title--h2 title-reset">кавер группа</h2>
-            <h1 class="title title--h1 title-reset">южане</h1>
+            <h1 class="title title--h1 title-reset performance__main-title">южане</h1>
         </div>
         <div class="video-widget" data-hystmodal="#m-video-slider">
-    <video class="video-widget__video" autoplay loop muted poster="/assets/images/poster-promo-3.jpg">
+    <video class="video-widget__video" autoplay playsinline loop muted poster="/assets/images/poster-promo-3.jpg">
         <source src="/assets/static/promo-3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
         Тег video не поддерживается вашим браузером. 
     </video>
@@ -105,7 +105,7 @@
                 </div>
             </div>
             <div class="video-widget" data-hystmodal="#m-video">
-                <video class="video-widget__video" autoplay loop muted poster="/assets/images/poster-promo-3.jpg">
+                <video class="video-widget__video" autoplay playsinline loop muted poster="/assets/images/poster-promo-3.jpg">
                     <source src="/assets/static/promo-3.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     Тег video не поддерживается вашим браузером. 
                 </video>
@@ -706,7 +706,7 @@
         <div class="swiper" data-primary-slider="slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="additional-service-card" data-hystmodal="#m-form">
+                    <div class="additional-service-card additional-service-card--price" data-hystmodal="#m-form">
                         <div class="additional-service-card__wrap-content">
                             <img src="./assets/images/important.png" class="additional-service-card__important" loading="lazy" alt="">
                             <div class="additional-service-card__block-head">
@@ -1196,6 +1196,7 @@
         </div>
     </div>
 </footer>
+
             <div class="hystmodal m-modal" id="m-modal" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
@@ -1208,7 +1209,7 @@
         </div>
     </div>
 </div>
-<div class="hystmodal m-modal m-slider m-stage-images m-stage-images--bright" id="m-stage-images-bright" data-m-slider="main" aria-hidden="true">
+            <div class="hystmodal m-modal m-slider m-stage-images m-stage-images--bright" id="m-stage-images-bright" data-m-slider="main" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">
@@ -1256,7 +1257,7 @@
         </div>
     </div>
 </div>
-<div class="hystmodal m-modal m-slider m-stage-images m-stage-images--classic" id="m-stage-images-classic" data-m-slider="main" aria-hidden="true">
+            <div class="hystmodal m-modal m-slider m-stage-images m-stage-images--classic" id="m-stage-images-classic" data-m-slider="main" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">
@@ -1304,7 +1305,7 @@
         </div>
     </div>
 </div>
-<div class="hystmodal m-modal m-slider m-stage-images m-stage-images--daring" id="m-stage-images-daring" data-m-slider="main" aria-hidden="true">
+            <div class="hystmodal m-modal m-slider m-stage-images m-stage-images--daring" id="m-stage-images-daring" data-m-slider="main" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">
@@ -1352,7 +1353,7 @@
         </div>
     </div>
 </div>
-<div class="hystmodal m-modal m-slider m-video-slider" id="m-video-slider" data-m-slider="main" aria-hidden="true">
+            <div class="hystmodal m-modal m-slider m-video-slider" id="m-video-slider" data-m-slider="main" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">
@@ -1389,7 +1390,7 @@
         </div>
     </div>
 </div>
-<div class="hystmodal m-modal m-slider m-video" id="m-video" aria-hidden="true">
+            <div class="hystmodal m-modal m-slider m-video" id="m-video" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">
@@ -1401,7 +1402,7 @@
         </div>
     </div>
 </div>
-<div class="hystmodal m-modal m-slider m-video" id="m-video-feedback" aria-hidden="true">
+            <div class="hystmodal m-modal m-slider m-video" id="m-video-feedback" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">
@@ -1413,7 +1414,7 @@
         </div>
     </div>
 </div>
-<div class="hystmodal m-modal m-form" id="m-form" aria-hidden="true">
+            <div class="hystmodal m-modal m-form" id="m-form" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
             <button data-hystclose class="hystmodal__close">
@@ -1456,15 +1457,14 @@
         </div>
     </div>
 </div>
-
-<div class="message" data-message="main">
+            <div class="message" data-message="main">
     <svg class="message__icon">
         <use xlink:href="./assets/icons/sprite-svg.svg#success"/>
     </svg>
     <span class="message__text">Спасибо! Ваша заявка отправлена</span>
 </div>
 
-<script src="./assets/scripts/libs.js"></script>
+            <script src="./assets/scripts/libs.js"></script>
 <script src="./assets/scripts/main.js"></script>
         </div>
     </body>
