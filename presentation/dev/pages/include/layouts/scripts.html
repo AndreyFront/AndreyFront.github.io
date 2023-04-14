@@ -1,2 +1,14 @@
+<script>
+    function page() {
+        const main = document.querySelector('[data-page="main"]')
+        const header = document.querySelector('[data-header="main"]')
+
+        if (!main && !header) return
+
+        main.style.paddingTop = `${header.offsetHeight}px`
+    }
+    
+    page()
+</script>
 <script src="./assets/scripts/libs.js"></script>
 <script src="./assets/scripts/main.js"></script>
