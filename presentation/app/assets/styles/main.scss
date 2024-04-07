@@ -1,0 +1,32 @@
+@import './fonts';
+@import './vars';
+@import './_mixins';
+@import './settings';
+@import './classes';
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: $font-p, sans-serif;
+    font-weight: 400;
+    font-size: clamp(14px, vw(16), vw(16));
+    line-height: 1.2em;
+    color: $color-text-p;
+}
+
+html,
+body {
+    width: 100%;
+    background-color: $color-base-bg;
+    scroll-behavior: smooth;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}

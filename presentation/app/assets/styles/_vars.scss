@@ -1,0 +1,52 @@
+:root {
+    // Base
+    --color-base-bg: #f5f5f5;
+    --color-base-bg-s: #131417;
+    --color-base-bg-t: #fff;
+    --color-base-bg-nav: #131417;
+    --color-base-border: #131417;
+    --color-base-border-s: #cfd1d7;
+    --color-base-border-t: #fff;
+    --color-base-decore-nav: rgba(19, 20, 23, 0.1);
+
+    // Text
+    --color-text-p: #131417;
+    --color-text-s: #9fa0a3;
+    --color-text-t: #fff;
+    --color-text-q: #828283;
+    --color-text-f: #f5f5f5;
+
+    --tr-time-p: 0.4s;
+    --tr-time-s: 0.5s;
+    --tr-time-t: 0.8s;
+    --font-p: "Manrope", sans-serif;
+}
+
+// Colors
+
+    // Base
+    $color-base-bg: var(--color-base-bg);
+    $color-base-bg-s: var(--color-base-bg-s);
+    $color-base-bg-t: var(--color-base-bg-t);
+    $color-base-bg-nav: var(--color-base-bg-nav);
+    $color-base-border: var(--color-base-border);
+    $color-base-border-s: var(--color-base-border-s);
+    $color-base-border-t: var(--color-base-border-t);
+    $color-base-decore-nav: var(--color-base-decore-nav);
+
+    // Text
+    $color-text-p: var(--color-text-p);
+    $color-text-s: var(--color-text-s);
+    $color-text-t: var(--color-text-t);
+    $color-text-q: var(--color-text-q);
+    $color-text-f: var(--color-text-f);
+
+// Fonts
+
+$font-p: var(--font-p);
+
+// Other
+
+$tr-time-p: var(--tr-time-p);
+$tr-time-s: var(--tr-time-s);
+$tr-time-t: var(--tr-time-t);
